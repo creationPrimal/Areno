@@ -1,0 +1,644 @@
+
+.storesdiv{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 20px 30px;
+}
+.stores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0);
+}
+.store:nth-child(1), 
+.store:nth-child(2),
+.store:nth-child(3),
+.store:nth-child(4),
+.store:nth-child(5),
+.store:nth-child(6),
+.store:nth-child(7),
+.store:nth-child(8),
+.store:nth-child(9),
+.store:nth-child(10){
+    display: flex;
+}
+.store{
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 48%;
+    min-width: 330px;
+    padding: 4px;
+    margin: 0px 0px 10px 0px;
+    background-color: rgba(187, 183, 183, 0.377);
+}
+.store:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 48%;
+    padding: 4px;
+    margin: 0px 0px 10px 0px;
+    background-color: rgba(187, 183, 183, 0.377);
+    transition: 200ms;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.477);
+    cursor: pointer;
+}
+.store:hover .store-details h4{
+    color: black !important;
+}
+.store-profileimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    background-color: grey;
+}
+.store-profileimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.store-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+}
+.store-details p{
+    font-size: 14px;
+    margin: 0px 0px 2px 0px;
+}
+.store-details h4{
+    color: orangered;
+    margin: 0px 0px 10px 0px;
+}
+
+/*brands page*/
+.brandsdiv{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 20px 30px;
+}
+.brands{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.brands p{
+    margin: 10px 5px 10px 0px;
+    padding: 2px 20px 2px 20px;
+    background-color: rgba(250, 161, 129, 0.466);
+}
+.brands p:hover{
+    margin: 10px 5px 10px 0px;
+    padding: 2px 20px 2px 20px;
+    color: white;
+    background-color: orangered;
+    transition: 100ms;
+}
+
+/*profile*/
+.profilepage{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 20px 30px;
+}
+.profiletop{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0px 0px 0px;
+}
+.profile-profileimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    min-width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    background-color: grey;
+}
+.profile-profileimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profilepage-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+.profilepage-details h3{
+    color: orangered;
+    margin: 0px 0px 5px 0px;
+}
+.retail{
+    font-size: 13px;
+    margin: 0px 0px 5px 0px;
+}
+span{
+    color: orangered;
+}
+.workinghours{
+    font-size: 13px;
+    margin: 10px 0px 10px 0px;
+}
+.bio{
+    margin: 0px;
+}
+.locationprofile{
+    font-size: 13px;
+    margin: 0px 0px 10px 0px;
+}
+.postingdiv{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 20px 170px;
+
+}
+.posting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 20px 0px 0px;
+    background-color: rgba(128, 128, 128, 0.39);
+}
+.posting:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: none;
+    color: white ;
+    border-radius: 4px;
+    margin: 0px 20px 0px 0px;
+    background-color: rgb(0, 0, 0);
+    transition: 200ms;
+    cursor: pointer;
+}
+.posting p{
+    margin: 0px;
+}
+.posting i{
+    margin: 0px 5px 0px 0px;
+    color: orangered;
+}
+
+/*settings page*/
+.settingspage{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 30px 10px 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.123);
+}
+.settingspage h4{
+    margin: 5px 0px 10px 0px;
+}
+.setprofileimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.342);
+}
+.setprofileimage i{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+.setprofileimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 23%;
+    min-width: 220px;
+    margin: 10px 10px 10px 0px;
+}
+.inputdiv label{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.hours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.hours p{
+    font-size: 12px;
+    margin: 0px 10px 0px 10px;
+}
+.inputdiv input[type="text"]{
+    height: 30px;
+    outline: none;
+    width: 100%;
+    padding-left: 5px;
+    border: 1px solid rgba(255, 68, 0, 0);
+    border-radius: 0px;
+    background-color: rgba(151, 151, 151, 0.459);
+}
+.inputdiv input[type="time"],.inputdiv input[type="tel"]{
+    height: 30px;
+    outline: none;
+    display: flex;
+    width: 100%;
+    padding-left: 5px;
+    border: 1px solid rgba(255, 68, 0, 0);
+    border-radius: 0px;
+    background-color: rgba(151, 151, 151, 0.459);
+}
+.inputdiv input[type="file"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    outline: none;
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgba(255, 68, 0, 0);
+    border-radius: 0px;
+    background-color: rgba(151, 151, 151, 0.459);
+}
+
+select{
+    height: 30px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgba(255, 68, 0, 0);
+    border-radius: 0px;
+    background-color: rgba(151, 151, 151, 0.459);
+}
+.textarea label{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.settings-button{
+    margin: 20px 0px 0px 0px;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    background-color: orangered;
+    border: none;
+}
+.settings-button:hover{
+    margin: 20px 0px 0px 0px;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 764px){
+    .storesdiv{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 20px 10px;
+    }
+    .store{
+        display: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: 48%;
+        min-width: 300px;
+        padding: 4px;
+        margin: 0px 0px 10px 0px;
+        background-color: rgba(187, 183, 183, 0.377);
+    }
+    .store:nth-child(1), 
+    .store:nth-child(2),
+    .store:nth-child(3),
+    .store:nth-child(4),
+    .store:nth-child(5),
+    .store:nth-child(6),
+    .store:nth-child(7),
+    .store:nth-child(8),
+    .store:nth-child(9),
+    .store:nth-child(10){
+        display: flex;
+    }
+    .store-profileimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 90px;
+        min-width: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+        background-color: grey;
+    }
+    .store-details p{
+        font-size: 12px;
+        margin: 0px 0px 2px 0px;
+    }
+    .store-details h4{
+        font-size: 14px;
+        margin: 0px 0px 7px 0px;
+    }
+    .brandsdiv{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 20px 10px;
+    }
+    .profile-profileimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 90px;
+        min-width: 90px;
+        border-radius: 50%;
+        margin-right: 10px;
+        overflow: hidden;
+        background-color: grey;
+    }
+    .profilepage-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    .postingdiv{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0px 20px 0px;
+    
+    }
+    .profilepage{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 20px 10px;
+    }
+    .profilepage-details{
+        font-size: 12px;
+    }
+    .settingspage{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10px 10px 10px 10px;
+    }
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 31%;
+        min-width: 200px;
+        margin: 10px 10px 10px 0px;
+    }
+    .hours{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .inputdiv select{
+        width: 102.5%;
+    }
+    
+}
+
+
+@media screen and (max-width: 650px){
+    .store{
+        display: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        min-width: 200px;
+        padding: 4px;
+        margin: 0px 0px 10px 0px;
+        background-color: rgba(187, 183, 183, 0.377);
+    }
+    .store:nth-child(1), 
+    .store:nth-child(2),
+    .store:nth-child(3),
+    .store:nth-child(4),
+    .store:nth-child(5),
+    .store:nth-child(6),
+    .store:nth-child(7),
+    .store:nth-child(8),
+    .store:nth-child(9),
+    .store:nth-child(10){
+        display: flex;
+    }
+    .store:hover{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding: 4px;
+        margin: 0px 0px 10px 0px;
+        background-color: rgba(187, 183, 183, 0.377);
+        transition: 200ms;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.477);
+        cursor: pointer;
+    }
+    .retail{
+        font-size: 11px;
+        margin: 0px 0px 5px 0px;
+    }
+    .settingspage{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10px 10px 10px 10px;
+    }
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 46%;
+        min-width: 180px;
+        margin: 10px 15px 10px 0px;
+    }
+    .hours p{
+        font-size: 12px;
+        margin: 0px 10px 0px 10px;
+    }
+    .inputdiv select{
+        width: 104%;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    .profiletop{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 20px 0px 0px 0px;
+    }
+    .profile-profileimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 90px;
+        min-width: 90px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        background-color: grey;
+    }
+    .settingspage{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10px 10px 10px 10px;
+    }
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        min-width: 150px;
+        margin: 10px 15px 10px 0px;
+    }
+    .textarea textarea{
+        width: 96%;
+    }
+    .inputdiv select{
+        width: 102.5%;
+    }
+}
+
+@media screen and (max-width: 1064px) and (min-width: 764px){
+    .store-details p{
+        font-size: 13px;
+        margin: 0px 0px 2px 0px;
+    }
+    .store-details h4{
+        margin: 0px 0px 10px 0px;
+    }
+    .storesdiv{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 15px 20px 15px;
+    }
+    .brandsdiv{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 15px 20px 15px;
+    }
+    .profile-profileimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 90px;
+        min-width: 90px;
+        border-radius: 50%;
+        margin-right: 20px;
+        overflow: hidden;
+        background-color: grey;
+    }
+    .profilepage-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+    .postingdiv{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0px 20px 0px;
+    
+    }
+    .profilepage{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 15px 20px 15px;
+    }
+    .settingspage{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 10px 15px 10px 15px;
+    }
+    .inputdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30%;
+        min-width: 200px;
+        margin: 10px 15px 10px 0px;
+    }
+    
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="assets/css/shopping.css">
+    <link rel="stylesheet" href="assets/css/shopping2.css">
+    <link rel="stylesheet" href="assets/css/splide.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/productpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="nav-menu product-menu" >
+                <i class="fa-solid fa-bars" style="color: white; font-size: 25px;"></i>
+            </div>
+            <div class="right-nav">
+                <a href="index.html"><h4>Home</h4></a>
+                <a href=""><h4>Stores</h4></a>
+                <a href="#categories"><h4>Categories</h4></a>
+                <a href=""><h4>Brands</h4></a>
+                <a href="products.html"><h4>Products</h4></a>
+                <a href=""><h4>About</h4></a>
+                <a href=""><h4>Contact Us</h4></a>
+                <a href="cart.html"><div class="cart">
+                    <div class="cart-circle">8</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
+                        <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.07593 6.31818H35.3487L54.9614 104.309C55.6306 107.678 57.4635 110.704 60.1393 112.858C62.8151 115.012 66.1633 116.157 69.5977 116.091H140.73C144.165 116.157 147.513 115.012 150.189 112.858C152.865 110.704 154.698 107.678 155.367 104.309L167.076 42.9091H42.6668" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div></a>
+                <div class="notifications">
+                    <div class="cart-circle">8</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="159" height="171" viewBox="0 0 159 171" fill="none">
+                        <path d="M128.23 56.313C128.23 43.0614 123.069 30.3525 113.883 20.9822C104.696 11.6119 92.2367 6.34775 79.2449 6.34775C66.2531 6.34775 53.7935 11.6119 44.6069 20.9822C35.4203 30.3525 30.2594 43.0614 30.2594 56.313C30.2594 114.606 5.7666 131.261 5.7666 131.261H152.723C152.723 131.261 128.23 114.606 128.23 56.313Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" fill="white"/>
+                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="profileimage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" fill="none">
+                        <path d="M91.707 90.5585C94.2868 90.0208 95.8232 87.3213 94.5413 85.0189C91.7152 79.9431 87.2631 75.4829 81.5678 72.0838C74.2327 67.7062 65.2454 65.3333 55.9998 65.3333C46.7542 65.3333 37.7669 67.7062 30.4318 72.0838C24.7365 75.4828 20.2843 79.9431 17.4583 85.0188C16.1764 87.3213 17.7128 90.0208 20.2926 90.5584V90.5584C43.8444 95.4668 68.1552 95.4668 91.707 90.5585V90.5585Z" fill="white"/>
+                        <circle cx="56.0001" cy="37.3333" r="23.3333" fill="white"/>
+                      </svg>
+                </div>
+            </div>
+            
+        </nav>
+        <!--search bar-->
+        <div class="productpagehead">
+            <div class="product-detail-head">
+               
+                <a href="products.html"><div class="return">
+                    <i class="fa-solid fa-arrow-left" ></i>
+                </div></a>
+                <div class="product-nav-head">
+                    <h4>Cart</h4>
+                </div>
+            </div>
+            <div class="productcart-notification">
+                <div class="mobile-cart">
+                    <div class="cart-circle">8</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23" fill="none">
+                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
+                <div class="mobile-notification">
+                    <div class="cart-circle">8</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M17.9383 8.43703C17.9383 6.70036 17.2619 5.03481 16.058 3.80679C14.8541 2.57878 13.2212 1.88889 11.5185 1.88889C9.81592 1.88889 8.18303 2.57878 6.97909 3.80679C5.77516 5.03481 5.09879 6.70036 5.09879 8.43703C5.09879 16.0765 1.88892 18.2593 1.88892 18.2593H21.1482C21.1482 18.2593 17.9383 16.0765 17.9383 8.43703Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.4445 22.1111C13.2488 22.404 12.9679 22.6471 12.6299 22.8161C12.2919 22.9851 11.9086 23.0741 11.5186 23.0741C11.1285 23.0741 10.7453 22.9851 10.4073 22.8161C10.0693 22.6471 9.78837 22.404 9.59265 22.1111" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                       
+                      </svg>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="menu">
+            <div class="menudiv">
+                <div>
+                    <button class="minimize-menu">
+                        <i class="fa-solid fa-x" ></i>
+                    </button>
+                    <div class="main-menu-content">
+                        <a href=""><div class="menu-logo">
+                            <img src="assets/icons/Frame 304 (2).png" alt="">
+                        </div></a>
+                        <a href=""><div class="menu-title">
+                            <button class="menu-title-icon">
+                                <i class="fa-solid fa-house "></i>
+                            </button>
+                            <button><p>Home</p></button>
+                        </div></a>
+                        <a href=""><div class="menu-title title-selected">
+                            <button class="menu-title-icon">
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                            <button><p>Shopping</p></button>
+                        </div></a>
+                        <a href=""><div class="menu-title">
+                            <button class="menu-title-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </button>
+                            <button><p>Restaurants</p></button>
+                        </div></a>
+                        <a href=""><div class="menu-title">
+                            <button class="menu-title-icon">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </button>
+                            <button><p>Booking</p></button>
+                        </div></a>
+                        <a href=""><div class="menu-title">
+                            <button class="menu-title-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </button>
+                            <button><p>Contact Areno</p></button>
+                        </div></a>
+                    </div>
+                    <div class="menu-about-areno">
+                        <a href=""><button><p>About Us</p></button></a>
+                        <a href=""><button><p>Categories</p></button></a>
+                        <a href=""><button><p>Privacy Policy</p></button></a>
+                        <a href=""><button><p>Refund Policy</p></button></a>
+                        <a href=""><button><p>Advertise With Us</p></button></a>
+                    </div>
+                    <div class="theme">
+                        <p><b>Change Theme</b></p>
+                        <div class="toggle-switch" >
+                            <label class="switch-label">
+                              <input type="checkbox" class="checkbox" id="darkmode">
+                              <span class="slider" ></span>
+                            </label>
+                          </div> 
+                    </div>
+                    <div class="menu-follow-us">
+                        <h5>Follow Us</h5>
+                        <div class="menu-socials">
+                            <a href=""><button class="social">
+                                <i class="fa-brands fa-facebook"></i>
+                            </button></a>
+                            <a href=""><button class="social">
+                                <i class="fa-brands fa-instagram"></i>
+                            </button></a>
+                            <a href=""><button class="social">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </button></a>
+                            <a href=""><button class="social">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </button></a>
+                            <a href=""><button class="social">
+                                <i class="fa-brands fa-threads"></i>
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="below-menu">
+                    <div class="register">
+                        <a href="signup.html"><button class="register-button1">Register</button></a>
+                        <a href="login.html"><button class="register-button2">Log In</button></a>
+                    </div>
+                    <div class="menu-trademark">
+                        <p>© 2023. Areno Company Limited. app version 1.0.0</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="darkside"></div>
+        </div>
+        <!--cart products-->
+        <div class="cart-products">
+            <!--start of product-->
+            <div class="cart-product">
+                <div class="cart-product-image">
+                    <img src="assets/photos/15stunning.jpg" alt="">
+                </div>
+                <div class="cart-product-details">
+                    <div>
+                        <p>Item Name:</p>
+                        <h4 style="color: orangered;">AJ4 Nike Snikers</h4>
+                        <h4>Tsh 13,000/=</h4>
+                        <div class="amount-counter cart-count-items" >
+                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <input type="number" name="" class="cartamount" placeholder="1">
+                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
+                        
+                    </div>
+                   
+                    <a href="orderdetails.html"><button class="add-cart2 cart2">
+                        Purchase
+                        <i style="margin-left: 10px;" class="fa-solid fa-cart-arrow-down"></i>
+                    </button></a>
+                </div>
+            </div>
+            <!--end of product-->
+            <!--start of product-->
+            <div class="cart-product">
+                <div class="cart-product-image">
+                    <img src="assets/photos/37 Beauty Products Under $10 That Feel Like They Should Cost More.jpg" alt="">
+                </div>
+                <div class="cart-product-details">
+                    <div>
+                        <p>Item Name:</p>
+                        <h4 style="color: orangered;">Perfume For Women</h4>
+                        <h4>Tsh 13,000/=</h4>
+                        <div class="amount-counter cart-count-items" >
+                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <input type="number" name="" class="cartamount" placeholder="1">
+                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
+                        
+                    </div>
+                   
+                    <a href="orderdetails.html"><button class="add-cart2 cart2">
+                        Purchase
+                        <i style="margin-left: 10px;" class="fa-solid fa-cart-arrow-down"></i>
+                    </button></a>
+                </div>
+            </div>
+            <!--end of product-->
+            <!--start of product-->
+            <div class="cart-product">
+                <div class="cart-product-image">
+                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
+                </div>
+                <div class="cart-product-details">
+                    <div>
+                        <p>Item Name:</p>
+                        <h4 style="color: orangered;">Fresh Winter Boots</h4>
+                        <h4>Tsh 13,000/=</h4>
+                        <div class="amount-counter cart-count-items" >
+                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <input type="number" name="" class="cartamount" placeholder="1">
+                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
+                        
+                    </div>
+                   
+                    <a href=""><button class="add-cart2 cart2">
+                        Purchase
+                        <i style="margin-left: 10px;" class="fa-solid fa-cart-arrow-down"></i>
+                    </button></a>
+                </div>
+            </div>
+            <!--end of product-->
+            <!--start of product-->
+            <div class="cart-product">
+                <div class="cart-product-image">
+                    <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
+                </div>
+                <div class="cart-product-details">
+                    <div>
+                        <p>Item Name:</p>
+                        <h4 style="color: orangered;">Fashion Glasses for Men</h4>
+                        <h4>Tsh 13,000/=</h4>
+                        <div class="amount-counter cart-count-items" >
+                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <input type="number" name="" class="cartamount" placeholder="1">
+                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
+                        
+                    </div>
+                   
+                    <a href="orderdetails.html"><button class="add-cart2 cart2">
+                        Purchase
+                        <i style="margin-left: 10px;" class="fa-solid fa-cart-arrow-down"></i>
+                    </button></a>
+                </div>
+            </div>
+            <!--end of product-->
+        </div>
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+   
+    <script src="assets/js/shoppingpage.js" ></script>
+    <script src="assets/js/productpage.js" ></script>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+  --text-color-light: black;
+  --bg-color-light: white;
+  --text-color-dark: white;
+  --bg-color-dark: #333;
+}
+
+body {
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.dark-mode {
+  --text-color-light: white;
+  --bg-color-light: #333;
+  --text-color-dark: black;
+  --bg-color-dark: white;
+}
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Dark Mode</button>
+    <p class="text">This is a sample text.</p>
+    <div class="box"></div>
+    <button id="red" >red</button>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        });
+
+        const red = document.getElementById('red')
+
+        function change() {
+          red.textContent = 'blue'
+        }
+
+        localStorage.setItem('color', 'change')
+        const stored = localStorage.getItem('color')
+
+        red.addEventListener('click', stored );
+    </script>
+</body>
+</html>
