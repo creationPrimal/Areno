@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areno - Payment Method</title>
+    <title>Areno - Food Page</title>
 
     <link rel="stylesheet" href="assets/css/shopping.css">
     <link rel="stylesheet" href="assets/css/shopping2.css">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/productpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
@@ -23,15 +24,15 @@
                 <i class="fa-solid fa-bars" style="color: white; font-size: 25px;"></i>
             </div>
             <div class="right-nav">
-                <a href="shopping.html"><h4>Home</h4></a>
-                <a href=""><h4>Stores</h4></a>
-                <a href="#categories"><h4>Categories</h4></a>
+                <a href="restaurants.html"><h4>Home</h4></a>
+                <a href="restaurantspage.html"><h4>Restaurants</h4></a>
+                <a href="meals.html"><h4>Meals</h4></a>
                 <a href=""><h4>Brands</h4></a>
-                <a href="products.html"><h4>Products</h4></a>
+                <a href="foods.html"><h4>Food Items</h4></a>
                 <a href=""><h4>About</h4></a>
                 <a href=""><h4>Contact Us</h4></a>
-                <div class="cart">
-                    <a href="cart.html"><div class="cart-circle">8</div>
+                <a href="cart.html"><div class="cart">
+                    <div class="cart-circle">8</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
                         <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,12 +59,12 @@
         <!--search bar-->
         <div class="productpagehead">
             <div class="product-detail-head">
-              
-                <a href="orderdetails.html"><div class="return">
-                    <i class="fa-solid fa-arrow-left" ></i>
+                
+                <a href="foods.html"><div class="return">
+                    <i class="fa-solid fa-arrow-left" "></i>
                 </div></a>
                 <div class="product-nav-head">
-                    <h4>Check Out</h4>
+                    <h4>Item Details</h4>
                 </div>
             </div>
             <div class="productcart-notification">
@@ -103,13 +104,13 @@
                             </button>
                             <button><p>Home</p></button>
                         </div></a>
-                        <a href="shopping.html"><div class="menu-title title-selected">
+                        <a href="shopping.html"><div class="menu-title ">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
                             <button><p>Shopping</p></button>
                         </div></a>
-                        <a href="restaurants.html"><div class="menu-title">
+                        <a href="restaurants.html"><div class="menu-title title-selected">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-utensils"></i>
                             </button>
@@ -178,60 +179,67 @@
             </div>
             <div class="darkside"></div>
         </div>
-        <!--order summary-->
-        <div class="summary-main">
-            
-            <div class="order-summary">
-                <h4>Order Summary</h4>
-                <div class="order-summary-summary">
-                    <p>Product: <b>AJ4 Nike Snikers</b></p>
-                    <p>Amount: <b>10 Pieces, White, 3kg</b></p>
+        <!--product details-->
+        <!--product full screen view div-->
+        <div id="fullscreen-image-container">
+            <img id="fullscreen-image">
+          </div>
+          <!--product details-->
+        <div class="productdetail">
+            <div class="productdetailimage">
+                <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt=""  class="thumbnail">
+            </div>
+            <div class="productdetail-details">
+                <div>
+                    <div class="details-productname">
+                        <p>Item Name:</p>
+                        <h3 id="productname1">Fried Chicken With Rice</h3>
+                    </div>
+                    <div class="details-productname">
+                        <h2 >Tsh 16,000/=</h2>
+                    </div>
+                    <div class="category-region">
+                        <p>Meal: <b>Fast Food</b></p>
+                        <p>Location: <b>Tegeta</b></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="category-region">
+                        <p>Weight: <b>500g</b></p>
+                        <p>Size: <b>3x3x3</b></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="description">
+                        <h4>Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis rutrum orci,
+                             vitae vulputate risus. Vestibulum et quam eget ligula feugiat tempus. Mauris nulla turpis,
+                              suscipit sit amet magna quis, convallis mattis justo.
+                             Pellentesque eu turpis felis. Pellentesque tortor ipsum, convallis ut mi eget, facilisis lacinia diam</p>
+                    </div>
+                </div>
+                <div class="amount-count">
+                    <div class="amount-count-div1">
+                        <div class="amount-counter">
+                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <input type="number" name="" class="cartamount" placeholder="1">
+                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
+                        <button class="add-cart addcart-button" id="product1">
+                            <p class="add-to-cart-txt" id="product1">Add to Cart</p>
+                        </button>
+                        <a href="foodordersummary.html"><button class="add-cart2" >
+                            <p >Purchase Item</p>
+                            <i style="margin-left: 10px;" class="fa-solid fa-cart-arrow-down"></i>
+                        </button></a>
+                    </div>
+                    <div class="product-profile">
+                        <p><i>Item by: </i> <a href=""><b class="profile-name">Zuhura Fast Foods</b></a></p>
+                        <div class="product-profile-image">
+                            <a href=""><img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt=""></a>
+                        </div>
+                    </div>
                     
-                    <div class="taxcalculations">
-                        <p>Price: <b>Tsh 17,000/=</b></p>
-                        <p>VAT: <b>Tsh 1,000/=</b></p>
-                        <p>Total Price: <b style="color: orangered;">Tsh 19,000/=</b></p>
-                    </div>
                 </div>
-                <h4 style="color: green; margin-top: 60px;">Choose payment method</h4>
-                <div class="paymentmethods">
-                    <div class="paymentmethod">
-                        <p><b>M-Pesa</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/M-Pesa.JPG" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Tigo-Pesa</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/tigo.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Airtel Money</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/Airtellogo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Debit Card</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/debit.png" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Cash</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/cash.png" alt="">
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="agreement">
-                    <p>By Checking Out, you accept Areno <a href=""><span><i>Terms & Policies</i></span></a> and <a href=""><span><i>Privacy Policy</i></span></a> </p>
-                </div>
-               
-            
             </div>
         </div>
         
@@ -239,6 +247,119 @@
         
         
         
+        
+           
+        
+
+
+        <!--footer-->
+        <div class="footer">
+            <div class="footerdiv1">
+                <div class="logoquote">
+                    <div class="arenologo">
+                        <img src="assets/icons/Frame 304 (2).png" alt="">
+                    </div>
+                    <div class="quote">
+                        <p>Areno Tanzania is an e commerce web application for all Tanzanians</p>
+                    </div>
+                    <div class="socialicons">
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-threads"></i>
+                        </button></a>
+                    </div>
+                </div>
+                <div class="list">
+                    <a href=""><button><h4>SUPPORT</h4></button></a>
+                    <ul>
+                        <li><a href=""><button>Contact Us</button></li></a>
+                        <li><a href=""><button>+255 782 222 222</button></li></a>
+                        <li><a href=""><button>+255 782 222 222</button></li></a>
+                        <li><a href=""><button>Areno@gmail.com</button></li></a>
+                    </ul>
+                </div>
+                <div class="list">
+                    <a href=""><button><h4>ABOUT US</h4></button></a>
+                    <ul>
+                        <li><a href=""><button>Terms & Policy</button></li></a>
+                        <li><a href=""><button>Trust and Safety</button></li></a>
+                        <li><a href=""><button>Advertise</button></li></a>
+                        <li><a href=""><button>Help & FAQ</button></li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="lowerfooterdetail">
+                <a href="#top"><div class="backtotop">
+                   Return up
+                </div></a>
+                <p>Areno company limited ©  2023. All rights reserved</p>
+            </div>
+        </div>
+        <!--mobile below navigations-->
+        <div class="mobile-nav">
+            <a href="restaurants.html"><div class="mobile-nav-div">
+                <button class="mobile-nav-icon ">
+                    <img src="assets/icons/Home_fill (1).png" alt="">
+                </button>
+                <p>Home</p>
+            </div></a>
+            <a href="restaurantspage.html"><div class="mobile-nav-div">
+                <button class="mobile-nav-icon">
+                   <img src="assets/icons/Shop_duotone.png" alt="">
+                </button>
+                <p>Restaurants</p>
+            </div></a>
+            <a href="meals.html"><div class="mobile-nav-div">
+                <button class="mobile-nav-icon">
+                    <img src="assets/icons/Widget.png" alt="">
+                </button>
+                <p>Melas</p>
+            </div></a>
+            <a href=""><div class="mobile-nav-div">
+                <button class="mobile-nav-icon">
+                    <img src="assets/icons/Shop.png" alt="">
+                </button>
+                <p>Brands</p>
+            </div></a>
+            <a href="foods.html"><div class="mobile-nav-div">
+                <button class="mobile-nav-icon selected">
+                    <img src="assets/icons/package_favourite_alt.png" alt="">
+                </button>
+                <p>Foods</p>
+            </div></a>
+            <!--
+                <a href=""><div class="mobile-nav-div">
+                <div class="mobile-nav-icon">
+                    <div class="mobile-nav-profile-image">
+                        <img src="" alt="">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                        <g clip-path="url(#clip0_12_245)">
+                        <path d="M24.4849 18.6358C22.9469 17.0979 21.1163 15.9593 19.119 15.2701C21.2582 13.7968 22.6635 11.331 22.6635 8.54283C22.6635 4.04147 19.0014 0.379303 14.5 0.379303C9.99867 0.379303 6.3365 4.04147 6.3365 8.54283C6.3365 11.331 7.74189 13.7968 9.88112 15.2701C7.88382 15.9593 6.0532 17.0979 4.51521 18.6358C1.84816 21.3029 0.379333 24.8489 0.379333 28.6207H2.58569C2.58569 22.0511 7.93043 16.7064 14.5 16.7064C21.0696 16.7064 26.4144 22.0511 26.4144 28.6207H28.6207C28.6207 24.8489 27.1519 21.3029 24.4849 18.6358ZM14.5 14.5C11.2153 14.5 8.54286 11.8277 8.54286 8.54283C8.54286 5.258 11.2153 2.58566 14.5 2.58566C17.7848 2.58566 20.4572 5.258 20.4572 8.54283C20.4572 11.8277 17.7848 14.5 14.5 14.5Z" fill="#F24E1E"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_12_245">
+                            <rect width="28.2414" height="28.2414" fill="white" transform="translate(0.379333 0.379303)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <p>Profile</p>
+            </div></a>
+            -->
+            
+        </div>
 
 
 
@@ -256,6 +377,10 @@
 
    
     <script src="assets/js/shoppingpage.js" ></script>
+    <script src="assets/js/productpage.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="assets/js/shoppingspliders.js" ></script>
+    
     
     
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areno - Payment Method</title>
+    <title>Food Item - Checkout Page</title>
 
     <link rel="stylesheet" href="assets/css/shopping.css">
     <link rel="stylesheet" href="assets/css/shopping2.css">
@@ -23,15 +23,15 @@
                 <i class="fa-solid fa-bars" style="color: white; font-size: 25px;"></i>
             </div>
             <div class="right-nav">
-                <a href="shopping.html"><h4>Home</h4></a>
-                <a href=""><h4>Stores</h4></a>
-                <a href="#categories"><h4>Categories</h4></a>
+                <a href="restaurants.html"><h4>Home</h4></a>
+                <a href="restaurantspage.html"><h4>Restaurants</h4></a>
+                <a href="meals.html"><h4>Meals</h4></a>
                 <a href=""><h4>Brands</h4></a>
-                <a href="products.html"><h4>Products</h4></a>
+                <a href="foods.html"><h4>Food Items</h4></a>
                 <a href=""><h4>About</h4></a>
                 <a href=""><h4>Contact Us</h4></a>
-                <div class="cart">
-                    <a href="cart.html"><div class="cart-circle">8</div>
+                <a href="cart.html"><div class="cart">
+                    <div class="cart-circle">8</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
                         <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,8 +58,8 @@
         <!--search bar-->
         <div class="productpagehead">
             <div class="product-detail-head">
-              
-                <a href="orderdetails.html"><div class="return">
+                
+                <a href="foodpage.html"><div class="return">
                     <i class="fa-solid fa-arrow-left" ></i>
                 </div></a>
                 <div class="product-nav-head">
@@ -103,13 +103,13 @@
                             </button>
                             <button><p>Home</p></button>
                         </div></a>
-                        <a href="shopping.html"><div class="menu-title title-selected">
+                        <a href="shopping.html"><div class="menu-title ">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
                             <button><p>Shopping</p></button>
                         </div></a>
-                        <a href="restaurants.html"><div class="menu-title">
+                        <a href="restaurants.html"><div class="menu-title title-selected">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-utensils"></i>
                             </button>
@@ -184,8 +184,8 @@
             <div class="order-summary">
                 <h4>Order Summary</h4>
                 <div class="order-summary-summary">
-                    <p>Product: <b>AJ4 Nike Snikers</b></p>
-                    <p>Amount: <b>10 Pieces, White, 3kg</b></p>
+                    <p>Item: <b>Chips Mayai with Sousage</b></p>
+                    <p>Amount: <b>10 Items, 3kg</b></p>
                     
                     <div class="taxcalculations">
                         <p>Price: <b>Tsh 17,000/=</b></p>
@@ -193,43 +193,49 @@
                         <p>Total Price: <b style="color: orangered;">Tsh 19,000/=</b></p>
                     </div>
                 </div>
-                <h4 style="color: green; margin-top: 60px;">Choose payment method</h4>
-                <div class="paymentmethods">
-                    <div class="paymentmethod">
-                        <p><b>M-Pesa</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/M-Pesa.JPG" alt="">
-                        </div>
+                <h4>Delivery Information</h4>
+                <!--<form action="">-->
+                <div class="delivery">
+                    <div class="delivery-info">
+                        <label for="firstname">Full Name</label>
+                        <input type="text" placeholder="First name Second name" name="firstname">
                     </div>
-                    <div class="paymentmethod">
-                        <p><b>Tigo-Pesa</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/tigo.jpg" alt="">
-                        </div>
+                    <div class="delivery-info">
+                        <label for="number1">Mobile 1</label>
+                        <input type="tel" placeholder="+255 **** " name="number1" required maxlength="16">
                     </div>
-                    <div class="paymentmethod">
-                        <p><b>Airtel Money</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/Airtellogo.png" alt="">
-                        </div>
+                    <div class="delivery-info">
+                        <label for="number2">Mobile 2</label>
+                        <input type="tel" placeholder="+255 **** " name="number2" maxlength="16">
                     </div>
-                    <div class="paymentmethod">
-                        <p><b>Debit Card</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/debit.png" alt="">
-                        </div>
+                    <div class="delivery-info">
+                        <label for="location">Location</label>
+                        <input type="location"placeholder=" " name="location" required>
                     </div>
-                    <div class="paymentmethod">
-                        <p><b>Cash</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/cash.png" alt="">
-                        </div>
+                </div>
+                <div class="map">
+                    map
+                </div>
+                <div class="delivery">
+                    <div class="delivery-info">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" placeholder="Input Date" required>
+                    </div>
+                    <div class="delivery-info">
+                        <label for="time">Time</label>
+                        <input type="time" placeholder="Input Time" name="time" required>
                     </div>
                     
                 </div>
-                <div class="agreement">
-                    <p>By Checking Out, you accept Areno <a href=""><span><i>Terms & Policies</i></span></a> and <a href=""><span><i>Privacy Policy</i></span></a> </p>
+                <div class="instructionlabel">
+                    <label for="instructions" >Delivery Instructions</label>
+                    <textarea name="instructions" id="" cols="30" rows="10" ></textarea>
                 </div>
+                <div class="preceedpayment">
+                    <a href="restaurantpaymentmethods.html"><button  class="proceed">Proceed To Payment</button></a><!--dont forget to change type of this button to submit-->
+                    <a href="productpage.html"><button type="button" class="cancel">Cancel</button></a> 
+                </div>
+                <!--</form>-->
                
             
             </div>
