@@ -1,0 +1,404 @@
+
+
+.areno-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 30px 50px 30px;
+}
+.areno-center h1{
+    font-size: 40px;
+}
+.areno-center p, .areno-center h1{
+    color: white;
+    margin: 10px 0px 0px 0px;
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 22%;
+    min-width: 200px;
+    background-color: white;
+    height: 260px;
+    margin: 20px 20px 0px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.service:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 22%;
+    min-width: 200px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 260px;
+    margin: 20px 20px 0px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.service-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 100%;
+    background-color: grey;
+    overflow: hidden;
+}
+.service-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.service-image img:hover{
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2);
+    transition: 300ms;
+    object-fit: cover;
+    cursor: pointer;
+}
+.service p{
+    color: black;
+    margin: 0px 0px 0px 0px;
+}
+.service:hover .service-detail p{
+    color: white;
+    margin: 0px 0px 0px 0px;
+}
+.service i{
+    color: orangered;
+    margin: 0px 10px 0px 0px;
+}
+.service-detail{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 200px 0px 0px 0px;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+}
+.startedbtn{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 200px;
+    align-self: center;
+    color: white;
+    background-color: black;
+}
+.startedbtn:hover{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 200px;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    transition: 300ms;
+    background-color: rgb(255, 255, 255);
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.aboutimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    min-width: 400px;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0);
+}
+.aboutimage img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+.about-details{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 764px){
+    .areno-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22%;
+        min-width: 160px;
+        background-color: white;
+        height: 180px;
+        margin: 20px 20px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .service:hover{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22%;
+        min-width: 160px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        height: 180px;
+        margin: 20px 20px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+     
+    .service-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+        width: 100%;
+        background-color: grey;
+        overflow: hidden;
+    }
+    .service p{
+        color: black;
+        font-size: 12px;
+        margin: 0px 0px 0px S0px;
+    }
+    .areno-center h1{
+        font-size: 25px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .aboutimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 100%;
+        min-width: 400px;
+        overflow: hidden;
+        background-color: rgba(128, 128, 128, 0);
+    }
+    .start{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 200px 0px 0px 0px;
+        padding: 10px 10px 10px 10px;
+        background-color: white;
+    }
+    .aboutimage img{
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 28%;
+        min-width: 120px;
+        background-color: white;
+        height: 140px;
+        margin: 20px 0px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .service:hover{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 28%;
+        min-width: 120px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        height: 140px;
+        margin: 20px 0px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .service-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        width: 100%;
+        background-color: grey;
+        overflow: hidden;
+    }
+    .about-details{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+    }
+    .service i{
+        color: orangered;
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .aboutimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+        min-width: 150px;
+        overflow: hidden;
+        background-color: rgba(128, 128, 128, 0);
+    }
+    .aboutimage img{
+        height: 200px;
+        width: auto;
+        object-fit: cover;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 28%;
+        min-width: 100px;
+        background-color: white;
+        height: 130px;
+        margin: 20px 0px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .service:hover{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 28%;
+        min-width: 100px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        height: 130px;
+        margin: 20px 0px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .service-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        width: 100%;
+        background-color: grey;
+        overflow: hidden;
+    }
+    
+}
+@media screen and (max-width: 1064px) and (min-width: 764px){
+    .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22%;
+        min-width: 200px;
+        background-color: white;
+        height: 220px;
+        margin: 20px 20px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .service:hover{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 22%;
+        min-width: 200px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        height: 220px;
+        margin: 20px 20px 0px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .service-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        width: 100%;
+        background-color: grey;
+        overflow: hidden;
+    }
+}
