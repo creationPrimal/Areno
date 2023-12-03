@@ -262,12 +262,20 @@
     position: relative;
     margin: 15px 10px 5px 10px ;
 }
-.reason-head p, .reason-detail p{
+.reason-head p{
+    font-size: 13px;
+    margin: 0px;
+}
+.reason-detail p{
+    text-align: start;
     font-size: 13px;
     margin: 0px;
 }
 .reason-detail{
     display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    text-align: start !important;
     margin: 10px;
 }
 .reason-button{
