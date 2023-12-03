@@ -4,6 +4,38 @@
     place-items: center;
     width: 100%;
     cursor: grab;
+    margin-bottom: 20px;
+}
+.reasonslide{
+    display: grid;
+    place-items: center;
+    width: auto;
+    cursor: grab;
+}
+.reasonslide .splide__slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-bottom: 30px;
+}
+.reasonslide .splide__pagination__page{
+    background-color: orangered;
+    bottom: 0px;
+    cursor: pointer;
+}
+.reasonslide .splide__pagination__page.is-active{
+    background-color: black;
+    bottom: 0px;
+    cursor: pointer;
+}
+.slide .splide__pagination__page{
+    background-color: orangered;
+    bottom: 0px;
+}
+.slide .splide__pagination__page.is-active{
+    background-color: black;
+    bottom: 0px;
 }
 
 
