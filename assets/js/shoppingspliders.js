@@ -345,7 +345,7 @@ const shoppingmainad = new Splide( '#shopping-main-ad', {
   rewind: true,
   arrows: false,
   interval: 10000,
-  pagination: false,
+  pagination: true,
   autoplay: true,
   breakpoints: {
     1200: {
@@ -368,5 +368,4 @@ const shoppingmainad = new Splide( '#shopping-main-ad', {
     },
   } );
   shoppingmainad.mount()
-
 
