@@ -598,7 +598,7 @@ nav a:hover{
     display: flex;
     position: relative;
     flex-direction: row;
-    margin: 20px 35px 5px 35px;
+    margin: 5px 35px 5px 35px;
     justify-content: space-between;
     align-items: center;
 }
