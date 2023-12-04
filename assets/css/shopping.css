@@ -262,7 +262,7 @@ nav a:hover{
     position: relative;
     margin: 0px;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     padding: 7px 0px 7px 5px;
     border-radius: 3px;
 }
@@ -304,7 +304,7 @@ nav a:hover{
 }
 .menu-about-areno p{
     margin: 5px 10px 0px 0px;
-    font-size: 13px;
+    font-size: 15px;
 }
 .menu-about-areno a{
     width: fit-content;
@@ -520,7 +520,7 @@ nav a:hover{
 .adslider::before {
     content: "";
     display: block;
-    padding-top: 28.125%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
+    padding-top: 37.5%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
 }
 .adslider2{
     position: relative;

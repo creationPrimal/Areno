@@ -7,7 +7,7 @@
     
     }
     p{
-        font-size: 14px;
+        font-size: 15px;
     }
     
     nav{
@@ -61,6 +61,7 @@
         justify-content: center;
     }
     .mobile-nav-head h4{
+        font-size: 23px;
         margin: 10px 0px 0px 0px;
         color: orangered;
     }
@@ -107,7 +108,7 @@
     .adslider::before {
         content: "";
         display: block;
-        padding-top: 28.125%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
+        padding-top: 37.5%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
     }
     .adslider2{
         position: relative;
@@ -136,7 +137,7 @@
         margin: 20px 10px 10px 10px;
     }
     .categories h3{
-        font-size: 14px;
+        font-size: 17px;
     }
     .productshead{
         display: flex;
@@ -147,7 +148,7 @@
         align-items: center;
     }
     .productshead h3{
-        font-size: 14px;
+        font-size: 17px;
     }
     .productsdiv{
         display: flex;
@@ -184,15 +185,7 @@
         margin-right: 10px;
     
     }
-    .category{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 80px;
-        margin-right: 10px;
-    
-    }
+  
     .categoryimage{
         display: flex;
         justify-content: center;
@@ -215,14 +208,14 @@
         font-size: 11px;
     }
     .footer p{
-        font-size: 11px;
+        font-size: 13px;
     }
     .list h4{
         margin: 0px 0px 10px 0px;
         font-size: 12px;
     }
     .list button{
-        font-size: 11px;
+        font-size: 13px;
     }
     .socialicons{
         display: none;
@@ -314,6 +307,7 @@
         position: relative;
         margin: 0px;
         width: 100%;
+        font-size: 15px;
         padding: 8px 0px 8px 5px;
         border-radius: 3px;
     }
@@ -425,7 +419,7 @@
         justify-content: space-around;
     }
     .mobile-headings p{
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 550;
         margin: 0px;
     }
@@ -477,7 +471,7 @@
         font-size: 17px;
     }
     p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .adslider {
         position: relative;
@@ -499,7 +493,7 @@
     .adslider::before {
         content: "";
         display: block;
-        padding-top: 28.125%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
+        padding-top: 37.5%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
     }
     .adslider2{
         position: relative;
@@ -704,7 +698,7 @@
         content: "";
         display: block;
         border-radius: 4px;
-        padding-top: 28.125%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
+        padding-top: 37.5%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
     }
     .adslider2{
         position: relative;

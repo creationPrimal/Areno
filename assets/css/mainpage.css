@@ -1,0 +1,126 @@
+
+
+.switch{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 30px 20px 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    justify-content: space-around;
+    height: 40px;
+    background-color: rgba(255, 166, 0, 0);
+    align-items: center;
+}
+.switch button p{
+    margin: 0px;
+    font-weight: bold;
+}
+.switch button{
+    width: 33%;
+    border: none;
+    height: 100%;
+    color: white;
+    background-color: orangered;
+}
+.switch button:nth-child(1){
+    width: 33%;
+    border: none;
+    height: 100%;
+    color: white;
+    transition: 200ms;
+    cursor: pointer;
+    background-color: orange;
+}
+.switch button:hover{
+    width: 33%;
+    border: none;
+    height: 100%;
+    color: white;
+    transition: 200ms;
+    cursor: pointer;
+    background-color: orange;
+}
+
+
+.productside{
+    display: flex;
+    flex-direction: column;
+}
+.restaurantside{
+    display: none;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 764px){
+    .switch{
+        display: flex;
+        flex-direction: row;
+        margin: 30px 10px 20px 10px;
+        border-radius: 7px;
+        overflow: hidden;
+        justify-content: space-around;
+        height: 40px;
+        background-color: rgba(255, 166, 0, 0);
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 600px){
+
+}
+
+
+@media screen and (max-width: 1064px) and (min-width: 764px){
+    .switch{
+        display: flex;
+        flex-direction: row;
+        margin: 30px 15px 20px 15px;
+        border-radius: 7px;
+        overflow: hidden;
+        justify-content: space-around;
+        height: 40px;
+        background-color: rgba(255, 166, 0, 0);
+        align-items: center;
+    }
+}
