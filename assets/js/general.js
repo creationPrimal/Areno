@@ -58,19 +58,33 @@
   //implementing switch tabs
   const productside = document.querySelector('.productside');
   const restaurantside = document.querySelector('.restaurantside');
+  const bookingside = document.querySelector('.bookingside');
   const productswitch =document.getElementById('productswitch');
   const restaurantswitch =document.getElementById('restaurantswitch');
+  const bookingswitch =document.getElementById('bookingswitch');
 
   productswitch.addEventListener("click", () => {
     productside.style.display = 'flex'
     restaurantside.style.display = 'none'
+    bookingside.style.display = 'none'
     restaurantswitch.style.backgroundColor = 'orangered'
+    bookingswitch.style.backgroundColor = 'orangered'
     productswitch.style.backgroundColor = 'orange'
   })
   restaurantswitch.addEventListener("click", () => {
     productside.style.display = 'none'
     restaurantside.style.display = 'flex'
+    bookingside.style.display = 'none'
     restaurantswitch.style.backgroundColor = 'orange'
+    bookingswitch.style.backgroundColor = 'orangered'
+    productswitch.style.backgroundColor = 'orangered'
+  })
+  bookingswitch.addEventListener("click", () => {
+    productside.style.display = 'none'
+    restaurantside.style.display = 'none'
+    bookingside.style.display = 'flex'
+    restaurantswitch.style.backgroundColor = 'orangered'
+    bookingswitch.style.backgroundColor = 'orange'
     productswitch.style.backgroundColor = 'orangered'
   })
   
