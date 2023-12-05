@@ -520,7 +520,7 @@ nav a:hover{
 .adslider::before {
     content: "";
     display: block;
-    padding-top: 37.5%; /* (4.5 / 16) * 100 for a 16:4.5 aspect ratio */
+    padding-top: 50%; /* (8 / 16) * 100 for a 16:4.5 aspect ratio */
 }
 .adslider2{
     position: relative;
@@ -590,6 +590,11 @@ nav a:hover{
     cursor: pointer;
     
 }
+/*.categoryimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}*/
 
 
 
@@ -598,11 +603,12 @@ nav a:hover{
     display: flex;
     position: relative;
     flex-direction: row;
-    margin: 5px 35px 5px 35px;
+    margin: 35px 35px 5px 35px;
     justify-content: space-between;
     align-items: center;
 }
 .productshead h3{
+    font-size: 24px;
     margin: 0px;
     font-weight: 500;
 }
