@@ -318,7 +318,7 @@ select{
     height: 40px;
     padding: 0px 10px 0px 10px;
     color: white;
-    background-color: orangered;
+    background-color: green;
     border: none;
 }
 .settings-button:hover{
@@ -326,7 +326,7 @@ select{
     height: 40px;
     padding: 0px 10px 0px 10px;
     color: white;
-    background-color: green;
+    background-color: orangered;
     border: none;
     cursor: pointer;
     transition: 200ms;

@@ -3,6 +3,7 @@
     display: flex;
     position: relative;
     flex-direction: row;
+    margin-bottom: 0px;
     padding: 10px 30px 10px 30px;
 
 }
@@ -58,7 +59,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    color: green;
+    color: black;
     border-radius: 7px;
     width: 300px;
     margin-top: 20px;
@@ -182,7 +183,7 @@
     outline: none;
     border-radius: 7px;
     padding: 0px 6px 0px 6px;
-    background-color: rgba(128, 128, 128, 0.555);
+    background-color: rgba(128, 128, 128, 0.26);
 }
 .login-new-button p{
     margin: 0px;
@@ -312,6 +313,93 @@
     margin: 0px 0px 0px 10px;
 
 }
+.seepassword{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.seepassword button{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    margin: 0px;
+    bottom: 0px;
+    height: 20px;
+}
+.seepassword button:hover{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    border: none;
+    color: rgb(71, 71, 255);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    margin: 0px;
+    bottom: 0px;
+    height: 20px;
+}
+#hidecode{
+    display: none;
+}
+
+/*contact aren0*/
+
+.contactareno{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 35px 20px 35px;
+}
+.name-email{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contactinput{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 5px 20px 10px 0px;
+}
+.contactinput label{
+    font-size: 15px;
+    margin: 5px 0px 10px 0px;
+}
+.contactinput input[type="text"], .contactinput input[type="email"], .contactinput input[type="number"]{
+    height: 30px;
+    outline: none;
+    padding-left: 5px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px rgba(0, 0, 0, 0.514) solid;
+    border-radius: 4px;
+}
+.contactareno button{
+    margin: 20px 0px 20px 0px;
+    height: 40px;
+    width: 33%;
+    color: white;
+    background-color: rgb(68, 68, 255);
+    border: none;
+}
+.contactareno button:hover{
+    margin: 20px 0px 20px 0px;
+    height: 40px;
+    width: 33%;
+    color: white;
+    background-color: rgb(0, 180, 0);
+    border: none;
+    transition: 200ms;
+    cursor: pointer;
+}
+.contactareno textarea{
+    margin: 20px 0px 10px 0px;
+    border-radius: 8px;
+}
 
 
 
@@ -334,8 +422,14 @@
         position: relative;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 50px;
         padding: 10px 30px 10px 30px;
     
+    }
+    .contactareno{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 20px 10px;
     }
     .form-svg{
         display: flex;
@@ -402,7 +496,7 @@
         outline: none;
         border-radius: 7px;
         padding: 0px 6px 0px 6px;
-        background-color: rgba(128, 128, 128, 0.555);
+        background-color: rgba(128, 128, 128, 0.26);
     }
     .googlebtn{
         display: flex;
@@ -517,13 +611,42 @@
         outline: none;
         border-radius: 7px;
         padding: 0px 6px 0px 6px;
-        background-color: rgba(128, 128, 128, 0.555);
+        background-color: rgba(128, 128, 128, 0.26);
     }
     .inputdiv{
         display: flex;
         flex-direction: column;
         margin-right: 0px;
         width: 100%;
+    }
+    .name-email{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contactinput{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 5px 20px 10px 0px;
+    }
+    .contactareno button{
+        margin: 20px 0px 20px 0px;
+        height: 40px;
+        width: 100%;
+        color: white;
+        background-color: rgb(68, 68, 255);
+        border: none;
+    }
+    .contactareno button:hover{
+        margin: 20px 0px 20px 0px;
+        height: 40px;
+        width: 100%;
+        color: white;
+        background-color: rgb(0, 180, 0);
+        border: none;
+        transition: 200ms;
+        cursor: pointer;
     }
     
 }
@@ -541,5 +664,10 @@
     }
     .registerform{
         margin: 0px 15px 0px 15px;
+    }
+    .contactareno{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 15px 20px 15px;
     }
 }

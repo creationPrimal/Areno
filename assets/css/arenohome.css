@@ -16,7 +16,7 @@
 .services{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -25,11 +25,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 25%;
+    width: 23%;
     min-width: 200px;
     background-color: white;
     height: 280px;
-    margin: 20px 20px 0px 0px;
+    margin: 20px 10px 0px 0px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -39,20 +39,17 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 25%;
+    width: 23%;
     min-width: 200px;
     color: white;
     background-color: rgb(0, 0, 0);
     height: 280px;
-    margin: 20px 20px 0px 0px;
+    margin: 20px 10px 0px 0px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 .service-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 240px;
     width: 100%;
     background-color: grey;
@@ -348,6 +345,162 @@
 }
 
 
+/*profile menu*/
+.profilemenudiv{
+    display: none;
+    position: fixed;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1001;
+}
+.profilemenu{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+    min-width: 250px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    background-color: white;
+    z-index: 1001;
+
+}
+.profiledarkside{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.profilemenu-head{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 30px;
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 0, 0, 0);
+  }
+.profilemenu-icon{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    min-width: 25px;
+    max-width: 25px;
+    margin: 0px 15px 0px 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px rgba(0, 0, 0, 0.151) solid;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+.profilemenu-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.profilemenu-icon svg{
+    height: 20px;
+    width: 100%;
+}
+.mobile-nav-profile-image{
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    z-index: 3;
+}
+.mobile-nav-profile-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.myorders{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.myorders h3{
+    margin: 5px 0px 5px 5px;
+}
+.orders{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 10px 35px;
+}
+.orders p{
+    margin: 0px 0px 5px 0px;
+}
+.orders p:hover{
+    margin: 0px 0px 5px 10px;
+    color: orangered;
+    font-weight: bold;
+    transition: 200ms;
+    cursor: pointer;
+}
+.orders span{
+    color: orangered;
+}
+.homecart-notificationsdiv{
+    display: flex !important;
+    position: relative;
+    flex-direction: row;
+}
+.mobile-notification{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 10px;
+}
+.homeprofileimage{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 35px;
+    margin-left: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: grey;
+}
+.offices{
+    display: flex;
+}
+.home-menu{
+    top: 0px !important;
+}
+.menu-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .menu-logo img{
+    height: 100%;
+    width: auto;
+  }
+
 
 
 
@@ -387,14 +540,14 @@
         position: relative;
         flex-direction: column;
         align-items: center;
-        margin: 50px 10px 50px 10px;
+        margin: 5px 10px 50px 10px;
     }
     .services{
         display: flex;
         position: relative;
         flex-direction: row;
         justify-content: space-evenly;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 100%;
     }
     .service{
@@ -402,10 +555,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 32%;
-        min-width: 185px;
+        width: 30%;
+        min-width: 255px;
         background-color: white;
-        height: 220px;
+        height: 260px;
         margin: 20px 4px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
@@ -416,20 +569,17 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 32%;
-        min-width: 185px;
+        width: 30%;
+        min-width: 255px;
         color: white;
         background-color: rgb(0, 0, 0);
-        height: 220px;
+        height: 260px;
         margin: 20px 4px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
     }
     .service-image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 280px;
         width: 100%;
         background-color: grey;
@@ -486,7 +636,7 @@
     .startbuttondiv{
         display: flex;
         flex-direction: row;
-        margin-top: 180px;
+        margin-top: 10px;
         justify-content: center;
     }
     .about-details{
@@ -546,6 +696,20 @@
         margin: 10px 0px 0px 10px;
         background-color: rgba(255, 217, 0, 0.322);
     }
+    .homeprofileimage{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: grey;
+    }
+
 }
 
 
@@ -555,7 +719,7 @@
         display: flex;
         position: relative;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -564,8 +728,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 32%;
-        min-width: 105px;
+        width: 30%;
+        min-width: 205px;
         background-color: white;
         height: 190px;
         margin: 20px 0px 0px 0px;
@@ -578,8 +742,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 32%;
-        min-width: 105px;
+        width: 30%;
+        min-width: 205px;
         color: white;
         background-color: rgb(0, 0, 0);
         height: 190px;
@@ -589,9 +753,6 @@
         cursor: pointer;
     }
     .service-image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 205px;
         width: 100%;
         background-color: grey;
@@ -664,6 +825,21 @@
         margin: 10px 0px 0px 10px;
         background-color: rgba(255, 217, 0, 0.322);
     }
+    .homeprofileimage{
+        display: none;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: grey;
+    }
+    .offices{
+        display: none;
+    }
     
     
 }
@@ -672,7 +848,7 @@
         display: flex;
         position: relative;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         width: 100%;
     }
@@ -681,11 +857,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 32%;
-        min-width: 105px;
+        width: 30%;
+        min-width: 155px;
         background-color: white;
-        height: 140px;
-        margin: 20px 0px 0px 0px;
+        height: 160px;
+        margin: 20px 5px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
@@ -695,21 +871,18 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 32%;
-        min-width: 105px;
+        width: 30%;
+        min-width: 155px;
         color: white;
         background-color: rgb(0, 0, 0);
-        height: 140px;
-        margin: 20px 0px 0px 0px;
+        height: 160px;
+        margin: 20px 5px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
     }
     .service-image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 120px;
+        height: 140px;
         width: 100%;
         background-color: grey;
         overflow: hidden;
@@ -747,11 +920,11 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 25%;
-        min-width: 230px;
+        width: 30%;
+        min-width: 280px;
         background-color: white;
         height: 280px;
-        margin: 20px 0px 0px 0px;
+        margin: 20px 20px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
@@ -761,21 +934,18 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 25%;
-        min-width: 230px;
+        width: 30%;
+        min-width: 280px;
         color: white;
         background-color: rgb(0, 0, 0);
         height: 280px;
-        margin: 20px 0px 0px 0px;
+        margin: 20px 20px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
     }
     .service-image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 280px;
+        height: 260px;
         width: 100%;
         background-color: grey;
         overflow: hidden;
@@ -833,6 +1003,19 @@
         box-shadow: 5px 0px 15px rgba(128, 128, 128, 0.5);
         transition: 300ms;
         cursor: pointer;
+    }
+    .homeprofileimage{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        margin-right: 15px;
+        margin-left: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: grey;
     }
 }
 

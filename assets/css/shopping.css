@@ -6,6 +6,9 @@ body{
     padding: 0px;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
     color: black;
@@ -196,7 +199,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     min-width: 40px;
-    height: 40px;
+    height: auto;
     border: none;
     background-color: rgba(0, 0, 0, 0);
     margin-right: 10px;
@@ -340,7 +343,25 @@ nav a:hover{
     font-size: 20px;
     color: orangered;
 }
-
+.languagediv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 10px 0px 0px;
+}
+.languagediv p{
+    margin: 0px 10px 0px 0px;
+}
+.languagediv button{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 10px 0px 0px;
+}
+.eng{
+    color: orangered;
+}
 .theme{
     display: flex;
     flex-direction: row;
@@ -351,7 +372,7 @@ nav a:hover{
     margin: 10px 0px 10px 0px;
 }
 .theme p{
-    margin: 0px 20px 0px 0px;
+    margin: 0px 33px 0px 0px;
 }
 .toggle-switch {
     position: relative;
@@ -568,6 +589,29 @@ nav a:hover{
     background-color: #28292c00;
     margin-right: 10px;
 
+}
+.categoryoptiondiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 35px 20px 30px;
+}
+.categoryoptiondiv button{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.categoryoptiondiv h3{
+    white-space: nowrap;
+    margin: 0px;
+    color: orangered;
+}
+.linecut{
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 100%;
 }
 .category p{
     margin: 10px 0px 10px 0px;
@@ -795,7 +839,7 @@ nav a:hover{
     display: flex;
     position: relative;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     left: 0px;
     right: 0px;
     bottom: -18px;
@@ -921,6 +965,17 @@ nav a:hover{
 .mobile-nav{
     display: none;
 }
+.new-mobile-nav{
+    display: none;
+    position: fixed;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    bottom: 0px;
+    z-index: 1000;
+}
 
 
 
@@ -935,7 +990,7 @@ nav a:hover{
     top: 0px;
     right: 0px;
     background-color: rgba(0, 0, 0, 0);
-    z-index: 1000;
+    z-index: 1001;
 }
 .filtermenudiv{
     display: flex;

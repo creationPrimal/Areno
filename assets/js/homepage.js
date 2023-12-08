@@ -59,7 +59,41 @@
           },
         } );
         reasons.mount()
+      //shopping main slider
+const shoppingmainad = new Splide( '#shopping-main-ad', {
+  perPage: 1,
+  drag : 'free',
+  perMove: 1,
+  padding: 0,
+  snap: true,
+  type: 'fade',
+  rewind: true,
+  arrows: false,
+  interval: 10000,
+  pagination: true,
+  autoplay: true,
+  breakpoints: {
+    1200: {
+    perPage: 1,
+    },
     
+    764: {
+    perPage: 1,
+    },
+    678: {
+      perPage: 1,
+    },
+    610: {
+      perPage: 1,
+    },
+    580: {
+      perPage: 1,
+    },
+    
+    },
+  } );
+  shoppingmainad.mount()
+
       
 //preloader
 window.onload = function(){
@@ -68,4 +102,23 @@ window.onload = function(){
   preloader.style.display = 'none';
   preloaderbg.style.display = 'none';
 };
+
+
+// Get all buttons with the class '.profile-menu'
+const profileMenuButtons = document.querySelectorAll('.profile-menu');
+const profileMenuDiv = document.querySelector('.profilemenudiv');
+
+// Loop through each button and attach event listeners
+profileMenuButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    profileMenuDiv.style.display = 'flex';
+  });
+});
+
+// Add event listener to close the menu when clicking outside
+const profileDarkSide = document.querySelector('.profiledarkside');
+profileDarkSide.addEventListener('click', () => {
+  profileMenuDiv.style.display = 'none';
+});
     
+

@@ -34,7 +34,7 @@ body {
     background-color: var(--text-color-productbackground);
     transition: color 0.3s, background-color 0.3s;
 }
-.viewproduct{
+.viewproduct, .track-headings button{
     color: var(--text-color-light);
     transition: color 0.3s, background-color 0.3s;
 }
@@ -72,7 +72,7 @@ body {
     transition: 300ms;
     cursor: pointer;
 }
-.add-cart2:hover{
+.add-cart2:hover, .contactinput input{
     color: var(--text-color-light) !important;
     border-color: var(--bg-color-filterbuttonborder) !important;
 }
