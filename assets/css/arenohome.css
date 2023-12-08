@@ -11,7 +11,7 @@
 }
 .areno-center p, .areno-center h1{
     color: white;
-    margin: 10px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
 }
 .services{
     display: flex;
@@ -97,9 +97,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 100px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 10px 30px 10px 30px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 .startedbtn{
     height: 35px;
@@ -164,7 +164,6 @@
     align-items: flex-start;
 }
 .abouthead h2{
-    color: rgb(4, 4, 37);
     margin: 0px 0px 0px 0px;
 }
 .aboutsquare{
@@ -540,7 +539,7 @@
         position: relative;
         flex-direction: column;
         align-items: center;
-        margin: 5px 10px 50px 10px;
+        margin: 5px 10px 15px 10px;
     }
     .services{
         display: flex;
@@ -592,7 +591,7 @@
         margin: 0px 0px 0px S0px;
     }
     .areno-center h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .about{
         display: flex;
@@ -624,9 +623,9 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin: 220px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
         padding: 10px 10px 10px 10px;
-        background-color: white;
+        background-color: rgba(255, 0, 0, 0);
     }
     .aboutimage img{
         height: 300px;
@@ -637,6 +636,7 @@
         display: flex;
         flex-direction: row;
         margin-top: 10px;
+        margin-bottom: 100px;
         justify-content: center;
     }
     .about-details{
@@ -759,7 +759,6 @@
         overflow: hidden;
     }
     .abouthead h2{
-        color: rgb(4, 4, 37);
         font-size: 18px;
         margin: 0px 0px 0px 0px;
     }
@@ -860,8 +859,8 @@
         width: 30%;
         min-width: 155px;
         background-color: white;
-        height: 160px;
-        margin: 20px 5px 0px 0px;
+        height: 140px;
+        margin: 10px 5px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
@@ -875,8 +874,8 @@
         min-width: 155px;
         color: white;
         background-color: rgb(0, 0, 0);
-        height: 160px;
-        margin: 20px 5px 0px 0px;
+        height: 140px;
+        margin: 10px 5px 0px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
