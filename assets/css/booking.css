@@ -165,7 +165,7 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 20px 10px 20px 10px;
+        margin: 20px 10px 20px 15px;
         align-items: center;
     }
     .booking-category{
