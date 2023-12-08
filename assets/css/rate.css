@@ -153,6 +153,7 @@
 }
 .reviewdiv textarea{
   border-radius: 6px;
+  width: 98%;
   background-color: rgba(255, 255, 255, 0);
 }
 .reviewsubmitbtn{
@@ -315,7 +316,7 @@
   border: none;
   height: auto;
   font-size: 12px;
-  right: 0px;
+  right: 10px;
   width: 5px;
   cursor: pointer;
   background-color: rgb(255, 255, 255);
@@ -408,7 +409,7 @@
     .allorders{
       display: flex;
       flex-direction: column;
-      margin: 0px 10px 120px 10px;
+      margin: 0px 20px 120px 10px;
     }
     .from{
       display: none;
@@ -454,7 +455,7 @@
       position: relative;
       justify-content: space-between;
       flex-direction: column;
-      width: 100%;
+      width: 98%;
       background-color: rgba(255, 217, 0, 0);
     }
     .name, .email{
@@ -468,7 +469,7 @@
         color: #fff;
         cursor: pointer;
         border: none;
-        width: 100%;
+        width: 99%;
         font-size: 14px;
         font-weight: bold;
         margin: 20px 0px 10px 0px;
@@ -480,7 +481,7 @@
         color: #fff;
         cursor: pointer;
         border: none;
-        width: 100%;
+        width: 99%;
         font-size: 14px;
         font-weight: bold;
         margin: 20px 0px 10px 0px;
