@@ -47,12 +47,6 @@
                         <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div>
-                <div class="profileimage">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" fill="none">
-                        <path d="M91.707 90.5585C94.2868 90.0208 95.8232 87.3213 94.5413 85.0189C91.7152 79.9431 87.2631 75.4829 81.5678 72.0838C74.2327 67.7062 65.2454 65.3333 55.9998 65.3333C46.7542 65.3333 37.7669 67.7062 30.4318 72.0838C24.7365 75.4828 20.2843 79.9431 17.4583 85.0188C16.1764 87.3213 17.7128 90.0208 20.2926 90.5584V90.5584C43.8444 95.4668 68.1552 95.4668 91.707 90.5585V90.5585Z" fill="white"/>
-                        <circle cx="56.0001" cy="37.3333" r="23.3333" fill="white"/>
-                      </svg>
-                </div>
             </div>
             
         </nav>
@@ -60,7 +54,7 @@
         
         <form action="" id="top">
             <div class="mobile-nav-head">
-                <h4>Profile Page</h4>
+                <h4>Profile</h4>
             </div>
             <div class="searchdiv">
                 <div class="nav-menu">
@@ -124,13 +118,7 @@
                         <a href="index.html"><div class="menu-logo">
                             <img src="assets/icons/Frame 304 (2).png" alt="">
                         </div></a>
-                        <a href="index.html"><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-house "></i>
-                            </button>
-                            <button><p>Home</p></button>
-                        </div></a>
-                        <a href="shopping.html"><div class="menu-title title-selected">
+                        <a href="shopping.html"><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
@@ -142,7 +130,7 @@
                             </button>
                             <button><p>Restaurants</p></button>
                         </div></a>
-                        <a href=""><div class="menu-title">
+                        <a href="booking.html"><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-book-bookmark"></i>
                             </button>
@@ -150,17 +138,32 @@
                         </div></a>
                         <a href=""><div class="menu-title">
                             <button class="menu-title-icon">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </button>
+                            <button><p>Logistics</p></button>
+                        </div></a>
+                        <a href="rate.html"><div class="menu-title">
+                            <button class="menu-title-icon">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button><p>Rate Us</p></button>
+                        </div></a>
+                        <a href="contactareno.html"><div class="menu-title">
+                            <button class="menu-title-icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </button>
                             <button><p>Contact Areno</p></button>
                         </div></a>
                     </div>
                     <div class="menu-about-areno">
-                        <a href=""><button><p>About Us</p></button></a>
-                        <a href=""><button><p>Categories</p></button></a>
-                        <a href=""><button><p>Privacy Policy</p></button></a>
-                        <a href=""><button><p>Refund Policy</p></button></a>
-                        <a href=""><button><p>Advertise With Us</p></button></a>
+                        <a href="index.html#aboutus"><button><p>About Us</p></button></a>
+                        <a href="index.html#privacypolicies"><button><p>Privacy Policy</p></button></a>
+                        <a href="index.html#refundpolicies"><button><p>Refund Policy</p></button></a>
+                    </div>
+                    <div class="languagediv">
+                        <p><b>Language</b></p>
+                        <button class="eng">Eng</button>
+                        <button class="swahili">Swahili</button>
                     </div>
                     <div class="theme">
                         <p><b>Change Theme</b></p>
@@ -193,10 +196,6 @@
                     </div>
                 </div>
                 <div class="below-menu">
-                    <div class="register">
-                        <a href="signup.html"><button class="register-button1">Register</button></a>
-                        <a href="login.html"><button class="register-button2">Log In</button></a>
-                    </div>
                     <div class="menu-trademark">
                         <p>© 2023. Areno Company Limited. app version 1.0.0</p>
                     </div>
@@ -291,18 +290,18 @@
                 </div>
             </div>
             <div class="postingdiv">
-                <!--<button class="posting">
+                <button class="posting">
                     <i class="fa-solid fa-camera" ></i>
                     <p>Post Item</p>
-                </button>-->
+                </button>
                 <button class="posting">
                     <i class="fa-solid fa-address-book"></i>
                     <p>Contacts</p>
                 </button>
-                <!--<a href="settings.html"><button class="posting">
+                <a href="settings.html"><button class="posting">
                     <i class="fa-solid fa-gear" ></i>
                     <p>Settings</p>
-                </button></a>-->
+                </button></a>
             </div>
         </div>
          <!--Products-->
@@ -1240,59 +1239,45 @@
                 <p>Areno company limited ©  2023. All rights reserved</p>
             </div>
         </div>
-        <!--mobile below navigations-->
-        <div class="mobile-nav">
-            <a href="shopping.html"><div class="mobile-nav-div">
-                <button class="mobile-nav-icon ">
-                    <img src="assets/icons/Home_fill (1).png" alt="">
-                </button>
-                <p>Shopping</p>
-            </div></a>
-            <a href=""><div class="mobile-nav-div">
-                <button class="mobile-nav-icon ">
-                   <img src="assets/icons/Shop_duotone.png" alt="">
-                </button>
-                <p>Stores</p>
-            </div></a>
-            <a href="categories.html"><div class="mobile-nav-div">
-                <button class="mobile-nav-icon ">
-                    <img src="assets/icons/Widget.png" alt="">
-                </button>
-                <p>Categories</p>
-            </div></a>
-            <a href="brands.html"><div class="mobile-nav-div">
-                <button class="mobile-nav-icon ">
-                    <img src="assets/icons/Shop.png" alt="">
-                </button>
-                <p>Brands</p>
-            </div></a>
-            <a href="products.html"><div class="mobile-nav-div">
-                <button class="mobile-nav-icon ">
-                    <img src="assets/icons/package_favourite_alt.png" alt="">
-                </button>
-                <p>Products</p>
-            </div></a>
-            <!--
-                <a href=""><div class="mobile-nav-div">
-                <div class="mobile-nav-icon selected">
-                    <div class="mobile-nav-profile-image">
-                        <img src="" alt="">
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-                        <g clip-path="url(#clip0_12_245)">
-                        <path d="M24.4849 18.6358C22.9469 17.0979 21.1163 15.9593 19.119 15.2701C21.2582 13.7968 22.6635 11.331 22.6635 8.54283C22.6635 4.04147 19.0014 0.379303 14.5 0.379303C9.99867 0.379303 6.3365 4.04147 6.3365 8.54283C6.3365 11.331 7.74189 13.7968 9.88112 15.2701C7.88382 15.9593 6.0532 17.0979 4.51521 18.6358C1.84816 21.3029 0.379333 24.8489 0.379333 28.6207H2.58569C2.58569 22.0511 7.93043 16.7064 14.5 16.7064C21.0696 16.7064 26.4144 22.0511 26.4144 28.6207H28.6207C28.6207 24.8489 27.1519 21.3029 24.4849 18.6358ZM14.5 14.5C11.2153 14.5 8.54286 11.8277 8.54286 8.54283C8.54286 5.258 11.2153 2.58566 14.5 2.58566C17.7848 2.58566 20.4572 5.258 20.4572 8.54283C20.4572 11.8277 17.7848 14.5 14.5 14.5Z" fill="#F24E1E"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_12_245">
-                            <rect width="28.2414" height="28.2414" fill="white" transform="translate(0.379333 0.379303)"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
+         <!--mobile below navigations-->
+         <div class="new-mobile-nav">
+            <div class="rectangle-bar">
+                <a href="shopping.html"><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </button>
+                    <p>Shopping</p>
+                </div></a>
+                <a href="restaurants.html"><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </button>
+                    <p>Restaurants</p>
+                </div></a>
+            </div>
+            <div class="middlepiece">
+                <div class="mobile-nav-circle">
+                    <a href="index.html"><button class="mobile-nav-icon selected">
+                        <img src="assets/icons/Home_fill (1).png" alt="">
+                    </button></a>
                 </div>
-                <p>Profile</p>
-            </div></a>
-            -->
-            
+                <img src="assets/icons/middlepiece.png" alt="">
+            </div>
+            <div class="sub-rectangle"></div>
+            <div class="rectangle-bar">
+                <a href="booking.html"><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </button>
+                    <p>Booking</p>
+                </div></a>
+                <a href=""><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon ">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </button>
+                    <p>Logistics</p>
+                </div></a>
+            </div>
         </div>
 
 

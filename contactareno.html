@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Areno - Payment Method</title>
+    <title>Sign Up</title>
 
     <link rel="stylesheet" href="assets/css/shopping.css">
     <link rel="stylesheet" href="assets/css/shopping2.css">
-    <link rel="stylesheet" href="assets/css/splide.css">
     <link rel="stylesheet" href="assets/css/darkmode.css">
-    <link rel="stylesheet" href="assets/css/products.css">
     <link rel="stylesheet" href="assets/css/productpage.css">
+    <link rel="stylesheet" href="assets/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,15 +22,15 @@
                 <i class="fa-solid fa-bars" style="color: white; font-size: 25px;"></i>
             </div>
             <div class="right-nav">
-                <a href="restaurants.html"><h4>Home</h4></a>
-                <a href="restaurantspage.html"><h4>Restaurants</h4></a>
-                <a href="meals.html"><h4>Meals</h4></a>
-                <a href=""><h4>Brands</h4></a>
-                <a href="foods.html"><h4>Food Items</h4></a>
+                <a href="index.html"><h4>Home</h4></a>
+                <a href="shopping.html"><h4>Shopping</h4></a>
+                <a href="restaurants.html"><h4>Restaurants</h4></a>
+                <a href="booking.html"><h4>Booking</h4></a>
+                <a href=""><h4>Logistics</h4></a>
                 <a href="index.html#aboutus"><h4>About</h4></a>
                 <a href=""><h4>Contact Us</h4></a>
-                <div class="cart">
-                    <a href="cart.html"><div class="cart-circle">8</div>
+                <a href="cart.html"><div class="cart">
+                    <div class="cart-circle">8</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
                         <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
@@ -50,34 +49,17 @@
             
         </nav>
         <!--search bar-->
-        <div class="productpagehead">
+        <div class="productpagehead loginhead">
             <div class="product-detail-head">
-              
-                <a href="foodordersummary.html"><div class="return">
+               
+                <a href=""><div class="return">
                     <i class="fa-solid fa-arrow-left" ></i>
                 </div></a>
                 <div class="product-nav-head">
-                    <h4>Check Out</h4>
+                    <h4>Contact Areno</h4>
                 </div>
             </div>
-            <div class="productcart-notification">
-                <a href="cart.html"><div class="mobile-cart">
-                    <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23" fill="none">
-                        <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                </div></a>
-                <div class="mobile-notification">
-                    <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                        <path d="M17.9383 8.43703C17.9383 6.70036 17.2619 5.03481 16.058 3.80679C14.8541 2.57878 13.2212 1.88889 11.5185 1.88889C9.81592 1.88889 8.18303 2.57878 6.97909 3.80679C5.77516 5.03481 5.09879 6.70036 5.09879 8.43703C5.09879 16.0765 1.88892 18.2593 1.88892 18.2593H21.1482C21.1482 18.2593 17.9383 16.0765 17.9383 8.43703Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.4445 22.1111C13.2488 22.404 12.9679 22.6471 12.6299 22.8161C12.2919 22.9851 11.9086 23.0741 11.5186 23.0741C11.1285 23.0741 10.7453 22.9851 10.4073 22.8161C10.0693 22.6471 9.78837 22.404 9.59265 22.1111" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                       
-                      </svg>
-                </div>
-            </div>
+           
             
             
         </div>
@@ -97,7 +79,7 @@
                             </button>
                             <button><p>Shopping</p></button>
                         </div></a>
-                        <a href="restaurants.html"><div class="menu-title title-selected">
+                        <a href="restaurants.html"><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-utensils"></i>
                             </button>
@@ -121,7 +103,7 @@
                             </button>
                             <button><p>Rate Us</p></button>
                         </div></a>
-                        <a href="contactareno.html"><div class="menu-title">
+                        <a href=""><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </button>
@@ -177,63 +159,29 @@
             </div>
             <div class="darkside"></div>
         </div>
-        <!--order summary-->
-        <div class="summary-main">
-            
-            <div class="order-summary">
-                <h4>Order Summary</h4>
-                <div class="order-summary-summary">
-                    <p>Item: <b>Chicken Biriani</b></p>
-                    <p>Amount: <b>10 Items, 3kg</b></p>
-                    
-                    <div class="taxcalculations">
-                        <p>Price: <b>Tsh 17,000/=</b></p>
-                        <p>VAT: <b>Tsh 1,000/=</b></p>
-                        <p>Total Price: <b style="color: orangered;">Tsh 19,000/=</b></p>
-                    </div>
-                </div>
-                <h4 style="color: green; margin-top: 60px;">Choose payment method</h4>
-                <div class="paymentmethods">
-                    <div class="paymentmethod">
-                        <p><b>M-Pesa</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/M-Pesa.JPG" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Tigo-Pesa</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/tigo.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Airtel Money</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/Airtellogo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Debit Card</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/debit.png" alt="">
-                        </div>
-                    </div>
-                    <div class="paymentmethod">
-                        <p><b>Cash</b></p>
-                        <div class="paymentmethodlogo">
-                            <img src="assets/icons/cash.png" alt="">
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="agreement">
-                    <p>By Checking Out, you accept Areno <a href=""><span><i>Terms & Policies</i></span></a> and <a href=""><span><i>Privacy Policy</i></span></a> </p>
-                </div>
-               
-            
-            </div>
-        </div>
         
+         <!--register form main-->
+         <form action="">
+            <div class="contactareno">
+                <h3>Send Us A message Here</h3>
+                <div class="name-email">
+                    <div class="contactinput">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" placeholder="Input Your Name" name="fullname">
+                    </div>
+                    <div class="contactinput">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="example@email.com" name="email">
+                    </div>
+                    <div class="contactinput">
+                        <label for="number">Phone Number</label>
+                        <input type="number" placeholder="+255 ***" name="number">
+                    </div>
+                </div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </form>
         
         
         
@@ -253,7 +201,6 @@
 
     </section>
 
-   
     <script src="assets/js/shoppingpage.js" ></script>
     
     

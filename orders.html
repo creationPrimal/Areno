@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meals</title>
+    <title>My Orders</title>
 
     <link rel="stylesheet" href="assets/css/shopping.css">
     <link rel="stylesheet" href="assets/css/shopping2.css">
-    <link rel="stylesheet" href="assets/css/splide.css">
     <link rel="stylesheet" href="assets/css/darkmode.css">
-    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/rate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
@@ -20,14 +18,14 @@
     <section>
         <nav>
             <div class="logo">
-                <a href="#"><h4>Meals</h4></a>
+                <a href="#"><h4>Profile</h4></a>
             </div>
             <div class="right-nav">
-                <a href="restaurants.html"><h4>Home</h4></a>
-                <a href="restaurantspage.html"><h4>Restaurants</h4></a>
-                <a href="meals.html"><h4>Meals</h4></a>
-                <a href=""><h4>Brands</h4></a>
-                <a href="foods.html"><h4>Food Items</h4></a>
+                <a href="index.html"><h4>Home</h4></a>
+                <a href="shopping.html"><h4>Shopping</h4></a>
+                <a href="restaurants.html"><h4>Restaurants</h4></a>
+                <a href="booking.html"><h4>Booking</h4></a>
+                <a href=""><h4>Logistics</h4></a>
                 <a href=""><h4>About</h4></a>
                 <a href=""><h4>Contact Us</h4></a>
                 <a href="cart.html"><div class="cart">
@@ -53,7 +51,7 @@
         
         <form action="" id="top">
             <div class="mobile-nav-head">
-                <h4>Areno Meals</h4>
+                <h4>Welcome, David</h4>
             </div>
             <div class="searchdiv">
                 <div class="nav-menu">
@@ -90,18 +88,18 @@
                                 <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div></a>
-                        <a href="shopping.html"><button class="mobile-notification" type="button">
-                            <i class="fa-solid fa-house"></i>
-                        </button></a>
+                        <div class="mobile-notification">
+                            <div class="cart-circle">8</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M17.9383 8.43703C17.9383 6.70036 17.2619 5.03481 16.058 3.80679C14.8541 2.57878 13.2212 1.88889 11.5185 1.88889C9.81592 1.88889 8.18303 2.57878 6.97909 3.80679C5.77516 5.03481 5.09879 6.70036 5.09879 8.43703C5.09879 16.0765 1.88892 18.2593 1.88892 18.2593H21.1482C21.1482 18.2593 17.9383 16.0765 17.9383 8.43703Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.4445 22.1111C13.2488 22.404 12.9679 22.6471 12.6299 22.8161C12.2919 22.9851 11.9086 23.0741 11.5186 23.0741C11.1285 23.0741 10.7453 22.9851 10.4073 22.8161C10.0693 22.6471 9.78837 22.404 9.59265 22.1111" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            
+                            </svg>
+                        </div>
                     </div>
             </div>
         </form>
-        <div class="mobile-headings">
-            <a href=""><button><p>Restaurants</p></button></a>
-            <a href=""><button><p style="color: orangered;">Meals</p></button></a>
-            <a href=""><button><p>Brands</p></button></a>
-            <a href=""><button><p >Food Items</p></button></a>
-        </div>
+       
         <div class="menu">
             <div class="menudiv">
                 <div>
@@ -112,13 +110,13 @@
                         <a href="index.html"><div class="menu-logo">
                             <img src="assets/icons/Frame 304 (2).png" alt="">
                         </div></a>
-                        <a href="shopping.html"><div class="menu-title ">
+                        <a href="shopping.html"><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
                             <button><p>Shopping</p></button>
                         </div></a>
-                        <a href="restaurants.html"><div class="menu-title title-selected">
+                        <a href="restaurants.html"><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-utensils"></i>
                             </button>
@@ -142,7 +140,7 @@
                             </button>
                             <button><p>Rate Us</p></button>
                         </div></a>
-                        <a href="contactareno.html"><div class="menu-title">
+                        <a href=""><div class="menu-title">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </button>
@@ -209,29 +207,29 @@
                     </div>
                     <p><b>New Arrivals</b></p>
                     <div class="filterbuttons">
-                        <button>Food Items</button>
-                        <button>Restaurants</button>
+                        <button>Products</button>
+                        <button>Stores</button>
                     </div>
                     <div class="filterbutton">
                         <button>Random Picks</button>
                     </div>
                     <div class="filterbutton">
-                        <button id="filtercategory">Meals</button>
+                        <button id="filtercategory">Categories</button>
                     </div>
                     <!--filter categories-->
                     <div class="filtercategories">
                         <div class="filtercategoriesdiv">
-                            <button>Cafe</button>
-                            <button>Steak House</button>
-                            <button>Fast Food</button>
-                            <button>Fine Dining</button>
-                            <button>Casual Dining</button>
-                            <button>Cafeteria</button>
-                            <button>Buffet</button>
-                            <button>Bakery</button>
-                            <button>Ice cream</button>
-                            <button>Break Fast</button>
-                            <button>Food Truck</button>
+                            <button>Kitchen</button>
+                            <button>General Supplies</button>
+                            <button>Fruits</button>
+                            <button>Hard Ware</button>
+                            <button>Medicine</button>
+                            <button>Automobiles</button>
+                            <button>Furniture</button>
+                            <button>Drinks & Food</button>
+                            <button>Fashion & cloth</button>
+                            <button>Women Undies</button>
+                            <button>Shoes</button>
                         </div>
                         <div class="filter-more-categories">
                             <button  id="morefiltercategory">View More</button>
@@ -245,7 +243,7 @@
                     </div>
                     <p><b>a</b> to <b>z</b></p>
                     <div class="filterbuttons">
-                        <button>Restaurants</button>
+                        <button>Stores</button>
                         <button>Brands</button>
                     </div>
                     <p><b>Region & Location</b></p>
@@ -266,213 +264,191 @@
             <div class="filterdarkside"></div>
         </div>
         
-         <!--ad section-->
-         <div class="slide" style="margin-top: 20px;">
-            <div class="splide-wrapper">
-                <div class="splide" id="categories-main-ad">
-                    <div class="splide__track">
-                        <div class="splide__list">
-                            <div class="splide__slide">
-                                <div class="adslider">
-                                    <a href=""><img src="assets/photos/adblue.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="adslider">
-                                    <img src="assets/photos/Heaven on the earth.jpg">
-                                </div>
-                            </div>
-                            <div class="splide__slide">
-                                <div class="adslider">
-                                    <img src="assets/photos/adgreen.png">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+         <!--personal info-->
+         
+         
+        <div class="track-headings">
+            <a href="#pending"><button ><p>Pending</p></button></a>
+            <a href="#complete"><button><p>Completed</p></button></a>
+            <a href="#complete"><button><p>Past Orders</p></button></a>
+        </div>
+        
+        <!--orders-->
+       <div class="allorders">
+            <div class="pending" id="pending">
+                <h3>Pending Orders</h3>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Nike Sneakers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>1,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Sports gear</b></p></a>
+                    <p class="items"><b>1</b></p>
+                    <p class="price"><b>26,000</b>/=</p>
+                    <p class="date">Nov 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Skin Products</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Air Jordan</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>T shirt</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Boxers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Nike Sneakers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="status">Pending</p>
+                    <button>&times;</button>
                 </div>
             </div>
-        </div>
-        <!--categories-->
-        <div class="categories" >
-            <h3>Meals</h3>
-            <div class="categoriespagediv">
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
-                    </div>
-                    <p><b>Salads</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
-                    </div>
-                    <p><b>Break Fast</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Новая звезда Инстаграм_ 16-летний подросток из Перу превращает еду в настоящее искусство.jpeg" alt="">
-                    </div>
-                    <p><b>Steak House</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
-                    </div>
-                    <p><b>Live Kitchen</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Jack Daniels Burgers - Host The Toast.jpeg" alt="">
-                    </div>
-                    <p><b>Buffet</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Sip on These Sparkling Non-Alcoholic Bevvies All Summer Long.jpeg" alt="">
-                    </div>
-                    <p><b>Cafe</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
-                    </div>
-                    <p><b>Cafeteria</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                    </div>
-                    <p><b>Bakery</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
-                    </div>
-                    <p><b>Fine Dining</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
-                    </div>
-                    <p><b>Cafe</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant//Action Shot Creative Food Photography.jpeg" alt="">
-                    </div>
-                    <p><b>Cafeteria</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/breakfast.jpeg" alt="">
-                    </div>
-                    <p><b>Bakery</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
-                    </div>
-                    <p><b>Fine Dining</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
-                    </div>
-                    <p><b>Fast Food</b></b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
-                    </div>
-                    <p><b>Cafeteria</b></p>
-                </button></a>
-                <a href=""><button class="category2">
-                    <div class="category2image">
-                        <img src="assets/restaurant/breakfast.jpeg" alt="">
-                    </div>
-                    <p><b>Bakery</b></p>
-                </button></a>
-                
+            <div class="complete" id="complete">
+                <h3>Completed Orders</h3>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Nike Sneakers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Sports gear</b></p></a>
+                    <p class="items"><b>1</b></p>
+                    <p class="price"><b>26,000</b>/=</p>
+                    <p class="date">Nov 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Skin Products</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Air Jordan</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>T shirt</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Boxers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Nike Sneakers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Nike Sneakers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
+                <div class="order">
+                    <a href="productpage.html"><p class="productname"><b>Nike Sneakers</b></p></a>
+                    <p class="items"><b>2</b></p>
+                    <p class="price"><b>12,000</b>/=</p>
+                    <p class="date">Oct 20, 2012</p>
+                    <p class="from">From: <b>Aziz Fashion</b></p>
+                    <p class="completed">Complete</p>
+                    <button>&times;</button>
+                </div>
             </div>
-        </div>
-         <!--Products-->
+       </div>
          
         
 
-        <!--footer-->
-        <div class="footer">
-            <div class="footerdiv1">
-                <div class="logoquote">
-                    <div class="arenologo">
-                        <img src="assets/icons/Frame 304 (2).png" alt="">
-                    </div>
-                    <div class="quote">
-                        <p>Areno Tanzania is an e commerce web application for all Tanzanians</p>
-                    </div>
-                    <div class="socialicons">
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-facebook"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-instagram"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-threads"></i>
-                        </button></a>
-                    </div>
-                </div>
-                <div class="list">
-                    <a href=""><button><h4>SUPPORT</h4></button></a>
-                    <ul>
-                        <li><a href=""><button>Contact Us</button></li></a>
-                        <li><a href=""><button>+255 782 222 222</button></li></a>
-                        <li><a href=""><button>+255 782 222 222</button></li></a>
-                        <li><a href=""><button>Areno@gmail.com</button></li></a>
-                    </ul>
-                </div>
-                <div class="list">
-                    <a href=""><button><h4>ABOUT US</h4></button></a>
-                    <ul>
-                        <li><a href=""><button>Terms & Policy</button></li></a>
-                        <li><a href=""><button>Trust and Safety</button></li></a>
-                        <li><a href=""><button>Advertise</button></li></a>
-                        <li><a href=""><button>Help & FAQ</button></li></a>
-                    </ul>
-                </div>
-            </div>
-            <div class="lowerfooterdetail">
-                <a href="#top"><div class="backtotop">
-                   Return up
-                </div></a>
-                <p>Areno company limited ©  2023. All rights reserved</p>
-            </div>
-        </div>
-        
+       
         <!--mobile below navigations-->
         <div class="new-mobile-nav">
             <div class="rectangle-bar">
-                <a href="restaurantspage.html"><div class="mobile-nav-div">
+                <a href="shopping.html"><div class="mobile-nav-div">
                     <button class="mobile-nav-icon">
                        <img src="assets/icons/Shop_duotone.png" alt="">
                     </button>
-                    <p>Restaurants</p>
+                    <p>Shopping</p>
                 </div></a>
-                <a href="meals.html"><div class="mobile-nav-div">
-                    <button class="mobile-nav-icon selected">
+                <a href="categories.html"><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon">
                         <img src="assets/icons/Widget.png" alt="">
                     </button>
-                    <p>Meals</p>
+                    <p>Categories</p>
                 </div></a>
             </div>
             <div class="middlepiece">
                 <div class="mobile-nav-circle">
-                    <a href="index.html"><button class="mobile-nav-icon">
+                    <a href="index.html"><button class="mobile-nav-icon selected">
                         <img src="assets/icons/Home_fill (1).png" alt="">
                     </button></a>
                 </div>
@@ -480,17 +456,17 @@
             </div>
             <div class="sub-rectangle"></div>
             <div class="rectangle-bar">
-                <a href=""><div class="mobile-nav-div">
+                <a href="brands.html"><div class="mobile-nav-div">
                     <button class="mobile-nav-icon">
                         <img src="assets/icons/Shop.png" alt="">
                     </button>
                     <p>Brands</p>
                 </div></a>
-                <a href="foods.html"><div class="mobile-nav-div">
+                <a href="products.html"><div class="mobile-nav-div">
                     <button class="mobile-nav-icon ">
                         <img src="assets/icons/package_favourite_alt.png" alt="">
                     </button>
-                    <p>Foods</p>
+                    <p>Products</p>
                 </div></a>
             </div>
         </div>
@@ -511,10 +487,6 @@
 
    
     <script src="assets/js/shoppingpage.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="assets/js/shoppingspliders.js" ></script>
-    <script src="assets/js/categories.js" ></script>
-    <script src="assets/js/products.js" ></script>
     <script>
      
     </script>
