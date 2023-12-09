@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/shopping.css">
     <link rel="stylesheet" href="assets/css/shopping2.css">
     <link rel="stylesheet" href="assets/css/splide.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
     <link rel="stylesheet" href="assets/css/arenohome.css">
     <link rel="stylesheet" href="assets/css/products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -170,39 +171,46 @@
                             </div>
                             <h1 style="color: orangered; margin: 0px;">Profile</h1>
                         </div></a>
-                        <a href="signup.html"><div class="menu-title title-selected">
-                            <button class="menu-title-icon ">
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                            </button>
-                            <button><p>Register</p></button>
-                        </div></a>
-                        <a href="login.html"><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-right-to-bracket"></i>
-                            </button>
-                            <button><p>Log In</p></button>
-                        </div></a>
-                        <a href=""><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </button>
-                            <button><p>Settings</p></button>
-                        </div></a>
                     </div>
                     <div class="myorders">
-                        <h3>My Orders</h3>
-                        <div class="orders">
-                            <a href="orders.html#complete"><p><span>●</span> Past Orders</p></a>
-                            <a href="orders.html#complete"><p><span>●</span> Successful Orders</p></a>
-                            <a href="orders.html#pending"><p><span>●</span> Pending Orders</p></a>
+                        <h3><i class="fa-solid fa-right-to-bracket"></i> Register</h3>
+                        <div class="orders orders-p">
+                            <a href="customersignup.html"><p class="orders-p"><span>●</span> <b>Customer</b></p></a>
+                            <a href="registerform.html"><p class="orders-p"><span>●</span> <b>Seller</b></p></a>
+                            <a href="driverform.html"><p class="orders-p"><span>●</span> <b>Driver</b></p></a>
                         </div>
                     </div>
                     <div class="myorders">
-                        <h3>Partnership</h3>
+                        <a href="login.html"><h3><i class="fa-solid fa-right-to-bracket"></i> Log in</h3></a>
+                    </div>
+                    <div class="myorders">
+                        <h3><i class="fa-solid fa-gear"></i> Settings</h3>
                         <div class="orders">
-                            <p><span>●</span> Agent</p>
-                            <p><span>●</span> Supplier</p>
-                            <p><span>●</span> Driver</p>
+                            <p class="info-detail"><span>●</span> <b>Personal Information</b></p>
+                            <div class="subinfo">
+                                <p>Name: <b>David Simon</b></p>
+                                <p>Mobile 1: <b>+255 742 012 222</b></p>
+                                <p>Mobile 2: <b>+255 742 012 222</b></p>
+                                <p class="infoemail"><b>davidsamson@gmail.com</b></p>
+                            </div>
+                            <a href="cart"><p class="info-detail"><span>●</span> <b>Favourites</b></p></a>
+                            <p class="info-detail"><span>●</span> <b>Manage Notifications</b></p>
+                            <div class="subinfo">
+                                <button class="on">On</button>
+                                <button class="off">OFF</button>
+                            </div>
+                            <p class="info-detail"><span>●</span> <b>Delete Account</b></p>
+                            
+                            <p class="info-detail"><span>●</span> <b>Change Password</b></p>
+                        </div>
+                    </div>
+                    <div class="myorders">
+                        <h3>My Orders</h3>
+                        <div class="orders orders-p">
+                            <a href="orders.html#pending"><p class="orders-p"><span>●</span> <b>Pending Orders</b></p></a>
+                            <a href="orders.html#onroad"><p class="orders-p"><span>●</span> <b>On Shipment</b></p></a>
+                            <a href="orders.html#delivered"><p class="orders-p"><span>●</span> <b>Delivered</b></p></a>
+                            <a href="orders.html#cancelled"><p class="orders-p"><span>●</span> <b>Cancelled</b></p></a>
                         </div>
                     </div>
                 </div>
