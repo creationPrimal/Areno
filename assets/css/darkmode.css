@@ -38,9 +38,14 @@ body {
     color: var(--text-color-light);
     transition: color 0.3s, background-color 0.3s;
 }
-.filtermenudiv, .abouthead h2{
+.filtermenudiv, .abouthead h2, .orders p, .myorders h3, .subinfo button{
     color: var(--text-color-light);
     background-color: var(--bg-color-light);
+    transition: color 0.3s, background-color 0.3s;
+}
+.profilemenu{
+    color: var(--text-color-light);
+    background-color: var(--bg-color-light) !important;
     transition: color 0.3s, background-color 0.3s;
 }
 .filterbuttons button{
@@ -106,7 +111,7 @@ body {
 .return i{
     color: var(--text-color-light) !important;
 }
-.fillform, .category2, .posting {
+.fillform, .category2, .posting, .profilemenu {
     color: var(--text-color-light);
 }
 .store-details h4{

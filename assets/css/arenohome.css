@@ -362,12 +362,13 @@
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
-    width: 250px;
+    width: auto;
     min-width: 250px;
     height: 100%;
     right: 0px;
     top: 0px;
     padding: 10px;
+    overflow-y: scroll;
     background-color: white;
     z-index: 1001;
 
@@ -396,7 +397,7 @@
     height: 25px;
     min-width: 25px;
     max-width: 25px;
-    margin: 0px 15px 0px 5px;
+    margin: 0px 15px 0px 0px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px rgba(0, 0, 0, 0.151) solid;
@@ -431,25 +432,77 @@
     flex-direction: column;
 }
 .myorders h3{
-    margin: 5px 0px 5px 5px;
+    font-size: 17px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    padding: 15px 0px 5px;
+    
+}
+.myorders i{
+    margin-right: 10px;
+    color: orangered;
 }
 .orders{
+    display: none;
+    flex-direction: column;
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 0px 0px;
+    transition:0.3s delay;
+}
+.myorders h3:hover + .orders, .orders:hover{
     display: flex;
     flex-direction: column;
-    margin: 0px 10px 10px 35px;
+    padding: 0px 0px 0px 25px;
+    margin: 0px 0px 0px 0px;
 }
-.orders p{
-    margin: 0px 0px 5px 0px;
-}
-.orders p:hover{
-    margin: 0px 0px 5px 10px;
-    color: orangered;
-    font-weight: bold;
-    transition: 200ms;
+
+.info-detail{
+    margin-top: 6px !important;
     cursor: pointer;
 }
+.info-detail:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.info-detail:nth-child(1){
+    color: orangered;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.subinfo{
+    padding: 0px 0px 5px 20px;
+}
+.subinfo p{
+    margin: 0px 3px 0px 5px;
+    font-size: 12px !important;
+}
+
+.orders p{
+    margin: 3px 0px 2px 0px;
+}
+.orders-p:hover{
+    color: orangered;
+}
+
 .orders span{
     color: orangered;
+}
+.on{
+    border: 1px rgba(0, 128, 0, 0) solid;
+    background-color: rgb(42, 255, 42) !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.off{
+    border: 1px rgba(0, 0, 0, 0.521) solid;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.infoemail{
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .homecart-notificationsdiv{
     display: flex !important;
