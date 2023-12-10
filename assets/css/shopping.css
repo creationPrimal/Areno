@@ -361,6 +361,11 @@ nav a:hover{
 }
 .eng{
     color: orangered;
+    background-color: black;
+}
+.swahili{
+    color: black;
+    background-color: rgba(209, 205, 205, 0.466);
 }
 .theme{
     display: flex;
