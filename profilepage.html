@@ -39,7 +39,7 @@
                         <path d="M6.07593 6.31818H35.3487L54.9614 104.309C55.6306 107.678 57.4635 110.704 60.1393 112.858C62.8151 115.012 66.1633 116.157 69.5977 116.091H140.73C144.165 116.157 147.513 115.012 150.189 112.858C152.865 110.704 154.698 107.678 155.367 104.309L167.076 42.9091H42.6668" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div></a>
-                <div class="notifications">
+                <div class="notifications mobile-notification">
                     <div class="cart-circle">8</div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="159" height="171" viewBox="0 0 159 171" fill="none">
                         <path d="M128.23 56.313C128.23 43.0614 123.069 30.3525 113.883 20.9822C104.696 11.6119 92.2367 6.34775 79.2449 6.34775C66.2531 6.34775 53.7935 11.6119 44.6069 20.9822C35.4203 30.3525 30.2594 43.0614 30.2594 56.313C30.2594 114.606 5.7666 131.261 5.7666 131.261H152.723C152.723 131.261 128.23 114.606 128.23 56.313Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
@@ -209,21 +209,21 @@
         <div class="filtermenu">
             <div class="filtermenudiv">
                 <div class="filtercontents">
-                    <p><b>Price</b></p>
+                    <p><b class="translate" data-en="Price" data-sw="Bei">Price</b></p>
                     <div class="filterbuttons">
-                        <button>Low To High</button>
-                        <button>High To Low</button>
+                        <button><span class="translate" data-en="Low To High" data-sw="Chini - Juu"></span> </button>
+                        <button><span class="translate" data-en="High To Low" data-sw="Juu - Chini">High To Low</span> </button>
                     </div>
-                    <p><b>New Arrivals</b></p>
+                    <p><b class="translate" data-en="New Arrivals" data-sw="Ujio Mpya">New Arrivals</b></p>
                     <div class="filterbuttons">
-                        <button>Products</button>
-                        <button>Stores</button>
+                        <button><span class="translate" data-en="Products" data-sw="Bidhaa">Products</span> </button>
+                        <button><span class="translate" data-en="Stores" data-sw="Maduka">Stores</span> </button>
                     </div>
                     <div class="filterbutton">
-                        <button>Random Picks</button>
+                        <button><span class="translate" data-en="Random Picks" data-sw="chagua nasibu">Random Picks</span> </button>
                     </div>
                     <div class="filterbutton">
-                        <button id="filtercategory">Categories</button>
+                        <button id="filtercategory"><span class="translate" data-en="Categories" data-sw="Kategoria">Categories</span> </button>
                     </div>
                     <!--filter categories-->
                     <div class="filtercategories">
@@ -241,21 +241,21 @@
                             <button>Shoes</button>
                         </div>
                         <div class="filter-more-categories">
-                            <button  id="morefiltercategory">View More</button>
+                            <button  id="morefiltercategory"><span class="translate" data-en="View More" data-sw="Fungua Zaidi">View More</span> </button>
                         </div>
                         
                     </div>
                     <!--end filter categories-->
                     <div class="filterbuttons" style="margin-top: 15px;">
-                        <button>Newest</button>
-                        <button>Oldest</button>
+                        <button><span class="translate" data-en="Newest" data-sw="Mpya">Newest</span> </button>
+                        <button><span class="translate" data-en="Oldest" data-sw="Zamani">Oldest</span> </button>
                     </div>
-                    <p><b>a</b> to <b>z</b></p>
+                    <p ><b>a</b> <span class="translate" data-en="to" data-sw="mpaka">to</span> <b>z</b></p>
                     <div class="filterbuttons">
-                        <button>Stores</button>
-                        <button>Brands</button>
+                        <button><span class="translate" data-en="Stores" data-sw="Maduka">Stores</span> </button>
+                        <button><span class="translate" data-en="Brands" data-sw="Brandi">Brands</span> </button>
                     </div>
-                    <p><b>Region & Location</b></p>
+                    <p><b class="translate" data-en="Region & Location" data-sw="Mkoa & Sehemu">Region & Location</b></p>
                     <form action="">
                         <div class="filterbuttons">
                             <input type="search" placeholder="Input Location..">
@@ -271,6 +271,106 @@
                 
             </div>
             <div class="filterdarkside"></div>
+        </div>
+        <!--Notification div-->
+        <div class="notificationdiv">
+            <div class="notificationdarkside"></div>
+                <div class="notificationmenu">
+                    <h2 class="translate" data-en="Notifications" data-sw="Taarifa">Notifications</h2>
+                    <div class="notificationlist">
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Admin <span>0ct 20, 2023</span></h3>
+                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/logistics-business.jpg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Modern Funiture <span>0ct 20, 2023</span></h3>
+                                <p>New Items Brought in for you to choose, Genuinly available for sale new items new alert and more</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Did You eat Today? <span>0ct 20, 2023</span></h3>
+                                <p>Come Grab new slices of pizza from our latest and more favourable restaurants here at areno</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Admin <span>0ct 20, 2023</span></h3>
+                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/bolso de mensajero de un solo hombro con estilo ins para mujer, bolso con cadena de fragancia.jpeg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Discover more! <span>0ct 20, 2023</span></h3>
+                                <p>Explore various products and items here at areno and most impontantly they are cheap and affordable to any persona, vailable for sale</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Admin <span>0ct 20, 2023</span></h3>
+                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/Nike SNKRS_ Release Dates & Launch Calendar.jpeg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Modern Funiture <span>0ct 20, 2023</span></h3>
+                                <p>New Items Brought in for you to choose, Genuinly available for sale new items new alert and more</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Did You eat Today? <span>0ct 20, 2023</span></h3>
+                                <p>Come Grab new slices of pizza from our latest and more favourable restaurants here at areno</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Admin <span>0ct 20, 2023</span></h3>
+                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/bolso de mensajero de un solo hombro con estilo ins para mujer, bolso con cadena de fragancia.jpeg" alt="">
+                            </div>
+                        </div></a>
+                        <a href=""><div class="alert">
+                            <div class="alertdetails">
+                                <h3>Discover more! <span>0ct 20, 2023</span></h3>
+                                <p>Explore various products and items here at areno and most impontantly they are cheap and affordable to any persona, vailable for sale</p>
+                            </div>
+                            <div class="notificationimage">
+                                <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
+                            </div>
+                        </div></a>
+                        
+                    </div>
+                </div>
         </div>
         
         <!--Prfile-->
