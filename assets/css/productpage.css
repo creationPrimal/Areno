@@ -869,11 +869,15 @@ textarea{
     .add-cart:hover{
         margin-right: 10px;
     }
+    .add-cart2{
+        height: 40px !important;
+    }
     .amount-counter{
         display: flex;
         flex-direction: row;
         height: 40px;
         margin-right: 10px;
+        margin-bottom: 10px;
     }
     .amount-count-div1{
         display: flex;
@@ -1103,7 +1107,7 @@ textarea{
         border: none;
         padding-left: 10px;
         padding-right: 10px;
-        margin-right: 0px;
+        margin-right: 20px;
         background-color: rgba(0, 128, 0, 0.712);
         cursor: pointer;
     }
