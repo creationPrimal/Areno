@@ -40,7 +40,11 @@ swahiliBtn.addEventListener('click', () => {
   setLanguage('swahili');
 });
 
-  //expanding notification div
+  
+
+
+
+//expanding notification div
   // Get all buttons with the class '.notification-menu'
   const notificationMenuButtons = document.querySelectorAll('.mobile-notification');
   const notificationMenuDiv = document.querySelector('.notificationdiv');
@@ -57,8 +61,6 @@ swahiliBtn.addEventListener('click', () => {
   notificationDarkSide.addEventListener('click', () => {
     notificationMenuDiv.style.display = 'none';
   });
-
-
 
 
 
