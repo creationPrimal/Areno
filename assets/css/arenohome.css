@@ -1037,8 +1037,8 @@
         width: 47%;
         min-width: 150px;
         background-color: white;
-        height: 160px;
-        margin: 20px 0px 0px 0px;
+        height: 150px;
+        margin: 10px 0px 0px 0px;
         border-radius: 7px;
         overflow: hidden;
         cursor: pointer;
@@ -1052,14 +1052,14 @@
         min-width: 150px;
         color: white;
         background-color: rgb(0, 0, 0);
-        height: 160px;
-        margin: 20px 0px 0px 0px;
+        height: 150px;
+        margin: 10px 0px 0px 0px;
         border-radius: 7px;
         overflow: hidden;
         cursor: pointer;
     }
     .service-image{
-        height: 140px;
+        height: 130px;
         width: 100%;
         background-color: grey;
         overflow: hidden;
@@ -1069,7 +1069,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        height: 26px;
+        height: 20px;
     }
     .infoimage{
         display: flex;
@@ -1094,7 +1094,7 @@
         min-width: 150px;
         background-color: white;
         height: 220px;
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
         border-radius: 7px;
         overflow: hidden;
         cursor: pointer;
@@ -1109,7 +1109,7 @@
         color: white;
         background-color: rgb(0, 0, 0);
         height: 220px;
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
         border-radius: 7px;
         overflow: hidden;
         cursor: pointer;
