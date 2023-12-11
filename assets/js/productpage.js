@@ -29,6 +29,75 @@ const cartamount = document.querySelector('.cartamount');
       updateCounter();
 
 
+       //fifth slider
+const relatedproducts = new Splide( '#relatedproducts', {
+  perPage: 4,
+  gap : '1rem',
+  drag : 'free',
+  perMove: 1,
+  padding: { left: 0, right: 80 },
+  snap: true,
+  type: 'loop',
+  pagination: false,
+  autoplay: false,
+  breakpoints: {
+
+    1200: {
+    perPage: 4,
+    padding: { left: 0, right: 20 },
+    },
+    1104: {
+    perPage: 3,
+    padding: { left: 0, right: 100 },
+    },
+    964: {
+    perPage: 3,
+    padding: { left: 0, right: 50 },
+    },
+    884: {
+    perPage: 2,
+    padding: { left: 0, right: 180 },
+    },
+    764: {
+    perPage: 3,
+    padding: { left: 0, right: 20 },
+    },
+    678: {
+      perPage: 2,
+      padding: { left: 0, right: 170 },
+    },
+    610: {
+      perPage: 2,
+      padding: { left: 0, right: 130 },
+    },
+    580: {
+      perPage: 2,
+      padding: { left: 0, right: 80 },
+    },
+    520: {
+      perPage: 2,
+      padding: { left: 0, right: 30 },
+    },
+    470: {
+      perPage: 2,
+      padding: { left: 0, right: 0 },
+    },
+    440: {
+      perPage: 1,
+      padding: { left: 0, right: 170 },
+    },
+    390: {
+      perPage: 1,
+      padding: { left: 0, right: 120 },
+    },
+    335: {
+      perPage: 1,
+      padding: { left: 0, right: 50 },
+    },
+    },
+  } );
+  relatedproducts.mount()
+
 // JavaScript to handle full-screen image display
 const thumbnails = document.querySelectorAll('.thumbnail');
 const fullscreenImageContainer = document.getElementById('fullscreen-image-container');

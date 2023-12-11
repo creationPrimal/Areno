@@ -44,7 +44,8 @@ window.onload = function(){
 };
 
 
-// Get all buttons with the class '.profile-menu'
+
+// Get all buttons with the class '.notification-menu'
 const profileMenuButtons = document.querySelectorAll('.profile-menu');
 const profileMenuDiv = document.querySelector('.profilemenudiv');
 
@@ -55,12 +56,30 @@ profileMenuButtons.forEach(button => {
   });
 });
 
-// Add event listener to close the menu when clicking outside
+// Add event listener to close the notification when clicking outside
 const profileDarkSide = document.querySelector('.profiledarkside');
 profileDarkSide.addEventListener('click', () => {
   profileMenuDiv.style.display = 'none';
 });
-    
+  
+
+   //expanding notification div
+  // Get all buttons with the class '.notification-menu'
+  const notificationMenuButtons = document.querySelectorAll('.mobile-notification');
+  const notificationMenuDiv = document.querySelector('.notificationdiv');
+  
+  // Loop through each button and attach event listeners
+  notificationMenuButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      notificationMenuDiv.style.display = 'flex';
+    });
+  });
+  
+  // Add event listener to close the notification when clicking outside
+  const notificationDarkSide = document.querySelector('.notificationdarkside');
+  notificationDarkSide.addEventListener('click', () => {
+    notificationMenuDiv.style.display = 'none';
+  });
  //reasons slider main slider
  const reasons = new Splide( '#reasons', {
   perPage: 4,
@@ -122,3 +141,6 @@ profileDarkSide.addEventListener('click', () => {
     },
   } );
   reasons.mount()
+
+
+ 

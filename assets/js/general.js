@@ -104,7 +104,7 @@ loadmoreButtons.forEach((button) => {
     currentItem += 20;
 
     if (currentItem >= productboxes.length) {
-      button.style.display = 'none';
+      button.style.display = 'none'; 
     }
   };
 });

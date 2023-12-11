@@ -39,3 +39,32 @@ englishBtn.addEventListener('click', () => {
 swahiliBtn.addEventListener('click', () => {
   setLanguage('swahili');
 });
+
+  //expanding notification div
+  // Get all buttons with the class '.notification-menu'
+  const notificationMenuButtons = document.querySelectorAll('.mobile-notification');
+  const notificationMenuDiv = document.querySelector('.notificationdiv');
+  
+  // Loop through each button and attach event listeners
+  notificationMenuButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      notificationMenuDiv.style.display = 'flex';
+    });
+  });
+  
+  // Add event listener to close the notification when clicking outside
+  const notificationDarkSide = document.querySelector('.notificationdarkside');
+  notificationDarkSide.addEventListener('click', () => {
+    notificationMenuDiv.style.display = 'none';
+  });
+
+
+
+
+
+
+
+
+
+
+
