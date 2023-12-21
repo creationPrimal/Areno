@@ -1,32 +1,33 @@
 //code to count products in product page
-const more = document.querySelector('.more');
-const less = document.querySelector('.less');
+const buttons = document.querySelectorAll('.more, .less');
 const cartamount = document.querySelector('.cartamount');
 
-      let counter = 0;
-      // Function to update the counter and display it in the <input> element
-      function updateCounter() {
-        cartamount.value = counter;
-      }
-      
+let counter = 0;
 
-      // Event listener for the increment button
-      more.addEventListener('click', function() {
-        counter++;
-        updateCounter();
-      });
+// Function to update the counter and display it in the <input> element
+function updateCounter() {
+  cartamount.value = counter;
+}
 
-      // Event listener for the decrement button
-      less.addEventListener('click', function() {
-        if (counter >= 1) {
-            counter--;
-          updateCounter();
-        }
-          
-      });
+// Function to handle button clicks
+function buttonClick(event) {
+  if (event.target.classList.contains('more')) {
+    counter++;
+  } else if (event.target.classList.contains('less')) {
+    if (counter >= 1) {
+      counter--;
+    }
+  }
+  updateCounter();
+}
 
-      // Initial counter display
-      updateCounter();
+// Attach event listeners to buttons
+buttons.forEach(button => {
+  button.addEventListener('click', buttonClick);
+});
+
+// Initial counter display
+updateCounter();
 
 
        //fifth slider

@@ -9,7 +9,7 @@
     rewind: true,
     arrows: false,
     interval: 9000,
-    pagination: false,
+    pagination: true,
     autoplay: true,
     breakpoints: {
       1200: {
