@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="translate" data-en="Registration Form" data-sw="Fomu ya Usajili">Registration Form</title>
+    <title >Areno - Hotel Page</title>
 
     <link rel="stylesheet" href="assets/css/shopping.css">
     <link rel="stylesheet" href="assets/css/shopping2.css">
+    <link rel="stylesheet" href="assets/css/splide.css">
     <link rel="stylesheet" href="assets/css/darkmode.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
     <link rel="stylesheet" href="assets/css/productpage.css">
-    <link rel="stylesheet" href="assets/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
@@ -23,7 +26,7 @@
             </div>
             <div class="right-nav">
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
-                <a href=""><h4 >All</h4></a>
+                <a href=""><h4 class="translate" data-en="All Events" data-sw="Matukio Yote">All Events</h4></a>
                 <a href=""><h4 class="translate" data-en="" data-sw="">Categories</h4></a>
                 <a href=""><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
                 <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
@@ -41,7 +44,7 @@
                     <i class="fa-solid fa-arrow-left" ></i>
                 </div></a>
                 <div class="product-nav-head">
-                    <h4>Event Registration </h4>
+                    <h4>Hotel Details</h4>
                 </div>
             </div>
             
@@ -57,7 +60,7 @@
                         <a href="index.html"><div class="menu-logo">
                             <img src="assets/icons/Frame 304 (2).png" alt="">
                         </div></a>
-                        <a href="shopping.html"><div class="menu-title ">
+                        <a href="shopping.html"><div class="menu-title title-selected">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
@@ -150,102 +153,167 @@
             <div class="darkside"></div>
         </div>
         
-        
-         <!--register form main-->
-        <form action="" class="registerform">
-            <div class="registering-form">
-                <div class="inputdiv">
-                    <label for="firstname" >Event Name</label>
-                    <input type="text" name="firstname" placeholder="Your Name">
+        <!--product details-->
+        <!--product full screen view div-->
+        <div id="fullscreen-image-container">
+            <img id="fullscreen-image">
+          </div>
+          <!--product details-->
+        <div class="productdetail">
+            <div class="productdetailimage2">
+                <img src="assets/hotels/The Most Incredible Hotels in the World for Under $250.jpg" alt=""  class="thumbnail">
+            </div>
+            <div class="productdetail-details">
+                <div>
+                    <div class="details-productname">
+                        <p>Hotel Name:</p>
+                        <h3 id="productname1">Golden Tulip</h3>
+                    </div>
+                    <div class="details-productname">
+                        <h2 >From Tsh 16,000/=</h2>
+                    </div>
+                    <div class="category-region">
+                        <p><span >Ratings: </span> <b>★★★★☆ 4.5 </b></p>
+                        <p><span class="translate" data-en="Location:" data-sw="Sehemu:">Location: </span>: <b>Ubungo</b></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="category-region">
+                        <p><span>Contacts: </span> <b>+255 742 012 233</b></p>
+                        <p><span>Contacts: </span> <b>+255 742 012 233</b></p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="description">
+                        <h4 class="translate" data-en="Description" data-sw="Maelezo">About The Place</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis rutrum orci,
+                             vitae vulputate risus. Vestibulum et quam eget ligula feugiat tempus. Mauris nulla turpis,
+                              suscipit sit amet magna quis, convallis mattis justo.
+                             Pellentesque eu turpis felis. Pellentesque tortor ipsum, convallis ut mi eget, facilisis lacinia diam</p>
+                    </div>
                 </div>
-                <div class="inputdiv">
-                    <label for="businessname" >Event Type*</label>
-                    <select name="" id="">
-                        <option value="Conference">Conference</option>
-                        <option value="Seminars">Seminars</option>
-                        <option value="Workshop">Workshop</option>
-                        <option value="Festival & Concert">Festival & Concert</option>
-                        <option value="Theatre & Comedy">Theatre & Comedy</option>
-                        <option value="Praise & Worship">Praise & Worship</option>
-                        <option value="Party & Ceremony">Party & Ceremony</option>
-                    </select>
-                </div>
-                <div class="inputdiv">
-                    <label for="firstname" >Organizer's Name</label>
-                    <input type="text" name="firstname" placeholder="Your Name">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" class="translate" data-en="Phone Number" data-sw="Namba ya Simu">Phone Number</label>
-                    <input type="tel" name="businessname" placeholder="+255 ***">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" class="translate" data-en="Mobile" data-sw="Simu ya Kiganjani">Mobile</label>
-                    <input type="tel" name="businessname" placeholder="+255 ***">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" class="translate" data-en="Email" data-sw="Barua Pepe">Email</label>
-                    <input type="email" name="businessname" placeholder="example@email.com">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname">Date/Dates</label>
-                    <input type="text" name="businessname">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" >Time</label>
-                    <input type="time" name="businessname" >
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" class="translate" data-en="Location" data-sw="Sehemu">Location</label>
-                    <input type="text" name="businessname" placeholder="Country, Region, District">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" >Ticket Price</label>
-                    <input type="text" name="businessname" >
-                </div>
-                <div class="inputdiv">
-                    <label for="businessregistered" >Ticket Description.</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="inputdiv">
-                    <label for="businessregistered" >Event Description.</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname" >Any Discounts/Offers</label>
-                    <input type="text" name="businessname" >
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname">Date/Dates</label>
-                    <input type="text" name="businessname">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname">Upload Poster*</label>
-                    <input type="file" name="businessname">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname">Upload Second Poster</label>
-                    <input type="file" name="businessname">
-                </div>
-                <div class="inputdiv">
-                    <label for="businessname">Upload Third Poster</label>
-                    <input type="file" name="businessname">
-                </div>
-                <div class="inputdiv">
-                    <div class="radiodiv">
-                        <input type="checkbox" value="Yes">
-                        <label for="businessregistered">Do you agree with our <a href=""><span style="color: orangered;">terms and conditions</span></a>?</label>
+                <div class="amount-count">
+                    <div class="amount-count-div1">
+                        <div class="amount-counter">
+                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <input type="number" name="" class="cartamount" placeholder="1">
+                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                        </div>
+                        <a href="orderdetails.html"><button class="add-cart2" >
+                            <p>Book Now</p>
+                        </button></a>
                     </div>
                     
                 </div>
-                
-                
             </div>
-            <button class="login-new-button" id="submitform" type="button" style="margin: 20px 0px 20px 0px;" class="translate" data-en="Submit" data-sw="Kusanya">Submit</button>
-        </form>
+
+           
+        </div>
+        <div class="moreimages">
+            <div class="hotelimage">
+                <img src="assets/hotels/12 Best Palm Springs Hotels from Boutique to Resorts _ La Jolla Mom.jpg" alt="">
+            </div>
+            <div class="hotelimage">
+                <img src="assets/hotels/7 luxury family winter-sun escapes.jpg" alt="">
+            </div>
+            <div class="hotelimage">
+                <img src="assets/hotels/Royal Cliff Beach Hotel by DBALP.jpg" alt="">
+            </div>
+        </div>
+
+       
         
         
         
         
+        
+        
+           
+        
+
+
+        <!--footer-->
+        <div class="footer">
+            <div class="footerdiv1">
+                <div class="logoquote">
+                    <div class="arenologo">
+                        <img src="assets/icons/Frame 304 (2).png" alt="">
+                    </div>
+                    <div class="quote">
+                        <p>Areno Tanzania is an e commerce web application for all Tanzanians</p>
+                    </div>
+                    <div class="socialicons">
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button></a>
+                        <a href=""><button class=" footer-social">
+                            <i class="fa-brands fa-threads"></i>
+                        </button></a>
+                    </div>
+                </div>
+                <div class="list">
+                    <a href=""><button><h4>SUPPORT</h4></button></a>
+                    <ul>
+                        <li><a href=""><button>Contact Us</button></li></a>
+                        <li><a href=""><button>+255 782 222 222</button></li></a>
+                        <li><a href=""><button>+255 782 222 222</button></li></a>
+                        <li><a href=""><button>Areno@gmail.com</button></li></a>
+                    </ul>
+                </div>
+                <div class="list">
+                    <a href=""><button><h4>ABOUT US</h4></button></a>
+                    <ul>
+                        <li><a href=""><button>Terms & Policy</button></li></a>
+                        <li><a href=""><button>Trust and Safety</button></li></a>
+                        <li><a href=""><button>Advertise</button></li></a>
+                        <li><a href=""><button>Help & FAQ</button></li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="lowerfooterdetail">
+                <a href="#top"><div class="backtotop">
+                   Return up
+                </div></a>
+                <p>Areno company limited ©  2023. All rights reserved</p>
+            </div>
+        </div>
+         <!--mobile below navigations-->
+         <div class="new-mobile-nav">
+            <div class="rectangle-bar">
+                <a href="events.html"><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </button>
+                    <p>Events</p>
+                </div></a>
+            </div>
+            <div class="middlepiece">
+                <div class="mobile-nav-circle">
+                    <a href="index.html"><button class="mobile-nav-icon selected">
+                        <img src="assets/icons/Home_fill (1).png" alt="">
+                    </button></a>
+                </div>
+                <img src="assets/icons/middlepiece.png" alt="">
+            </div>
+            <div class="sub-rectangle"></div>
+            <div class="rectangle-bar">
+                <a href="eventscategories.html"><div class="mobile-nav-div">
+                    <button class="mobile-nav-icon">
+                        <img src="assets/icons/Widget.png" alt="">
+                    </button>
+                    <p>Categories</p>
+                </div></a>
+            </div>
+        </div>
 
 
 
@@ -263,14 +331,15 @@
 
    
     <script src="assets/js/shoppingpage.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="assets/js/productpage.js" ></script>
     <script src="assets/js/language.js" ></script>
+    <script src="assets/js/bookingsliders.js" ></script>
     <script>
         
-  //alerting during submission of form
-const submitform = document.getElementById('submitform')
- 
- submitform.addEventListener("click", () =>{ alert('Thank You for submitting your application, Will be reviewed by our team and a responce will be provided to you soon.')})
     </script>
+    
+    
     
 </body>
 </html>
