@@ -23,6 +23,25 @@
         background-color: orangered;
         z-index: 1000;
     }
+    .callus{
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        margin: 25px 0px 0px 0px;
+        height: 60px;
+        background-color: rgba(128, 128, 128, 0);
+      }
+      .call{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        background-color: rgba(0, 255, 0, 0.836);
+        box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.271);
+        border-radius: 50%;
+        cursor: pointer;
+      }
     .searchdiv{
         display: flex;
         position: relative;
@@ -318,11 +337,11 @@
         border-radius: 3px;
     }
     .menu-about-areno p{
-        margin: 5px 10px 0px 0px;
+        margin: 5px 10px 10px 0px;
        
     }
     .menu-about-areno p:hover{
-        margin: 5px 10px 0px 5px;
+        margin: 5px 10px 10px 5px;
         transition: 200ms;
         color: orangered;
     }
@@ -573,7 +592,7 @@
         height: 59px;
         width: 50%;
         border-radius: 13px 13px 0px 0px;
-        background-color: white;
+        background-color: white !important;
         box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.825);
         z-index: 2;
     }
@@ -643,6 +662,7 @@
         filter: invert(56%);
     }
     .mobile-nav-div p{
+        color: black !important;
         margin: 0px;
         font-size: 10px !important;
     }

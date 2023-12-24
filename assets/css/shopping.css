@@ -253,7 +253,7 @@ nav a:hover{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 0px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
 }
 .main-menu-content{
     margin-right: 20px;
@@ -306,7 +306,7 @@ nav a:hover{
     flex-direction: column;
 }
 .menu-about-areno p{
-    margin: 5px 10px 0px 0px;
+    margin: 5px 10px 10px 0px;
     font-size: 15px;
 }
 .menu-about-areno a{
@@ -319,7 +319,7 @@ nav a:hover{
     cursor: pointer;
 }
 .menu-about-areno p:hover{
-    margin: 5px 10px 0px 5px;
+    margin: 5px 10px 10px 5px;
     transition: 200ms;
     color: orangered;
 }
@@ -348,7 +348,7 @@ nav a:hover{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 10px 10px 0px 0px;
+    margin: 10px 10px 15px 0px;
 }
 .languagediv p{
     margin: 0px 10px 0px 0px;
@@ -750,6 +750,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: 4px 0px 4px 0px;
 }
 .details h4{
     margin: 4px 7px 3px 7px;
@@ -831,7 +832,7 @@ nav a:hover{
     position: relative;
     flex-direction: row;
     align-items: center;
-    height: 30px;
+    min-height: 30px !important;
     width: 30px;
     border: none;
     border-radius: 5px;
@@ -1266,6 +1267,25 @@ nav a:hover{
   .notificationimage img{
     height: 100%;
     width: 100%;
+  }
+
+  .callus{
+    display: none;
+    position: relative;
+    justify-content: flex-start;
+    margin: 25px 0px 0px 0px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0);
+  }
+  .call{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 255, 0, 0.836);
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.271);
+    border-radius: 50%;
   }
 
 
