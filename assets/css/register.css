@@ -3,6 +3,8 @@
     display: flex;
     position: relative;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0px;
     padding: 10px 30px 10px 30px;
 
@@ -349,6 +351,7 @@
 
 /*contact aren0*/
 
+
 .contactareno{
     display: flex;
     flex-direction: column;
@@ -419,6 +422,7 @@
 
 
 @media screen and (max-width: 764px){
+
     .register-main{
         display: flex;
         position: relative;
@@ -428,6 +432,7 @@
         padding: 10px 30px 10px 30px;
     
     }
+    
     .contactareno{
         display: flex;
         flex-direction: column;

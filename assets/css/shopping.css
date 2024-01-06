@@ -102,6 +102,16 @@ nav a:hover{
 .mobile-notification svg{
     height: 25px;
 }
+.homebutton{
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 15px;
+}
 .notifications{
     display: flex;
     position: relative;
@@ -628,9 +638,6 @@ nav a:hover{
     color: orangered;
 }
 .categoryimage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100px;
     width: 100px;
     background-color: rgba(0, 204, 255, 0.24);
@@ -639,11 +646,11 @@ nav a:hover{
     cursor: pointer;
     
 }
-/*.categoryimage img{
+.categoryimage img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-}*/
+}
 
 
 
@@ -1286,6 +1293,15 @@ nav a:hover{
     background-color: rgba(0, 255, 0, 0.836);
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.271);
     border-radius: 50%;
+  }
+  .newbutton{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    background-color: gold;
+    padding: 3px 5px 3px 5px;
+    color: rgba(0, 0, 0, 0.815);
+    font-weight: bold;
   }
 
 

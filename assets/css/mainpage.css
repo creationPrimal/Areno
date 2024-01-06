@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     margin: 30px 30px 20px 30px;
-    border-radius: 7px;
+    border-radius: 0px;
     overflow: hidden;
     justify-content: space-around;
     height: 40px;
@@ -16,21 +16,14 @@
     font-weight: bold;
 }
 .switch button{
-    width: 33%;
-    border: none;
+    width: 32%;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 8px;
     height: 100%;
-    color: white;
-    background-color: orangered;
+    color: rgb(0, 0, 0);
+    background-color: white;
 }
-.switch button:nth-child(1){
-    width: 33%;
-    border: none;
-    height: 100%;
-    color: white;
-    transition: 200ms;
-    cursor: pointer;
-    background-color: orange;
-}
+
 .switch button:hover{
     width: 33%;
     border: none;
@@ -38,7 +31,16 @@
     color: white;
     transition: 200ms;
     cursor: pointer;
-    background-color: orange;
+    background-color: orangered;
+}
+.switchselected{
+    width: 33%;
+    border: none;
+    height: 100%;
+    color: white;
+    transition: 200ms;
+    cursor: pointer;
+    background-color: orangered;
 }
 
 
@@ -178,7 +180,7 @@
         display: flex;
         flex-direction: row;
         margin: 30px 10px 20px 10px;
-        border-radius: 7px;
+        border-radius: 0px;
         overflow: hidden;
         justify-content: space-around;
         height: 40px;
