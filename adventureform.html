@@ -19,13 +19,14 @@
     <section>
         <nav>
             <div class="logo">
-                <a href="#"><h4>Areno Booking</h4></a>
+                <a href="#"><h4 class="translate" data-en="Adventure Registration" data-sw="Usajili wa Adventure">Adventure Registration</h4></a>
             </div>
             <div class="right-nav">
+                <h4 style="cursor: pointer;" onclick="goBack()" class="translate" data-en="Back" data-sw="Nyuma">Back</h4>
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
-                <a href=""><h4 >All</h4></a>
-                <a href=""><h4 class="translate" data-en="" data-sw="">Categories</h4></a>
-                <a href=""><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
+                <a href="booking.html"><h4 class="translate" data-en="Booking" data-sw="Booking">Booking</h4></a>
+                <a href="adventure.html"><h4 class="translate" data-en="Adventure" data-sw="Adventure">Adventure</h4></a>
+                <a href="tickets.html"><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
                 <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
                 
@@ -37,11 +38,11 @@
         <div class="productpagehead">
             <div class="product-detail-head">
                 
-                <a href="bookingforms.html"><div class="return">
+                <div class="return" onclick="goBack()">
                     <i class="fa-solid fa-arrow-left" ></i>
-                </div></a>
+                </div>
                 <div class="product-nav-head">
-                    <h4>Adventure Registration </h4>
+                    <h4 class="translate" data-en="Adventure Registration" data-sw="Usajili wa Adventure">Adventure Registration </h4>
                 </div>
             </div>
             
@@ -155,11 +156,20 @@
         <form action="" class="registerform">
             <div class="registering-form">
                 <div class="inputdiv">
-                    <label for="firstname" >Adventure Activity/Event Name</label>
+                    <label for="firstname" class="translate" data-en="Adventure Activity/Event Name" data-sw="Jina la Tukio">Adventure Activity/Event Name</label>
                     <input type="text" name="firstname" placeholder="Name">
                 </div>
                 <div class="inputdiv">
-                    <label for="firstname" >Organizer's Name</label>
+                    <label for="businessname" class="translate" data-en="Adventure Type*" data-sw="Aina ya Adventure*">Adventure Type*</label>
+                    <select name="" id="">
+                        <option value="Wildlife">Wildlife</option>
+                        <option value="Museams">Museams</option>
+                        <option value="Game reserve">Game reserve</option>
+                        <option value="Tourism">Tourism</option>
+                    </select>
+                </div>
+                <div class="inputdiv">
+                    <label for="firstname" class="translate" data-en="Organizer's Name" data-sw="Jina la Mratibu">Organizer's Name</label>
                     <input type="text" name="firstname" placeholder="Your Name">
                 </div>
                 <div class="inputdiv">
@@ -175,35 +185,31 @@
                     <input type="email" name="businessname" placeholder="example@email.com">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Date</label>
+                    <label for="businessname" class="translate" data-en="Date" data-sw="Tarehe">Date</label>
                     <input type="date" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Time</label>
+                    <label for="businessname" class="translate" data-en="Time" data-sw="Muda">Time</label>
                     <input type="time" name="businessname" >
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Location to visit</label>
+                    <label for="businessname" class="translate" data-en="Location to Visit" data-sw="Sehemu ya Kutembelea">Location to visit</label>
                     <input type="text" name="businessname" >
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Starting Point</label>
+                    <label for="businessname" class="translate" data-en="Starting Point" data-sw="Sehemu ya Kuanzia">Starting Point</label>
                     <input type="text" name="businessname" >
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Type of Adventure</label>
-                    <input type="text" name="businessname" >
-                </div>
-                <div class="inputdiv">
-                    <label for="businessregistered" >Participation Info (Age, Sex, Other).</label>
+                    <label for="businessregistered" class="translate" data-en="Participation Info (Age, Sex, Other)" data-sw="Taarifa za Kushiriki (Miaka, Jinsia, Mengine)">Participation Info (Age, Sex, Other)</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Event Description.</label>
+                    <label for="businessregistered" class="translate" data-en="Adventure Description" data-sw="Maelezo ya Adventure">Adventure Description</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Equipments required.</label>
+                    <label for="businessregistered" class="translate" data-en="Equipments required" data-sw="Vifaa Vinavyohitajika">Equipments required</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
@@ -211,19 +217,19 @@
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Deadline</label>
+                    <label for="businessname" class="translate" data-en="Daedline" data-sw="Mwisho wa Malipo">Deadline</label>
                     <input type="date" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Photo*</label>
+                    <label for="businessname" class="translate" data-en="Upload Poster*" data-sw="Pakia Picha ya Tangazo*">Upload Poster*</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Second Photo</label>
+                    <label for="businessname" class="translate" data-en="Upload Second Poster" data-sw="Pakia Picha ya Tangazo ya pili">Upload Second Poster</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Third Photo</label>
+                    <label for="businessname" class="translate" data-en="Upload Third Poster" data-sw="Pakia Picha ya Tangazo ya tatu">Upload Third Poster</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">

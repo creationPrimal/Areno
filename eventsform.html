@@ -19,13 +19,14 @@
     <section>
         <nav>
             <div class="logo">
-                <a href="#"><h4>Areno Booking</h4></a>
+                <a href="#"><h4 class="translate" data-en="Event Registration" data-sw="Usajili wa Matukio">Event Registration</h4></a>
             </div>
             <div class="right-nav">
+                <h4 style="cursor: pointer;" onclick="goBack()" class="translate" data-en="Back" data-sw="Nyuma">Back</h4>
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
-                <a href=""><h4 >All</h4></a>
-                <a href=""><h4 class="translate" data-en="" data-sw="">Categories</h4></a>
-                <a href=""><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
+                <a href="booking.html"><h4 class="translate" data-en="Booking" data-sw="Booking">Booking</h4></a>
+                <a href="events.html"><h4 class="translate" data-en="Events" data-sw="Matukio">Events</h4></a>
+                <a href="tickets.html"><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
                 <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
                 
@@ -37,11 +38,11 @@
         <div class="productpagehead">
             <div class="product-detail-head">
                 
-                <a href="events.html"><div class="return">
+                <div class="return" onclick="goBack()">
                     <i class="fa-solid fa-arrow-left" ></i>
-                </div></a>
+                </div>
                 <div class="product-nav-head">
-                    <h4>Event Registration </h4>
+                    <h4 class="translate" data-en="Event Registration" data-sw="Usajili wa Matukio">Event Registration </h4>
                 </div>
             </div>
             
@@ -155,11 +156,11 @@
         <form action="" class="registerform">
             <div class="registering-form">
                 <div class="inputdiv">
-                    <label for="firstname" >Event Name</label>
+                    <label for="firstname" class="translate" data-en="Event Name" data-sw="Jina la Tukio">Event Name</label>
                     <input type="text" name="firstname" placeholder="Your Name">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Event Type*</label>
+                    <label for="businessname" class="translate" data-en="Event Type*" data-sw="Aina ya Tukio*">Event Type*</label>
                     <select name="" id="">
                         <option value="Conference">Conference</option>
                         <option value="Seminars">Seminars</option>
@@ -171,7 +172,7 @@
                     </select>
                 </div>
                 <div class="inputdiv">
-                    <label for="firstname" >Organizer's Name</label>
+                    <label for="firstname" class="translate" data-en="Organizer's Name" data-sw="Jina la Mratibu">Organizer's Name</label>
                     <input type="text" name="firstname" placeholder="Your Name">
                 </div>
                 <div class="inputdiv">
@@ -187,11 +188,11 @@
                     <input type="email" name="businessname" placeholder="example@email.com">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Date/Dates</label>
+                    <label for="businessname" class="translate" data-en="Date/Dates" data-sw="Tarehe">Date/Dates</label>
                     <input type="text" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Time</label>
+                    <label for="businessname" class="translate" data-en="Time" data-sw="Muda">Time</label>
                     <input type="time" name="businessname" >
                 </div>
                 <div class="inputdiv">
@@ -199,35 +200,35 @@
                     <input type="text" name="businessname" placeholder="Country, Region, District">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Ticket Price</label>
+                    <label for="businessname" class="translate" data-en="Ticket Price" data-sw="Bei ya Tiketi">Ticket Price</label>
                     <input type="text" name="businessname" >
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Ticket Description.</label>
+                    <label for="businessregistered" class="translate" data-en="Ticket Description" data-sw="Maelezo ya Tiketi">Ticket Description</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Event Description.</label>
+                    <label for="businessregistered" class="translate" data-en="Event Description" data-sw="Maelezo ya Tukio">Event Description</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Any Discounts/Offers</label>
+                    <label for="businessname" class="translate" data-en="Any Discounts/Offers" data-sw="Punguzo/Ofa yoyote">Any Discounts/Offers</label>
                     <input type="text" name="businessname" >
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Date/Dates</label>
+                    <label for="businessname" class="translate" data-en="Daedline" data-sw="Mwisho wa Malipo">Deadline</label>
                     <input type="text" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Poster*</label>
+                    <label for="businessname" class="translate" data-en="Upload Poster*" data-sw="Pakia Picha ya Tangazo*">Upload Poster*</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Second Poster</label>
+                    <label for="businessname" class="translate" data-en="Upload Second Poster" data-sw="Pakia Picha ya Tangazo ya pili">Upload Second Poster</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Third Poster</label>
+                    <label for="businessname" class="translate" data-en="Upload Third Poster" data-sw="Pakia Picha ya Tangazo ya tatu">Upload Third Poster</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">

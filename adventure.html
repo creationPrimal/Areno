@@ -20,12 +20,13 @@
     <section>
         <nav>
             <div class="logo">
-                <a href="#"><h4>Areno Adventure</h4></a>
+                <a href="#"><h4>Areno Adventures</h4></a>
             </div>
             <div class="right-nav">
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
-                <a href=""><h4 class="translate" data-en="All Events" data-sw="Matukio Yote">All Events</h4></a>
-                <a href=""><h4 class="translate" data-en="" data-sw="">Categories</h4></a>
+                <a href="booking.html"><h4 class="translate" data-en="Booking" data-sw="Booking">Booking</h4></a>
+                <a href=""><h4 class="translate" data-en="All Adventures" data-sw="Adventure Zote">All Adventures</h4></a>
+                <a href=""><h4 class="translate" data-en="Categories" data-sw="Kategoria">Categories</h4></a>
                 <a href=""><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
                 <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
@@ -38,7 +39,7 @@
         
         <form action="" id="top">
             <div class="mobile-nav-head">
-                <h4>Areno Adventure</h4>
+                <h4>Areno Adventures</h4>
             </div>
             <div class="searchdiv">
                 <div class="nav-menu">
@@ -69,12 +70,19 @@
                     <div class="cart-notificationsdiv">
                         <a href="tickets.html"><div class="mobile-notification" style="display: flex; flex-direction: column; justify-content: center;">
                             <i class="fa-solid fa-ticket"></i>
-                            <p style="margin: 2px 0px 0px 0px; font-size: 11px;">Tickets</p>
+                            <p style="margin: 2px 0px 0px 0px; font-size: 11px;" class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</p>
                         </div></a>
                     </div>
             </div>
         </form>
-        
+        <!--mobile headings-->
+        <div class="mobile-headings">
+            <a href="index.html"><button><p class="translate" data-en="Home" data-sw="Nyumbani">Home</p></button></a>
+            <a href="booking.html"><button><p class="translate" data-en="Booking" data-sw="Booking">Booking</p></button></a>
+            <a href="allevents.html"><button><p class="translate" data-en="All Adventures" data-sw="Adventure Zote">All Adventures</p></button></a>
+            <a href="adventurecategories.html"><button><p class="translate" data-en="Categories" data-sw="Kategoria">Categories</p></button></a>
+        </div>
+        <!--menu-->
         <div class="menu ">
             <div class="menudiv home-menu">
                 <div>
@@ -181,53 +189,40 @@
         <div class="filtermenu">
             <div class="filtermenudiv">
                 <div class="filtercontents">
-                    <p><b>Price</b></p>
+                    <p><b class="translate" data-en="Price" data-sw="Bei">Price</b></p>
                     <div class="filterbuttons">
-                        <button>Low To High</button>
-                        <button>High To Low</button>
-                    </div>
-                    <p><b>New Arrivals</b></p>
-                    <div class="filterbuttons">
-                        <button>Products</button>
-                        <button>Stores</button>
+                        <button><span class="translate" data-en="Low To High" data-sw="Chini - Juu">Low To High</span> </button>
+                        <button><span class="translate" data-en="High To Low" data-sw="Juu - Chini">High To Low</span> </button>
                     </div>
                     <div class="filterbutton">
-                        <button>Random Picks</button>
+                        <button><span class="translate" data-en="New Activities" data-sw="Shughuli mpya">New Activities</span> </button>
                     </div>
                     <div class="filterbutton">
-                        <button id="filtercategory">Categories</button>
+                        <button id="filtercategory"><span class="translate" data-en="Categories" data-sw="Kategoria">Categories</span> </button>
                     </div>
                     <!--filter categories-->
                     <div class="filtercategories">
                         <div class="filtercategoriesdiv">
-                            <button>Kitchen</button>
-                            <button>General Supplies</button>
-                            <button>Fruits</button>
-                            <button>Hard Ware</button>
-                            <button>Medicine</button>
-                            <button>Automobiles</button>
-                            <button>Furniture</button>
+                            <button>Conferences</button>
+                            <button>Seminars</button>
+                            <button>Workshop</button>
+                            <button>Wedding</button>
+                            <button>Festivals</button>
+                            <button>Parties</button>
+                            <button>Worship</button>
                             <button>Drinks & Food</button>
-                            <button>Fashion & cloth</button>
-                            <button>Women Undies</button>
-                            <button>Shoes</button>
+                            <button>Ceremonies</button>
+                            <button>Private parties</button>
+                            <button>Auctions</button>
                         </div>
                         <div class="filter-more-categories">
-                            <button  id="morefiltercategory">View More</button>
+                            <button  id="morefiltercategory"><span class="translate" data-en="View More" data-sw="Fungua Zaidi">View More</span> </button>
                         </div>
                         
                     </div>
                     <!--end filter categories-->
-                    <div class="filterbuttons" style="margin-top: 15px;">
-                        <button>Newest</button>
-                        <button>Oldest</button>
-                    </div>
-                    <p><b>a</b> to <b>z</b></p>
-                    <div class="filterbuttons">
-                        <button>Stores</button>
-                        <button>Brands</button>
-                    </div>
-                    <p><b>Region & Location</b></p>
+                    
+                    <p><b class="translate" data-en="Region & Location" data-sw="Mkoa & Sehemu">Region & Location</b></p>
                     <form action="">
                         <div class="filterbuttons">
                             <input type="search" placeholder="Input Location..">
@@ -646,7 +641,7 @@
                     <button class="mobile-nav-icon">
                         <i class="fa-solid fa-list" style="font-size: 35px;"></i>
                     </button>
-                    <p>All</p>
+                    <p class="translate" data-en="All" data-sw="Zote">All</p>
                 </div></a>
             </div>
             <div class="middlepiece">
@@ -663,7 +658,7 @@
                     <button class="mobile-nav-icon">
                         <img src="assets/icons/Widget.png" alt="">
                     </button>
-                    <p>Categories</p>
+                    <p class="translate" data-en="Categories" data-sw="Kategoria">Categories</p>
                 </div></a>
             </div>
         </div>

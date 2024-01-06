@@ -21,13 +21,13 @@
     <section>
         <nav>
             <div class="logo">
-                <a href="#"><h4>Areno Booking</h4></a>
+                <a href="#"><h4 class="translate" data-en="Activity Details" data-sw="Taarifa za Shughuli">Activity Details</h4></a>
             </div>
             <div class="right-nav">
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
-                <a href=""><h4 class="translate" data-en="All Events" data-sw="Matukio Yote">All Events</h4></a>
-                <a href=""><h4 class="translate" data-en="" data-sw="">Categories</h4></a>
-                <a href=""><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
+                <a href=""><h4 class="translate" data-en="Booking" data-sw="Booking">Booking</h4></a>
+                <a href=""><h4 class="translate" data-en="Register" data-sw="Jisajili">Register</h4></a>
+                <a href="tickets.html"><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
                 <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
                 
@@ -39,14 +39,22 @@
         <div class="productpagehead">
             <div class="product-detail-head">
                 
-                <a href=""><div class="return">
+                <div class="return" onclick="goBack()">
                     <i class="fa-solid fa-arrow-left" ></i>
-                </div></a>
+                </div>
                 <div class="product-nav-head">
-                    <h4>Event Details</h4>
+                    <h4 class="translate" data-en="Activity Details" data-sw="Taarifa za Shughuli">Activity Details</h4>
                 </div>
             </div>
-            
+            <div class="productcart-notification">
+                <button class="homebutton" onclick="copyAndShare()" type="button">
+                    <i class="fa-solid fa-share-nodes fa-fade"></i>
+                </button>
+                <a href="tickets.html"><div class="mobile-notification" style="display: flex; flex-direction: column; justify-content: center;">
+                    <i class="fa-solid fa-ticket"></i>
+                    <p style="margin: 2px 0px 0px 0px; font-size: 11px;" class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</p>
+                </div></a>
+            </div>
             
         </div>
         <div class="menu ">
@@ -165,7 +173,7 @@
             <div class="productdetail-details">
                 <div>
                     <div class="details-productname">
-                        <p>Activity Name:</p>
+                        <p class="translate" data-en="Activity Name:" data-sw="Jina la shughuli:">Activity Name:</p>
                         <h3 id="productname1">Adventure Tour</h3>
                     </div>
                     <div class="details-productname">
@@ -177,18 +185,18 @@
                     </div>
                     <div class="line"></div>
                     <div class="category-region">
-                        <p><span>Date: </span> <b>Nov 13, 2023</b></p>
-                        <p><span>Time: </span> <b>08: 00 Pm</b></p>
+                        <p><span class="translate" data-en="Date: " data-sw="Tarehe: ">Date: </span> <b>Nov 13, 2023</b></p>
+                        <p><span class="translate" data-en="Time: " data-sw="Muda: ">Time: </span> <b>08: 00 Pm</b></p>
                     </div>
                     <div class="line"></div>
                     <div class="category-region">
-                        <p><span>Contacts: </span> <b>+255 742 012 233</b></p>
-                        <p><span>Contacts: </span> <b>+255 742 012 233</b></p>
+                        <p><span class="translate" data-en="Contacts: " data-sw="Mawasiliano: ">Contacts: </span> <b>+255 742 012 233</b></p>
+                        <p><span class="translate" data-en="Contacts: " data-sw="Mawasiliano: ">Contacts: </span> <b>+255 742 012 233</b></p>
                     </div>
                     <div class="line"></div>
                     <div class="category-region">
-                        <p><span>Organizer: </span> <b>Anthony Samwel</b></p>
-                        <p><span>Email: </span> <b>anthonysamwel@gmail.com</b></p>
+                        <p><span class="translate" data-en="Organizer: " data-sw="Mratibu: ">Organizer: </span> <b>Anthony Samwel</b></p>
+                        <p><span class="translate" data-en="Email: " data-sw="Barua pepe: ">Email: </span> <b>anthonysamwel@gmail.com</b></p>
                     </div>
                     <div class="line"></div>
                     <div class="category-region">
@@ -207,9 +215,9 @@
                 <div class="amount-count">
                     <div class="amount-count-div1">
                         <div class="amount-counter">
-                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <button class="less">-</button>
                             <input type="number" name="" class="cartamount" placeholder="1">
-                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                            <button class="more">+</button>
                         </div>
                         <div class="activityclass">
                             <select name="" id="">
@@ -219,7 +227,7 @@
                             </select>
                         </div>
                         <a href=""><button class="add-cart2" >
-                            <p>Buy Tickets</p>
+                            <p class="translate" data-en="Buy Tickets" data-sw="Nunua Tiketi">Buy Tickets</p>
                         </button></a>
                     </div>
                     
@@ -294,11 +302,11 @@
          <!--mobile below navigations-->
          <div class="new-mobile-nav">
             <div class="rectangle-bar">
-                <a href="events.html"><div class="mobile-nav-div">
+                <a href="allevents.html"><div class="mobile-nav-div">
                     <button class="mobile-nav-icon">
-                        <i class="fa-solid fa-book-bookmark"></i>
+                        <i class="fa-solid fa-list" style="font-size: 35px;"></i>
                     </button>
-                    <p>Events</p>
+                    <p class="translate" data-en="All Activity" data-sw="Shughuli Zote">All Activities</p>
                 </div></a>
             </div>
             <div class="middlepiece">
@@ -313,9 +321,9 @@
             <div class="rectangle-bar">
                 <a href="eventscategories.html"><div class="mobile-nav-div">
                     <button class="mobile-nav-icon">
-                        <img src="assets/icons/Widget.png" alt="">
+                        <i class="fa-solid fa-book-bookmark"></i>
                     </button>
-                    <p>Categories</p>
+                    <p>Booking</p>
                 </div></a>
             </div>
         </div>

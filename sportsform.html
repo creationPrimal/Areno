@@ -19,13 +19,14 @@
     <section>
         <nav>
             <div class="logo">
-                <a href="#"><h4>Areno Booking</h4></a>
+                <a href="#"><h4 class="translate" data-en="Sports Registration" data-sw="Usajili wa Michezo">Sports Registration</h4></a>
             </div>
             <div class="right-nav">
+                <h4 style="cursor: pointer;" onclick="goBack()" class="translate" data-en="Back" data-sw="Nyuma">Back</h4>
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
-                <a href=""><h4 >All</h4></a>
-                <a href=""><h4 class="translate" data-en="" data-sw="">Categories</h4></a>
-                <a href=""><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
+                <a href="booking.html"><h4 class="translate" data-en="Booking" data-sw="Booking">Booking</h4></a>
+                <a href="sports.html"><h4 class="translate" data-en="Sports" data-sw="Michezo">Sports</h4></a>
+                <a href="tickets.html"><h4 class="translate" data-en="Tickets" data-sw="Tiketi">Tickets</h4></a>
                 <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
                 
@@ -37,11 +38,11 @@
         <div class="productpagehead">
             <div class="product-detail-head">
                 
-                <a href="bookingforms.html"><div class="return">
+                <div class="return" onclick="goBack()">
                     <i class="fa-solid fa-arrow-left" ></i>
-                </div></a>
+                </div>
                 <div class="product-nav-head">
-                    <h4>Sports Registration </h4>
+                    <h4 class="translate" data-en="Sports Registration" data-sw="Usajili wa Michezo">Sports Registration </h4>
                 </div>
             </div>
             
@@ -155,11 +156,23 @@
         <form action="" class="registerform">
             <div class="registering-form">
                 <div class="inputdiv">
-                    <label for="firstname" >Event Name</label>
+                    <label for="firstname" class="translate" data-en="Sport Name" data-sw="Jina la Mchezo">Sport Name</label>
                     <input type="text" name="firstname" placeholder="Name">
                 </div>
                 <div class="inputdiv">
-                    <label for="firstname" >Organizer's Name</label>
+                    <label for="businessname" class="translate" data-en="Sport Type*" data-sw="Aina ya Mchezo*">Sport Type*</label>
+                    <select name="" id="">
+                        <option value="Football">Football</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Volleyball">Volleyball</option>
+                        <option value="Netball">Netball</option>
+                        <option value="Swimming">Swimming</option>
+                        <option value="Racing">Racing</option>
+                        <option value="Boxing">Boxing</option>
+                    </select>
+                </div>
+                <div class="inputdiv">
+                    <label for="firstname" class="translate" data-en="Organizer's Name" data-sw="Jina la Mratibu">Organizer's Name</label>
                     <input type="text" name="firstname" placeholder="Your Name">
                 </div>
                 <div class="inputdiv">
@@ -175,11 +188,11 @@
                     <input type="email" name="businessname" placeholder="example@email.com">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Date/Dates</label>
+                    <label for="businessname" class="translate" data-en="Date/Dates" data-sw="Tarehe">Date/Dates</label>
                     <input type="text" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Time</label>
+                    <label for="businessname" class="translate" data-en="Time" data-sw="Muda">Time</label>
                     <input type="time" name="businessname" >
                 </div>
                 <div class="inputdiv">
@@ -187,43 +200,43 @@
                     <input type="text" name="businessname" placeholder="Country, Region, District">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname" >Ticket Price</label>
+                    <label for="businessname" class="translate" data-en="Ticket Price" data-sw="Bei ya Tiketi">Ticket Price</label>
                     <input type="text" name="businessname" >
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Participation Info (Age, Name, Team, Individual).</label>
+                    <label for="businessregistered" class="translate" data-en="Participation Info (Age, Team, Other)" data-sw="Taarifa za Kushiriki (Miaka, Timu, Mengine)">Participation Info (Age, Team, Other)</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Event Description.</label>
+                    <label for="businessregistered" class="translate" data-en="Event Description" data-sw="Maelezo ya Tukio">Event Description.</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Event Rules & Regulations.</label>
+                    <label for="businessregistered" class="translate" data-en="Event Rules & Regulations" data-sw="Sheria za Tukio">Event Rules & Regulations</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Equipments & Gears required.</label>
+                    <label for="businessregistered" class="translate" data-en="Equipments & Gears required" data-sw="Vifaa Vinavyohitajika">Equipments & Gears required</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessregistered" >Medical Info / waivers.</label>
+                    <label for="businessregistered" class="translate" data-en="Medical Info / waivers" data-sw="Taarifa za afya">Medical Info / waivers</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Deadline</label>
+                    <label for="businessname" class="translate" data-en="Daedline" data-sw="Mwisho wa Malipo">Deadline</label>
                     <input type="date" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Poster*</label>
+                    <label for="businessname" class="translate" data-en="Upload Poster*" data-sw="Pakia Picha ya Tangazo*">Upload Poster*</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Second Poster</label>
+                    <label for="businessname" class="translate" data-en="Upload Second Poster" data-sw="Pakia Picha ya Tangazo ya pili">Upload Second Poster</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">
-                    <label for="businessname">Upload Third Poster</label>
+                    <label for="businessname" class="translate" data-en="Upload Third Poster" data-sw="Pakia Picha ya Tangazo ya tatu">Upload Third Poster</label>
                     <input type="file" name="businessname">
                 </div>
                 <div class="inputdiv">

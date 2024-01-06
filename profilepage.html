@@ -29,7 +29,7 @@
                 <a href="restaurants.html"><h4 class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</h4></a>
                 <a href="booking.html"><h4 class="translate" data-en="Booking" data-sw="Booking">Booking</h4></a>
                 <a href=""><h4 class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</h4></a>
-                <a href="index.html#aboutus"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
+                <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
                 <a href="cart.html"><div class="cart">
                     <div class="cart-circle">8</div>
@@ -83,14 +83,6 @@
                         </div>
                     </div>
                     <div class="cart-notificationsdiv">
-                        <a href="cart.html"><div class="mobile-cart">
-                            <div class="cart-circle">8</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23" fill="none">
-                                <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div></a>
                         <div class="mobile-notification">
                             <div class="cart-circle">8</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -99,6 +91,9 @@
                             
                             </svg>
                         </div>
+                        <button class="homebutton" onclick="copyAndShare()" type="button">
+                            <i class="fa-solid fa-share-nodes fa-fade"></i>
+                        </button>
                     </div>
             </div>
         </form>
@@ -396,7 +391,7 @@
                 </div>
             </div>
             <div class="postingdiv">
-                <button class="posting">
+                <button class="posting" id="showFormButton">
                     <i class="fa-solid fa-camera" ></i>
                     <p class="translate" data-en="Post Item" data-sw="Pakia Bidhaa">Post Item</p>
                 </button>
@@ -409,6 +404,71 @@
                     <p class="translate" data-en="Settings" data-sw="Mipangilio">Settings</p>
                 </button></a>
             </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form>
+                    <h2 style="color: orangered; margin-top: 0px;">Add Item</h2>
+                    <div class="postform">
+                        <div class="formGroup">
+                        <label for="imageUpload">Item Image:</label>
+                        <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+                        </div>
+                        <div class="formGroup">
+                        <label for="productName">Item Name:</label>
+                        <input type="text" id="productName" name="productName" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="productName">Item Name:</label>
+                            <input type="text" id="productName" name="productName" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="productPrice">Price:</label>
+                            <input type="number" id="productPrice" name="productPrice" placeholder="0000" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="productLocation">Location:</label>
+                            <input type="text" id="productLocation" name="productLocation">
+                        </div>
+                        <div class="formGroup">
+                            <label for="productSize">Size:</label>
+                            <input type="text" id="productSize" name="productSize" placeholder="3x3x3">
+                        </div>
+                        <div class="formGroup">
+                            <label for="productWeight">Weight:</label>
+                            <input type="text" id="productWeight" name="productWeight" placeholder="1kg">
+                        </div>
+                        <div class="formGroup">
+                            <label for="productAvailability">Availability:</label>
+                            <input type="text" id="productAvailability" name="productAvailability" placeholder="Amount">
+                        </div>
+                        <div class="formGroup">
+                            <label for="productCategory">Product Category:</label>
+                            <select id="productCategory" name="productCategory">
+                            <option value="category1">Category 1</option>
+                            <option value="category2">Category 2</option>
+                            <option value="category3">Category 3</option>
+                            <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                        <div class="formGroup">
+                            <label for="productColor">Color:</label>
+                            <input type="text" id="productColor" name="productColor">
+                        </div>
+                        
+                    </div>
+                    <div class="textareagroup">
+                        <label for="productDescription">Description:</label>
+                        <textarea name="productDescription" id="" cols="30" rows="10"></textarea>
+                    </div>
+              
+                    <div class="buttons">
+                      <button type="submit">Submit</button>
+                      <button type="button">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
         </div>
          <!--Products-->
          <div class="productsproductpage">
@@ -417,6 +477,7 @@
             <div class="productsdivproductpage">
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Nike SNKRS_ Release Dates & Launch Calendar.jpeg" alt="">
                     </div>
@@ -424,19 +485,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Air Jordan 1 Mid (Lakers).jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -449,6 +498,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
                     </div>
@@ -456,19 +506,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -481,6 +519,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/How To Deal When All Your Friends Are Dating And You're Single - Society19.jpg" alt="">
                     </div>
@@ -488,19 +527,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -513,6 +540,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
                     </div>
@@ -520,19 +548,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -545,6 +561,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/The Craftsmen of Etsy_ 10 Wooden Products We Love.jpeg" alt="">
                     </div>
@@ -552,19 +569,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -577,6 +582,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Lv monogram two color mix limited hawaiian shirt shorts and flip flops combo.jpg" alt="">
                     </div>
@@ -584,19 +590,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -609,6 +603,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/15stunning.jpg" alt="">
                     </div>
@@ -616,19 +611,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -641,6 +624,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
                     </div>
@@ -648,19 +632,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -673,6 +645,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/on top of the world _ sunset _ couple goals _ relationship goals _ adventure tim___.jpg" alt="">
                     </div>
@@ -680,19 +653,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -705,6 +666,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/24 Moisturizing Products For Every Inch Of Your Body.jpeg" alt="">
                     </div>
@@ -712,19 +674,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -737,6 +687,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Top 12 Food Styling Tricks for Serious Food Bloggers.jpg" alt="">
                     </div>
@@ -744,19 +695,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -769,6 +708,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Heaven on the earth.jpg" alt="">
                     </div>
@@ -776,19 +716,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -801,6 +729,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/The Craftsmen of Etsy_ 10 Wooden Products We Love.jpeg" alt="">
                     </div>
@@ -808,19 +737,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -833,6 +750,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Lv monogram two color mix limited hawaiian shirt shorts and flip flops combo.jpg" alt="">
                     </div>
@@ -840,19 +758,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -865,6 +771,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
                     </div>
@@ -872,19 +779,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -897,6 +792,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos//Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
                     </div>
@@ -904,19 +800,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -929,6 +813,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/24 Moisturizing Products For Every Inch Of Your Body.jpeg" alt="">
                     </div>
@@ -936,19 +821,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -961,6 +834,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Air Jordan 1 Mid (Lakers).jpg" alt="">
                     </div>
@@ -968,19 +842,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -993,6 +855,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/15 Tips To Get The Best From Financial Aid For College - Society19.jpg" alt="">
                     </div>
@@ -1000,19 +863,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1025,6 +876,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/24 Moisturizing Products For Every Inch Of Your Body.jpeg" alt="">
                     </div>
@@ -1032,19 +884,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1057,6 +897,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Lo Mein Noodles.jpg" alt="">
                     </div>
@@ -1064,19 +905,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1089,6 +918,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/How To Deal When All Your Friends Are Dating And You're Single - Society19.jpg" alt="">
                     </div>
@@ -1096,19 +926,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1121,6 +939,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
                     </div>
@@ -1128,19 +947,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1153,6 +960,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Nike SNKRS_ Release Dates & Launch Calendar.jpeg" alt="">
                     </div>
@@ -1160,19 +968,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1185,6 +981,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/Air Jordan 1 Mid (Lakers).jpg" alt="">
                     </div>
@@ -1192,19 +989,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">
@@ -1217,6 +1002,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/24 Moisturizing Products For Every Inch Of Your Body.jpeg" alt="">
                     </div>
@@ -1249,6 +1035,7 @@
                 <!--end of Products-->
                 <!--start of Products-->
                 <div class="product-productpage">
+                    <span class="deleteitem"><i class="fa-solid fa-trash-can"></i></span>
                     <div class="product-productpage-image">
                         <img src="assets/photos/15stunning.jpg" alt="">
                     </div>
@@ -1256,19 +1043,7 @@
                         <h4>AJ4 Nike Snikers</h4>
                         <span><h4>Tsh 18,000/=</h4></span>
                     </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Adam Smith</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
-                        </div>
-                    </div>
+                    
                     <div class="viewproductdetails">
                         <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                         <button class="likebutton">

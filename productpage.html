@@ -54,13 +54,13 @@
         <div class="productpagehead">
             <div class="product-detail-head">
                 
-                <a href="products.html"><div class="return">
-                    <i class="fa-solid fa-arrow-left" "></i>
-                </div></a>
-                <div class="product-nav-head">
-                    <h4 class="translate" data-en="Product Details" data-sw="Maelezo ya Bidhaa">Product Details</h4>
+                <div class="return" onclick="goBack()">
+                    <i class="fa-solid fa-arrow-left"></i>
                 </div>
-            </div>
+                <div class="product-nav-head">
+                    <h4 class="translate" data-en="Item Details" data-sw="Maelezo ya Bidhaa">Item Details</h4>
+                </div>
+            </div> 
             <div class="productcart-notification">
                 <a href="cart.html"><div class="mobile-cart">
                     <div class="cart-circle">8</div>
@@ -70,13 +70,14 @@
                         <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div></a>
-                <a href="shopping.html"><button class="mobile-notification" type="button">
-                    <i class="fa-solid fa-house"></i>
-                </button></a>
+                <button class="homebutton" onclick="copyAndShare()" type="button">
+                    <i class="fa-solid fa-share-nodes fa-fade"></i>
+                </button>
             </div>
             
             
         </div>
+        <!--menu-->
         <div class="menu ">
             <div class="menudiv home-menu">
                 <div>
@@ -279,6 +280,7 @@
                     </div>
                 </div>
         </div>
+
         <!--product details-->
         <!--product full screen view div-->
         <div id="fullscreen-image-container">
@@ -309,10 +311,10 @@
                     </div>
                     <div class="line"></div>
                     <div class="category-region">
-                        <p><span class="translate" data-en="Available in Stock:" data-sw="Zilizopo:">Available in Stock: </span> <b>25</b></p>
+                        <p><span class="translate" data-en="Availability:" data-sw="Upatikanaji:">Availability: </span> <b>25</b></p>
                         <p><span class="translate" data-en="Weight:" data-sw="Uzito:">Weight: </span> <b>3Kg</b></p>
                     </div>
-                    <div class="line"></div>
+                    <div class="line"></div> 
                     <div class="description">
                         <h4 class="translate" data-en="Description" data-sw="Maelezo">Description</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis rutrum orci,
@@ -324,15 +326,15 @@
                 <div class="amount-count">
                     <div class="amount-count-div1">
                         <div class="amount-counter">
-                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <button class="less">-</button>
                             <input type="number" name="" class="cartamount" placeholder="1">
-                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                            <button class="more">+</button>
                         </div>
                         <button class="add-cart addcart-button" id="product1">
                             <p class="add-to-cart-txt translate" id="product1" data-en="Add to Cart" data-sw="Ongeza kwenye cart">Add to Cart</p>
                         </button>
                         <a href="orderdetails.html"><button class="add-cart2" >
-                            <p class="translate" data-en="Purchase Item" data-sw="Nunua Bidhaa">Purchase Item</p>
+                            <p class="translate" data-en="Purchase" data-sw="Nunua">Purchase</p>
                             <i style="margin-left: 10px;" class="fa-solid fa-cart-arrow-down"></i>
                         </button></a>
                     </div>
@@ -352,10 +354,11 @@
             <a href="products.html"><div class="seemore">
                 <button><h3 class="translate" data-en="See More" data-sw="Ona Zaidi">See More</h3></button>
                 <div class="seemorearrow">
-                    <i class="fa-solid fa-arrow-right" "></i>
+                    <i class="fa-solid fa-arrow-right" ></i>
                 </div>
             </div></a>
         </div>
+        <!--products-->
         <div class="productsdiv">
             <div class="slide">
                 <div class="splide-wrapper">
@@ -363,7 +366,7 @@
                         <div class="splide__track">
                             <div class="splide__list">
                                 <!--product-->
-                                <div class="splide__slide">
+                                <div class="splide__slide" style="margin: 0px 10px 10px 0px;">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/photos/It looks good.jpeg" alt="">
@@ -372,19 +375,7 @@
                                             <h4>AJ4 Nike Snikers</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Adam Smith</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                                             <button class="likebutton">
@@ -396,7 +387,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
@@ -405,19 +396,7 @@
                                             <h4>AJ4 Nike Snikers</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Adam Smith</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                                             <button class="likebutton">
@@ -429,7 +408,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/photos/Iphone 13 pro.jpg" alt="">
@@ -438,19 +417,7 @@
                                             <h4>AJ4 Nike Snikers</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Adam Smith</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                                             <button class="likebutton">
@@ -462,7 +429,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/photos/15 Tips To Get The Best From Financial Aid For College - Society19.jpg" alt="">
@@ -471,19 +438,7 @@
                                             <h4>AJ4 Nike Snikers</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Adam Smith</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                                             <button class="likebutton">
@@ -495,7 +450,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/photos/A running tally of all the 'spendy' and 'savey' recommendations from the You Beauty podcast_.jpg" alt="">
@@ -504,19 +459,7 @@
                                             <h4>AJ4 Nike Snikers</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Adam Smith</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                                             <button class="likebutton">
@@ -528,7 +471,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/photos/37 Beauty Products Under $10 That Feel Like They Should Cost More.jpg" alt="">
@@ -537,19 +480,7 @@
                                             <h4>AJ4 Nike Snikers</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Adam Smith</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="productpage.html"><button class="viewproduct"><b class="translate" data-en="View Product" data-sw="Ona Bidhaa">View Product</b></button></a>
                                             <button class="likebutton">

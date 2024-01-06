@@ -29,7 +29,7 @@
                 <a href="meals.html"><h4 class="translate" data-en="Categories" data-sw="Kategoria">Categories</h4></a>
                 <a href=""><h4>Brands</h4></a>
                 <a href="foods.html"><h4 class="translate" data-en="Foods" data-sw="Vyakula">Foods</h4></a>
-                <a href="index.html#aboutus"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
+                <a href="aboutus.html"><h4 class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</h4></a>
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Mawasiliana Nasi">Contact Us</h4></a>
                 <a href="cart.html"><div class="cart">
                     <div class="cart-circle">8</div>
@@ -54,9 +54,9 @@
         <div class="productpagehead">
             <div class="product-detail-head">
                 
-                <a href="foods.html"><div class="return">
-                    <i class="fa-solid fa-arrow-left" "></i>
-                </div></a>
+                <div class="return" onclick="goBack()">
+                    <i class="fa-solid fa-arrow-left" ></i>
+                </div>
                 <div class="product-nav-head">
                     <h4 class="translate" data-en="Item Details" data-sw="Maelezo ya Bidhaa">Item Details</h4>
                 </div>
@@ -70,13 +70,14 @@
                         <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                 </div></a>
-                <a href="restaurants.html"><button class="mobile-notification" type="button">
-                    <i class="fa-solid fa-house"></i>
-                </button></a>
+                <button class="homebutton" onclick="copyAndShare()" type="button">
+                    <i class="fa-solid fa-share-nodes fa-fade"></i>
+                </button>
             </div>
             
             
         </div>
+        <!--menu-->
         <div class="menu ">
             <div class="menudiv home-menu">
                 <div>
@@ -279,6 +280,7 @@
                     </div>
                 </div>
         </div>
+ 
         <!--product details-->
         <!--product full screen view div-->
         <div id="fullscreen-image-container">
@@ -307,6 +309,10 @@
                         <p><span class="translate" data-en="Weight:" data-sw="Uzito:">Weight: </span> <b>500g</b></p>
                         <p><span class="translate" data-en="Size:" data-sw="Ukubwa:">Size: </span> <b>3x3x3</b></p>
                     </div>
+                    <div class="category-region">
+                        <p><span class="translate" data-en="Availability:" data-sw="Upatikanaji:">Availability: </span> <b>25</b></p>
+                        <p><span class="translate" data-en="Weight:" data-sw="Uzito:">Color: </span> <b>Green</b></p>
+                    </div>
                     <div class="line"></div>
                     <div class="description">
                         <h4 class="translate" data-en="Description" data-sw="Maelezo">Description</h4>
@@ -319,9 +325,9 @@
                 <div class="amount-count">
                     <div class="amount-count-div1">
                         <div class="amount-counter">
-                            <button class="less"><i class="fa-solid fa-minus" style="color: #ffffff;" onclick="localStorage.clear();"></i></button>
+                            <button class="less">-</button>
                             <input type="number" name="" class="cartamount" placeholder="1">
-                            <button class="more"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+                            <button class="more">+</button>
                         </div>
                         <button class="add-cart addcart-button" id="product1">
                             <p class="add-to-cart-txt translate" id="product1" data-en="Add to Cart" data-sw="Ongeza kwenye cart">Add to Cart</p>
@@ -347,7 +353,7 @@
             <a href="foods.html"><div class="seemore">
                 <button><h3 class="translate" data-en="See More" data-sw="Ona Zaidi">See More</h3></button>
                 <div class="seemorearrow">
-                    <i class="fa-solid fa-arrow-right" "></i>
+                    <i class="fa-solid fa-arrow-right" ></i>
                 </div>
             </div></a>
         </div>
@@ -358,7 +364,7 @@
                         <div class="splide__track">
                             <div class="splide__list">
                                 <!--product-->
-                                <div class="splide__slide">
+                                <div class="splide__slide" style="margin: 0px 10px 10px 0px;">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
@@ -367,19 +373,7 @@
                                             <h4>Indian Fresh Birian</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Food restaurant</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
                                             <button class="likebutton">
@@ -391,7 +385,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/restaurant/Easy to prepare Oven Baked Whole Yellowtail Snapper recipe_.jpeg" alt="">
@@ -400,19 +394,7 @@
                                             <h4>Indian Fresh Birian</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Food restaurant</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
                                             <button class="likebutton">
@@ -424,7 +406,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
@@ -433,19 +415,7 @@
                                             <h4>Indian Fresh Birian</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Food restaurant</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
                                             <button class="likebutton">
@@ -457,7 +427,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
@@ -466,19 +436,7 @@
                                             <h4>Indian Fresh Birian</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Food restaurant</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
                                             <button class="likebutton">
@@ -490,7 +448,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/restaurant/Jack Daniels Burgers - Host The Toast.jpeg" alt="">
@@ -499,19 +457,7 @@
                                             <h4>Indian Fresh Birian</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Food restaurant</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
                                             <button class="likebutton">
@@ -523,7 +469,7 @@
                                     </div>
                                 </div>
                                  <!--product-->
-                                 <div class="splide__slide">
+                                 <div class="splide__slide style="margin: 0px 10px 10px 0px;"">
                                     <div class="product">
                                         <div class="productimage">
                                             <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
@@ -532,19 +478,7 @@
                                             <h4>Indian Fresh Birian</h4>
                                             <span><h4>Tsh 18,000/=</h4></span>
                                         </div>
-                                        <div class="productprofile">
-                                            <div class="productprofiledetails">
-                                                <div class="productprofileimage">
-                                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                                                </div>
-                                                <div class="productprofilename">
-                                                    <p>Food restaurant</p>
-                                                </div>
-                                            </div>
-                                            <div class="productdate">
-                                                <p>Oct 12, 2023</p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="viewproductdetails">
                                             <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
                                             <button class="likebutton">
