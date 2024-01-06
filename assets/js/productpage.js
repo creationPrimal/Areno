@@ -116,6 +116,36 @@ fullscreenImageContainer.style.display = 'none';
 });
 
 
+//share button API
+
+function copyAndShare() {
+  // Get the current webpage URL
+  const currentUrl = window.location.href;
+
+  // Copy the URL to the clipboard
+  navigator.clipboard.writeText(currentUrl)
+    .then(() => {
+      console.log('URL copied to clipboard:', currentUrl);
+      // Check if the share API is available
+      if (navigator.share) {
+        // Share the URL
+        navigator.share({
+          title: 'Share URL',
+          url: currentUrl
+        })
+        .then(() => console.log('URL shared successfully'))
+        .catch((error) => console.error('Error sharing URL:', error));
+      } else {
+        // If share API is not available, notify the user
+        alert('Share API not supported in this browser');
+      }
+    })
+    .catch((error) => {
+      console.error('Error copying to clipboard:', error);
+      alert('Failed to copy URL to clipboard');
+    });
+}
+
 //changing add to cart html text
 const addcart = document.getElementById(`product${productId}`);
 const productname = document.getElementById(`product${productId}`);

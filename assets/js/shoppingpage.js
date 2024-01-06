@@ -123,6 +123,11 @@ window.onload = function(){
   preloaderbg.style.display = 'none';
 };
 
+function goBack() {
+  // Go back to the previous page
+  window.history.back();
+}
+
 
 
 
