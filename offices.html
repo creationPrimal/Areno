@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="assets/css/darkmode.css">
     <link rel="stylesheet" href="assets/css/booking.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -17,6 +20,7 @@
 <body>
     <section>
         <nav>
+            <div class="navbar">
             <div class="logo">
                 <a href="#"><h4 class="translate" data-en="Areno Offices" data-sw="Ofisi za Areno">Areno Offices</h4></a>
             </div>
@@ -30,23 +34,17 @@
                 <a href=""><h4>Nearby Offices</h4></a>
                 <a href="cart.html"><div class="cart">
                     <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
-                        <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.07593 6.31818H35.3487L54.9614 104.309C55.6306 107.678 57.4635 110.704 60.1393 112.858C62.8151 115.012 66.1633 116.157 69.5977 116.091H140.73C144.165 116.157 147.513 115.012 150.189 112.858C152.865 110.704 154.698 107.678 155.367 104.309L167.076 42.9091H42.6668" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
                 </div></a>
                 <div class="notifications mobile-notification">
                     <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="159" height="171" viewBox="0 0 159 171" fill="none">
-                        <path d="M128.23 56.313C128.23 43.0614 123.069 30.3525 113.883 20.9822C104.696 11.6119 92.2367 6.34775 79.2449 6.34775C66.2531 6.34775 53.7935 11.6119 44.6069 20.9822C35.4203 30.3525 30.2594 43.0614 30.2594 56.313C30.2594 114.606 5.7666 131.261 5.7666 131.261H152.723C152.723 131.261 128.23 114.606 128.23 56.313Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" fill="white"/>
-                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <i class="fa-regular fa-bell"></i>
                 </div>
             </div>
-            
+            </div>
         </nav>
+
+        <main>
         <!--search bar-->
         
         <form action="" id="top">
@@ -321,60 +319,54 @@
          </div>
         
 
-        <!--footer-->
-        <div class="footer">
-            <div class="footerdiv1">
-                <div class="logoquote">
-                    <div class="arenologo">
-                        <img src="assets/icons/Frame 304 (2).png" alt="">
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>ARENO</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
                     </div>
-                    <div class="quote">
-                        <p>Areno Tanzania is an e commerce web application for all Tanzanians</p>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">Shopping</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Log In</a></li>
+                        </ul>
                     </div>
-                    <div class="socialicons">
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-facebook"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-instagram"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-threads"></i>
-                        </button></a>
+                    <div class="footer-col">
+                        <h4>SUPPORT</h4>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>FAQ</a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>+255 782 222 222</a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>+255 782 222 222</a></li>
+                            <li><a href="#"><i class="bi bi-chevron-right"></i>payment options</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="list">
-                    <a href=""><button><h4>SUPPORT</h4></button></a>
-                    <ul>
-                        <li><a href=""><button>Contact Us</button></li></a>
-                        <li><a href=""><button>+255 782 222 222</button></li></a>
-                        <li><a href=""><button>+255 782 222 222</button></li></a>
-                        <li><a href=""><button>Areno@gmail.com</button></li></a>
-                    </ul>
-                </div>
-                <div class="list">
-                    <a href=""><button><h4>ABOUT US</h4></button></a>
-                    <ul>
-                        <li><a href=""><button>Terms & Policy</button></li></a>
-                        <li><a href=""><button>Trust and Safety</button></li></a>
-                        <li><a href=""><button>Advertise</button></li></a>
-                        <li><a href=""><button>Help & FAQ</button></li></a>
-                    </ul>
+                    <div class="footer-col ">
+                        <h4>follow us</h4>
+                        <ul style="margin-bottom: 35px;">
+                            <li><a href="#">Areno Tanzania is an e commerce web application for all Tanzanians</a></li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-x"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lowerfooterdetail">
-                <a href="#top"><div class="backtotop">
-                   Return up
-                </div></a>
-                <p>Areno company limited ©  2023. All rights reserved</p>
-            </div>
-        </div>
+         </footer>
+
+        </main>
         
         <!--mobile below navigations-->
         <div class="new-mobile-nav">

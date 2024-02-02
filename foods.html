@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="assets/css/darkmode.css">
     <link rel="stylesheet" href="assets/css/products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,6 +22,7 @@
 <body>
     <section>
         <nav>
+            <div class="navbar">
             <div class="logo">
                 <a href="#"><h4 class="translate" data-en="Areno Food Items" data-sw="Areno Vyakula">Areno Food Items</h4></a>
             </div>
@@ -32,1060 +36,990 @@
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Mawasiliana Nasi">Contact Us</h4></a>
                 <a href="cart.html"><div class="cart">
                     <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
-                        <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.07593 6.31818H35.3487L54.9614 104.309C55.6306 107.678 57.4635 110.704 60.1393 112.858C62.8151 115.012 66.1633 116.157 69.5977 116.091H140.73C144.165 116.157 147.513 115.012 150.189 112.858C152.865 110.704 154.698 107.678 155.367 104.309L167.076 42.9091H42.6668" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
                 </div></a>
                 <div class="notifications mobile-notification">
                     <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="159" height="171" viewBox="0 0 159 171" fill="none">
-                        <path d="M128.23 56.313C128.23 43.0614 123.069 30.3525 113.883 20.9822C104.696 11.6119 92.2367 6.34775 79.2449 6.34775C66.2531 6.34775 53.7935 11.6119 44.6069 20.9822C35.4203 30.3525 30.2594 43.0614 30.2594 56.313C30.2594 114.606 5.7666 131.261 5.7666 131.261H152.723C152.723 131.261 128.23 114.606 128.23 56.313Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" fill="white"/>
-                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <i class="fa-regular fa-bell"></i>
                 </div>
             </div>
-            
+            </div>
         </nav>
+
+        <main>
         <!--search bar-->
         
-        <form action="" id="top">
-            <div class="mobile-nav-head">
-                <h4 class="translate" data-en="Areno Food Items" data-sw="Areno Vyakula">Areno Food Items</h4>
-            </div>
-            <div class="searchdiv">
-                <div class="nav-menu">
-                    <i class="fa-solid fa-bars" ></i>
+            <form action="" id="top">
+                <div class="mobile-nav-head">
+                    <h4 class="translate" data-en="Areno Food Items" data-sw="Areno Vyakula">Areno Food Items</h4>
                 </div>
-                    <div class="search-bar">
-                        <button class="search-icon" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.5 17.5L13.875 13.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <input type="search" class="search-input" placeholder="Search Here..">
-                        <div class="filter-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                <path d="M15.2491 2.7778H12.8743" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.70776 1V4.55556" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.70776 2.7778H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M4.16646 9H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7.33301 7.2222V10.7778" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M16.0408 9H7.33301" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15.2491 15.2222H12.8743" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.70776 13.4444V17" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.70776 15.2222H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+                <div class="searchdiv">
+                    <div class="nav-menu">
+                        <i class="fa-solid fa-bars" ></i>
                     </div>
-                    <div class="cart-notificationsdiv">
-                        <a href="cart.html"><div class="mobile-cart">
-                            <div class="cart-circle">8</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23" fill="none">
-                                <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#F24E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div></a>
-                        <a href="restaurants.html"><button class="homebutton" type="button">
-                            <i class="fa-solid fa-house"></i>
-                        </button></a>
-                    </div>
-            </div>
-        </form>
-        <div class="mobile-headings">
-            <a href="restaurantspage.html"><button><p class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</p></button></a>
-            <a href="meals.html"><button><p class="translate" data-en="Categories" data-sw="Kategoria">Categories</p></button></a>
-            <a href="brands.html"><button><p>Brands</p></button></a>
-            <a href="foods.html"><button><p style="color: orangered;" class="translate" data-en="Food Items" data-sw="Vyakula">Food Items</p></button></a>
-        </div>
-        <!--menu-->
-        <div class="menu ">
-            <div class="menudiv home-menu">
-                <div>
-                    <button class="minimize-menu">
-                        <i class="fa-solid fa-x" ></i>
-                    </button>
-                    <div class="main-menu-content">
-                        <a href="index.html"><div class="menu-logo">
-                            <img src="assets/icons/Frame 304 (2).png" alt="">
-                        </div></a>
-                        <a href="shopping.html"><div class="menu-title ">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-cart-arrow-down"></i>
-                            </button>
-                            <button><p class="translate" data-en="Shopping" data-sw="Ununuzi">Shopping</p></button>
-                        </div></a>
-                        <a href="restaurants.html"><div class="menu-title title-selected">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-utensils"></i>
-                            </button>
-                            <button><p class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</p></button>
-                        </div></a>
-                        <a href="booking.html"><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-book-bookmark"></i>
-                            </button>
-                            <button><p class="translate" data-en="Booking" data-sw="Booking">Booking</p></button>
-                        </div></a>
-                        <a href=""><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-truck-fast"></i>
-                            </button>
-                            <button><p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p></button>
-                        </div></a>
-                        <a href="rate.html"><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-star"></i>
-                            </button>
-                            <button><p class="translate" data-en="Rate Us" data-sw="Kiwango cha sisi">Rate Us</p></button>
-                        </div></a>
-                        <a href="contactareno.html"><div class="menu-title">
-                            <button class="menu-title-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </button>
-                            <button><p class="translate" data-en="Contact Areno" data-sw="Wasiliana na Areno">Contact Areno</p></button>
-                        </div></a>
-                    </div>
-                    
-                    <div class="menu-about-areno">
-                        <a href="aboutus.html"><button ><p class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</p></button></a>
-                        <a href="privacypolicy.html"><button><p class="translate" data-en="Privacy Policy" data-sw="Sera za faragha">Privacy Policy</p></button></a>
-                        <a href="refundpolicies.html"><button><p class="translate" data-en="Refund Policy" data-sw="Sera za Marejesho">Refund Policy</p></button></a>
-                    </div>
-                    <div class="languagediv">
-                        <p ><b class="translate" data-en="Language" data-sw="Lugha">Language</b></p>
-                        <button class="eng" id="englishBtn">Eng</button>
-                        <button class="swahili" id="swahiliBtn">Swahili</button>
-                    </div>
-                    <div class="theme">
-                        <p><b class="translate" data-en="Change Theme" data-sw="Badilisha mandhari">Change Theme</b></p>
-                        <div class="toggle-switch" >
-                            <label class="switch-label">
-                              <input type="checkbox" class="checkbox" id="darkmode">
-                              <span class="slider" ></span>
-                            </label>
-                          </div> 
-                    </div>
-                    <div class="menu-follow-us">
-                        <h5 class="translate" data-en="Follow Us" data-sw="Tufuatilie">Follow Us</h5>
-                        <div class="menu-socials">
-                            <a href=""><button class="social">
-                                <i class="fa-brands fa-facebook"></i>
-                            </button></a>
-                            <a href=""><button class="social">
-                                <i class="fa-brands fa-instagram"></i>
-                            </button></a>
-                            <a href=""><button class="social">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </button></a>
-                            <a href=""><button class="social">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </button></a>
-                            <a href=""><button class="social">
-                                <i class="fa-brands fa-threads"></i>
-                            </button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="callus">
-                    <a href="tel:+255717801745"><div class="call">
-                        <i class="fa-solid fa-phone" style="color: white; font-size: 30px;"></i>
-                    </div></a>
-                </div>
-                <div class="below-menu">
-                    <div class="menu-trademark">
-                        <p>© 2023. Areno Company Limited. app version 1.0.0</p>
-                    </div>
-                </div>
-               
-            </div>
-            <div class="darkside"></div>
-        </div>
-        <!--filter menu-->
-        <div class="filtermenu">
-            <div class="filtermenudiv">
-                <div class="filtercontents">
-                    <p><b class="translate" data-en="Price" data-sw="Bei">Price</b></p>
-                    <div class="filterbuttons">
-                        <button><span class="translate" data-en="Low To High" data-sw="Chini - Juu">Low To High</span> </button>
-                        <button><span class="translate" data-en="High To Low" data-sw="Juu - Chini">High To Low</span> </button>
-                    </div>
-                    <p><b class="translate" data-en="New Arrivals" data-sw="Ujio Mpya">New Arrivals</b></p>
-                    <div class="filterbuttons">
-                        <button><span class="translate" data-en="Food" data-sw="Chakula">Food</span> </button>
-                        <button><span class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</span> </button>
-                    </div>
-                    <div class="filterbutton">
-                        <button><span class="translate" data-en="Random Picks" data-sw="chagua nasibu">Random Picks</span> </button>
-                    </div>
-                    <div class="filterbutton">
-                        <button id="filtercategory"><span class="translate" data-en="Categories" data-sw="Kategoria">Categories</span> </button>
-                    </div>
-                    <!--filter categories-->
-                    <div class="filtercategories">
-                        <div class="filtercategoriesdiv">
-                            <button>Kitchen</button>
-                            <button>General Supplies</button>
-                            <button>Fruits</button>
-                            <button>Hard Ware</button>
-                            <button>Medicine</button>
-                            <button>Automobiles</button>
-                            <button>Furniture</button>
-                            <button>Drinks & Food</button>
-                            <button>Fashion & cloth</button>
-                            <button>Women Undies</button>
-                            <button>Shoes</button>
-                        </div>
-                        <div class="filter-more-categories">
-                            <button  id="morefiltercategory"><span class="translate" data-en="View More" data-sw="Fungua Zaidi">View More</span> </button>
-                        </div>
-                        
-                    </div>
-                    <!--end filter categories-->
-                    <div class="filterbuttons" style="margin-top: 15px;">
-                        <button><span class="translate" data-en="Newest" data-sw="Mpya">Newest</span> </button>
-                        <button><span class="translate" data-en="Oldest" data-sw="Zamani">Oldest</span> </button>
-                    </div>
-                    <p ><b>a</b> <span class="translate" data-en="to" data-sw="mpaka">to</span> <b>z</b></p>
-                    <div class="filterbuttons">
-                        <button><span class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</span> </button>
-                        <button><span class="translate" data-en="Brands" data-sw="Brandi">Brands</span> </button>
-                    </div>
-                    <p><b class="translate" data-en="Region & Location" data-sw="Mkoa & Sehemu">Region & Location</b></p>
-                    <form action="">
-                        <div class="filterbuttons">
-                            <input type="search" placeholder="Input Location..">
-                            <button class="filtersearch" type="submit">
+                        <div class="search-bar">
+                            <button class="search-icon" type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M17.5 17.5L13.875 13.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
+                            <input type="search" class="search-input" placeholder="Search Here..">
+                            <div class="filter-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M15.2491 2.7778H12.8743" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.70776 1V4.55556" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.70776 2.7778H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4.16646 9H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.33301 7.2222V10.7778" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0408 9H7.33301" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.2491 15.2222H12.8743" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.70776 13.4444V17" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.70776 15.2222H1" stroke="#828282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                         </div>
-                    </form>
+                        <div class="cart-notificationsdiv">
+                            <a href="cart.html"><div class="mobile-cart">
+                                <div class="cart-circle">8</div>
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div></a>
+                            <a href="restaurants.html"><button class="homebutton" type="button">
+                                <i class="bi bi-house-door-fill"></i>
+                            </button></a>
+                        </div>
                 </div>
-                
+            </form>
+            <div class="mobile-headings">
+                <a href="restaurantspage.html"><button><p class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</p></button></a>
+                <a href="meals.html"><button><p class="translate" data-en="Categories" data-sw="Kategoria">Categories</p></button></a>
+                <a href="brands.html"><button><p>Brands</p></button></a>
+                <a href="foods.html"><button><p style="color: orangered;" class="translate" data-en="Food Items" data-sw="Vyakula">Food Items</p></button></a>
             </div>
-            <div class="filterdarkside"></div>
-        </div>
-        <!--Notification div-->
-        <div class="notificationdiv">
-            <div class="notificationdarkside"></div>
-                <div class="notificationmenu">
-                    <h2 class="translate" data-en="Notifications" data-sw="Taarifa">Notifications</h2>
-                    <div class="notificationlist">
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Admin <span>0ct 20, 2023</span></h3>
-                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/logistics-business.jpg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Modern Funiture <span>0ct 20, 2023</span></h3>
-                                <p>New Items Brought in for you to choose, Genuinly available for sale new items new alert and more</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Did You eat Today? <span>0ct 20, 2023</span></h3>
-                                <p>Come Grab new slices of pizza from our latest and more favourable restaurants here at areno</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Admin <span>0ct 20, 2023</span></h3>
-                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/bolso de mensajero de un solo hombro con estilo ins para mujer, bolso con cadena de fragancia.jpeg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Discover more! <span>0ct 20, 2023</span></h3>
-                                <p>Explore various products and items here at areno and most impontantly they are cheap and affordable to any persona, vailable for sale</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Admin <span>0ct 20, 2023</span></h3>
-                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/Nike SNKRS_ Release Dates & Launch Calendar.jpeg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Modern Funiture <span>0ct 20, 2023</span></h3>
-                                <p>New Items Brought in for you to choose, Genuinly available for sale new items new alert and more</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Did You eat Today? <span>0ct 20, 2023</span></h3>
-                                <p>Come Grab new slices of pizza from our latest and more favourable restaurants here at areno</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Admin <span>0ct 20, 2023</span></h3>
-                                <p>Grab New Items From Our Stores, Genuinly available for sale</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/bolso de mensajero de un solo hombro con estilo ins para mujer, bolso con cadena de fragancia.jpeg" alt="">
-                            </div>
-                        </div></a>
-                        <a href=""><div class="alert">
-                            <div class="alertdetails">
-                                <h3>Discover more! <span>0ct 20, 2023</span></h3>
-                                <p>Explore various products and items here at areno and most impontantly they are cheap and affordable to any persona, vailable for sale</p>
-                            </div>
-                            <div class="notificationimage">
-                                <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
-                            </div>
-                        </div></a>
+            <!--menu-->
+            <div class="menu ">
+                <div class="menudiv home-menu">
+                    <div>
+                        <button class="minimize-menu">
+                            <i class="fa-solid fa-x" ></i>
+                        </button>
+                        <div class="main-menu-content">
+                            <a href="index.html"><div class="menu-logo">
+                                <img src="assets/icons/Frame 304 (2).png" alt="">
+                            </div></a>
+                            <a href="shopping.html"><div class="menu-title ">
+                                <button class="menu-title-icon">
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </button>
+                                <button><p class="translate" data-en="Shopping" data-sw="Ununuzi">Shopping</p></button>
+                            </div></a>
+                            <a href="restaurants.html"><div class="menu-title title-selected">
+                                <button class="menu-title-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </button>
+                                <button><p class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</p></button>
+                            </div></a>
+                            <a href="booking.html"><div class="menu-title">
+                                <button class="menu-title-icon">
+                                    <i class="fa-solid fa-book-bookmark"></i>
+                                </button>
+                                <button><p class="translate" data-en="Booking" data-sw="Booking">Booking</p></button>
+                            </div></a>
+                            <a href=""><div class="menu-title">
+                                <button class="menu-title-icon">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </button>
+                                <button><p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p></button>
+                            </div></a>
+                            <a href="rate.html"><div class="menu-title">
+                                <button class="menu-title-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </button>
+                                <button><p class="translate" data-en="Rate Us" data-sw="Kiwango cha sisi">Rate Us</p></button>
+                            </div></a>
+                            <a href="contactareno.html"><div class="menu-title">
+                                <button class="menu-title-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </button>
+                                <button><p class="translate" data-en="Contact Areno" data-sw="Wasiliana na Areno">Contact Areno</p></button>
+                            </div></a>
+                        </div>
                         
-                    </div>
-                </div>
-        </div>
-        
-        
-        <!--categories-->
-        <div id="categories"></div>
-        <div class="categories" >
-            <h3 class="translate" data-en="Categories" data-sw="Kategoria">Categories</h3>
-            <div class="slide">
-                <div class="splide-wrapper">
-                    <div class="splide" id="first-splide">
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
-                                        </div>
-                                        <p>Ice Cream</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
-                                        </div>
-                                        <p>Food Truck</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Jack Daniels Burgers - Host The Toast.jpeg" alt="">
-                                        </div>
-                                        <p>Steak House</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
-                                        </div>
-                                        <p>Cafeteria</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
-                                        </div>
-                                        <p>Buffet</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
-                                        </div>
-                                        <p>Fine Dining</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
-                                        </div>
-                                        <p>Fast Food</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Jack Daniels Burgers - Host The Toast.jpeg" alt="">
-                                        </div>
-                                        <p>Break Fast</p>
-                                    </button></a>
-                                </div>
-                                <div class="splide__slide">
-                                    <a href=""><button class="category">
-                                        <div class="categoryimage">
-                                            <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
-                                        </div>
-                                        <p>Bakery</p>
-                                    </button></a>
-                                </div>
+                        <div class="menu-about-areno">
+                            <a href="aboutus.html"><button ><p class="translate" data-en="About Us" data-sw="Kutuhusu">About Us</p></button></a>
+                            <a href="privacypolicy.html"><button><p class="translate" data-en="Privacy Policy" data-sw="Sera za faragha">Privacy Policy</p></button></a>
+                            <a href="refundpolicies.html"><button><p class="translate" data-en="Refund Policy" data-sw="Sera za Marejesho">Refund Policy</p></button></a>
+                        </div>
+                        <div class="languagediv">
+                            <p ><b class="translate" data-en="Language" data-sw="Lugha">Language</b></p>
+                            <button class="eng" id="englishBtn">Eng</button>
+                            <button class="swahili" id="swahiliBtn">Swahili</button>
+                        </div>
+                        <div class="theme">
+                            <p><b class="translate" data-en="Change Theme" data-sw="Badilisha mandhari">Change Theme</b></p>
+                            <div class="toggle-switch" >
+                                <label class="switch-label">
+                                <input type="checkbox" class="checkbox" id="darkmode">
+                                <span class="slider" ></span>
+                                </label>
+                            </div> 
+                        </div>
+                        <div class="menu-follow-us">
+                            <h5 class="translate" data-en="Follow Us" data-sw="Tufuatilie">Follow Us</h5>
+                            <div class="menu-socials">
+                                <a href=""><button class="social">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </button></a>
+                                <a href=""><button class="social">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </button></a>
+                                <a href=""><button class="social">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </button></a>
+                                <a href=""><button class="social">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </button></a>
+                                <a href=""><button class="social">
+                                    <i class="fa-brands fa-threads"></i>
+                                </button></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-         <!--foods-->
-        <div class="productsproductpage">
-            <h3 class="translate" data-en="All Food Items" data-sw="Vyakula">All Food Items</h3>
-            <!--Products div-->
-            <div class="productsdivproductpage">
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/breakfast.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Easy to prepare Oven Baked Whole Yellowtail Snapper recipe_.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Sip on These Sparkling Non-Alcoholic Bevvies All Summer Long.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/breakfast.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    <div class="productprofile">
-                        <div class="productprofiledetails">
-                            <div class="productprofileimage">
-                                <img src="assets/photos/21 Fun and Easy Beach Wedding Ideas.jpg" alt="">
-                            </div>
-                            <div class="productprofilename">
-                                <p>Food restaurant</p>
-                            </div>
-                        </div>
-                        <div class="productdate">
-                            <p>Oct 12, 2023</p>
+                    <div class="callus">
+                        <a href="tel:+255717801745"><div class="call">
+                            <i class="fa-solid fa-phone" style="color: white; font-size: 30px;"></i>
+                        </div></a>
+                    </div>
+                    <div class="below-menu">
+                        <div class="menu-trademark">
+                            <p>© 2023. Areno Company Limited. app version 1.0.0</p>
                         </div>
                     </div>
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
-                <!--start of Products-->
-                <div class="product-productpage">
-                    <div class="product-productpage-image">
-                        <img src="assets/restaurant/Easy to prepare Oven Baked Whole Yellowtail Snapper recipe_.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h4>Indian Fresh Birian</h4>
-                        <span><h4>Tsh 18,000/=</h4></span>
-                    </div>
-                    
-                    <div class="viewproductdetails">
-                        <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
-                        <button class="likebutton">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M13.5589 23.8895C13.4102 23.8904 13.2628 23.8617 13.1252 23.8051C12.9875 23.7484 12.8623 23.665 12.7567 23.5596L3.97728 14.7092C2.87602 13.5888 2.2583 12.0763 2.2583 10.5001C2.2583 8.92387 2.87602 7.41132 3.97728 6.291C5.08715 5.17674 6.59058 4.55103 8.15796 4.55103C9.72534 4.55103 11.2288 5.17674 12.3386 6.291L13.5589 7.5196L14.7793 6.291C15.8891 5.17674 17.3926 4.55103 18.9599 4.55103C20.5273 4.55103 22.0307 5.17674 23.1406 6.291C24.2419 7.41132 24.8596 8.92387 24.8596 10.5001C24.8596 12.0763 24.2419 13.5888 23.1406 14.7092L14.3612 23.5596C14.2556 23.665 14.1304 23.7484 13.9927 23.8051C13.8551 23.8617 13.7077 23.8904 13.5589 23.8895ZM8.15796 6.82567C7.67964 6.82349 7.20565 6.91688 6.76343 7.10043C6.32122 7.28399 5.91957 7.55406 5.58176 7.895C4.89936 8.58565 4.51629 9.52021 4.51629 10.4944C4.51629 11.4686 4.89936 12.4031 5.58176 13.0938L13.5589 21.1365L21.5361 13.0938C22.2185 12.4031 22.6016 11.4686 22.6016 10.4944C22.6016 9.52021 22.2185 8.58565 21.5361 7.895C20.8397 7.23259 19.918 6.86354 18.9599 6.86354C18.0019 6.86354 17.0801 7.23259 16.3837 7.895L14.3612 9.94266C14.2561 10.0493 14.1312 10.1339 13.9935 10.1917C13.8558 10.2494 13.7081 10.2792 13.5589 10.2792C13.4098 10.2792 13.2621 10.2494 13.1244 10.1917C12.9867 10.1339 12.8617 10.0493 12.7567 9.94266L10.7342 7.895C10.3964 7.55406 9.99471 7.28399 9.55249 7.10043C9.11028 6.91688 8.63628 6.82349 8.15796 6.82567V6.82567Z" fill="white"/>
-                              </svg>
-                        </button>
-                    </div>
-                </div>
-                <!--end of Products-->
                 
+                </div>
+                <div class="darkside"></div>
             </div>
-            <!--loading animation-->
-            <div class="loadmorediv">
-                <button class="loadmore">load more</button>
+            <!--filter menu-->
+            <div class="filtermenu">
+                <div class="filtermenudiv">
+                    <div class="filtercontents">
+                        <p><b class="translate" data-en="Price" data-sw="Bei">Price</b></p>
+                        <div class="filterbuttons">
+                            <button><span class="translate" data-en="Low To High" data-sw="Chini - Juu">Low To High</span> </button>
+                            <button><span class="translate" data-en="High To Low" data-sw="Juu - Chini">High To Low</span> </button>
+                        </div>
+                        <p><b class="translate" data-en="New Arrivals" data-sw="Ujio Mpya">New Arrivals</b></p>
+                        <div class="filterbuttons">
+                            <button><span class="translate" data-en="Food" data-sw="Chakula">Food</span> </button>
+                            <button><span class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</span> </button>
+                        </div>
+                        <div class="filterbutton">
+                            <button><span class="translate" data-en="Random Picks" data-sw="chagua nasibu">Random Picks</span> </button>
+                        </div>
+                        <div class="filterbutton">
+                            <button id="filtercategory"><span class="translate" data-en="Categories" data-sw="Kategoria">Categories</span> </button>
+                        </div>
+                        <!--filter categories-->
+                        <div class="filtercategories">
+                            <div class="filtercategoriesdiv">
+                                <button>Kitchen</button>
+                                <button>General Supplies</button>
+                                <button>Fruits</button>
+                                <button>Hard Ware</button>
+                                <button>Medicine</button>
+                                <button>Automobiles</button>
+                                <button>Furniture</button>
+                                <button>Drinks & Food</button>
+                                <button>Fashion & cloth</button>
+                                <button>Women Undies</button>
+                                <button>Shoes</button>
+                            </div>
+                            <div class="filter-more-categories">
+                                <button  id="morefiltercategory"><span class="translate" data-en="View More" data-sw="Fungua Zaidi">View More</span> </button>
+                            </div>
+                            
+                        </div>
+                        <!--end filter categories-->
+                        <div class="filterbuttons" style="margin-top: 15px;">
+                            <button><span class="translate" data-en="Newest" data-sw="Mpya">Newest</span> </button>
+                            <button><span class="translate" data-en="Oldest" data-sw="Zamani">Oldest</span> </button>
+                        </div>
+                        <p ><b>a</b> <span class="translate" data-en="to" data-sw="mpaka">to</span> <b>z</b></p>
+                        <div class="filterbuttons">
+                            <button><span class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</span> </button>
+                            <button><span class="translate" data-en="Brands" data-sw="Brandi">Brands</span> </button>
+                        </div>
+                        <p><b class="translate" data-en="Region & Location" data-sw="Mkoa & Sehemu">Region & Location</b></p>
+                        <form action="">
+                            <div class="filterbuttons">
+                                <input type="search" placeholder="Input Location..">
+                                <button class="filtersearch" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.5 17.5L13.875 13.875" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+                <div class="filterdarkside"></div>
+            </div>
+            <!--Notification div-->
+            <div class="notificationdiv">
+                <div class="notificationdarkside"></div>
+                    <div class="notificationmenu">
+                        <h2 class="translate" data-en="Notifications" data-sw="Taarifa">Notifications</h2>
+                        <div class="notificationlist">
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Admin <span>0ct 20, 2023</span></h3>
+                                    <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/logistics-business.jpg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Modern Funiture <span>0ct 20, 2023</span></h3>
+                                    <p>New Items Brought in for you to choose, Genuinly available for sale new items new alert and more</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/Topdress Women'sVintage Polka Audrey Dress 1950s Halter Retro Cocktail Dress.jpeg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Did You eat Today? <span>0ct 20, 2023</span></h3>
+                                    <p>Come Grab new slices of pizza from our latest and more favourable restaurants here at areno</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Admin <span>0ct 20, 2023</span></h3>
+                                    <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/bolso de mensajero de un solo hombro con estilo ins para mujer, bolso con cadena de fragancia.jpeg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Discover more! <span>0ct 20, 2023</span></h3>
+                                    <p>Explore various products and items here at areno and most impontantly they are cheap and affordable to any persona, vailable for sale</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Admin <span>0ct 20, 2023</span></h3>
+                                    <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/Nike SNKRS_ Release Dates & Launch Calendar.jpeg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Modern Funiture <span>0ct 20, 2023</span></h3>
+                                    <p>New Items Brought in for you to choose, Genuinly available for sale new items new alert and more</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/Free Photo _ Close up portrait of an attractive young woman isolated.jpg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Did You eat Today? <span>0ct 20, 2023</span></h3>
+                                    <p>Come Grab new slices of pizza from our latest and more favourable restaurants here at areno</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Admin <span>0ct 20, 2023</span></h3>
+                                    <p>Grab New Items From Our Stores, Genuinly available for sale</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/bolso de mensajero de un solo hombro con estilo ins para mujer, bolso con cadena de fragancia.jpeg" alt="">
+                                </div>
+                            </div></a>
+                            <a href=""><div class="alert">
+                                <div class="alertdetails">
+                                    <h3>Discover more! <span>0ct 20, 2023</span></h3>
+                                    <p>Explore various products and items here at areno and most impontantly they are cheap and affordable to any persona, vailable for sale</p>
+                                </div>
+                                <div class="notificationimage">
+                                    <img src="assets/photos/The Gracefully Glam Blog _ Beauty.jpg" alt="">
+                                </div>
+                            </div></a>
+                            
+                        </div>
+                    </div>
             </div>
             
-            <!--end of Products div-->
-        </div>
-           
-        
-
-
-        <!--footer-->
-        <div class="footer">
-            <div class="footerdiv1">
-                <div class="logoquote">
-                    <div class="arenologo">
-                        <img src="assets/icons/Frame 304 (2).png" alt="">
+            
+            <!--categories-->
+            <div id="categories"></div>
+            <div class="categories" >
+                <h3 class="translate" data-en="Categories" data-sw="Kategoria">Categories</h3>
+                <div class="slide">
+                    <div class="splide-wrapper">
+                        <div class="splide" id="first-splide">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
+                                            </div>
+                                            <p>Ice Cream</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
+                                            </div>
+                                            <p>Food Truck</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Jack Daniels Burgers - Host The Toast.jpeg" alt="">
+                                            </div>
+                                            <p>Steak House</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
+                                            </div>
+                                            <p>Cafeteria</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
+                                            </div>
+                                            <p>Buffet</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
+                                            </div>
+                                            <p>Fine Dining</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
+                                            </div>
+                                            <p>Fast Food</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Jack Daniels Burgers - Host The Toast.jpeg" alt="">
+                                            </div>
+                                            <p>Break Fast</p>
+                                        </button></a>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <a href=""><button class="category">
+                                            <div class="categoryimage">
+                                                <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
+                                            </div>
+                                            <p>Bakery</p>
+                                        </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="quote">
-                        <p>Areno Tanzania is an e commerce web application for all Tanzanians</p>
-                    </div>
-                    <div class="socialicons">
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-facebook"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-instagram"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </button></a>
-                        <a href=""><button class=" footer-social">
-                            <i class="fa-brands fa-threads"></i>
-                        </button></a>
-                    </div>
-                </div>
-                <div class="list">
-                    <a href=""><button><h4>SUPPORT</h4></button></a>
-                    <ul>
-                        <li><a href=""><button>Contact Us</button></li></a>
-                        <li><a href=""><button>+255 782 222 222</button></li></a>
-                        <li><a href=""><button>+255 782 222 222</button></li></a>
-                        <li><a href=""><button>Areno@gmail.com</button></li></a>
-                    </ul>
-                </div>
-                <div class="list">
-                    <a href=""><button><h4>ABOUT US</h4></button></a>
-                    <ul>
-                        <li><a href=""><button>Terms & Policy</button></li></a>
-                        <li><a href=""><button>Trust and Safety</button></li></a>
-                        <li><a href=""><button>Advertise</button></li></a>
-                        <li><a href=""><button>Help & FAQ</button></li></a>
-                    </ul>
                 </div>
             </div>
-            <div class="lowerfooterdetail">
-                <a href="#top"><div class="backtotop">
-                   Return up
-                </div></a>
-                <p>Areno company limited ©  2023. All rights reserved</p>
+
+            <!--foods-->
+            <div class="productsproductpage">
+                <h3 class="translate" data-en="All Food Items" data-sw="Vyakula">All Food Items</h3>
+                <!--Products div-->
+                <div class="productsdivproductpage">
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/breakfast.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Easy to prepare Oven Baked Whole Yellowtail Snapper recipe_.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Sip on These Sparkling Non-Alcoholic Bevvies All Summer Long.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Como fazer Milk Shake - Fácil.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/photos/Meet Three Female Chefs Disrupting The Arizona Food Scene.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Bacon Bourbon Barbecued Chicken Skewers.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Simple Italian Salad _ The Modern Proper.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/breakfast.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Action Shot Creative Food Photography.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/13 Cheap Graduation Party Food Ideas You Can Easily Make - Its Claudia G.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Muschel-Spaghetti in Tomatensugo.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Pepperoni and Burrata Pizza with Pesto.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        <div class="productprofile">
+                            <div class="productprofiledetails">
+                                <div class="productprofileimage">
+                                    <img src="assets/photos/21 Fun and Easy Beach Wedding Ideas.jpg" alt="">
+                                </div>
+                                <div class="productprofilename">
+                                    <p>Food restaurant</p>
+                                </div>
+                            </div>
+                            <div class="productdate">
+                                <p>Oct 12, 2023</p>
+                            </div>
+                        </div>
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    <!--start of Products-->
+                    <div class="product-productpage">
+                        <div class="product-productpage-image">
+                            <img src="assets/restaurant/Easy to prepare Oven Baked Whole Yellowtail Snapper recipe_.jpeg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4>Indian Fresh Birian</h4>
+                            <span><h4>Tsh 18,000/=</h4></span>
+                        </div>
+                        
+                        <div class="viewproductdetails">
+                            <a href="foodpage.html"><button class="viewproduct"><b class="translate" data-en="View Item" data-sw="Ona Bidhaa">View Item</b></button></a>
+                            <button class="likebutton">
+                               <i class="fa-solid fa-cart-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!--end of Products-->
+                    
+                </div>
+                <!--loading animation-->
+                <div class="loadmorediv">
+                    <button class="loadmore">load more</button>
+                </div>
+                
+                <!--end of Products div-->
             </div>
-        </div>
+            
+            
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>ARENO</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>online shop</h4>
+                            <ul>
+                                <li><a href="#">Shopping</a></li>
+                                <li><a href="#">Restaurants</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>SUPPORT</h4>
+                            <ul>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i>FAQ</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i>+255 782 222 222</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i>+255 782 222 222</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i>payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col ">
+                            <h4>follow us</h4>
+                            <ul style="margin-bottom: 35px;">
+                                <li><a href="#">Areno Tanzania is an e commerce web application for all Tanzanians</a></li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-x"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+        </main>
 
         <!--mobile below navigations-->
         <div class="new-mobile-nav">

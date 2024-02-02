@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/productpage.css">
     <link rel="stylesheet" href="assets/css/arenohome.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,9 +22,10 @@
 <body>
     <section>
         <nav>
-            <div class="nav-menu product-menu" >
-                <i class="fa-solid fa-bars" style="color: white; font-size: 25px;"></i>
-            </div>
+            <div class="navbar">
+                <div class="return2" onclick="goBack()">
+                    <i class="fa-solid fa-arrow-left" ></i>
+                </div>
             <div class="right-nav">
                 <a href="index.html"><h4 class="translate" data-en="Home" data-sw="Nyumbani">Home</h4></a>
                 <a href="shopping.html"><h4 class="translate" data-en="Shopping" data-sw="Ununuzi">Shopping</h4></a>
@@ -33,23 +36,17 @@
                 <a href="contactareno.html"><h4 class="translate" data-en="Contact Us" data-sw="Wasiliana Nasi">Contact Us</h4></a>
                 <a href="cart.html"><div class="cart">
                     <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="173" height="166" viewBox="0 0 173 166" fill="none">
-                        <path d="M64.6214 160C68.6631 160 71.9396 156.724 71.9396 152.682C71.9396 148.64 68.6631 145.364 64.6214 145.364C60.5797 145.364 57.3032 148.64 57.3032 152.682C57.3032 156.724 60.5797 160 64.6214 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M145.121 160C149.163 160 152.44 156.724 152.44 152.682C152.44 148.64 149.163 145.364 145.121 145.364C141.08 145.364 137.803 148.64 137.803 152.682C137.803 156.724 141.08 160 145.121 160Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.07593 6.31818H35.3487L54.9614 104.309C55.6306 107.678 57.4635 110.704 60.1393 112.858C62.8151 115.012 66.1633 116.157 69.5977 116.091H140.73C144.165 116.157 147.513 115.012 150.189 112.858C152.865 110.704 154.698 107.678 155.367 104.309L167.076 42.9091H42.6668" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <i class="fa-solid fa-cart-arrow-down"></i>
                 </div></a>
                 <div class="notifications mobile-notification">
                     <div class="cart-circle">8</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="159" height="171" viewBox="0 0 159 171" fill="none">
-                        <path d="M128.23 56.313C128.23 43.0614 123.069 30.3525 113.883 20.9822C104.696 11.6119 92.2367 6.34775 79.2449 6.34775C66.2531 6.34775 53.7935 11.6119 44.6069 20.9822C35.4203 30.3525 30.2594 43.0614 30.2594 56.313C30.2594 114.606 5.7666 131.261 5.7666 131.261H152.723C152.723 131.261 128.23 114.606 128.23 56.313Z" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" fill="white"/>
-                        <path d="M93.9399 160.652C92.4465 162.887 90.3029 164.742 87.7238 166.032C85.1447 167.321 82.2206 168 79.2442 168C76.2679 168 73.3438 167.321 70.7647 166.032C68.1856 164.742 66.042 162.887 64.5486 160.652" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    <i class="fa-regular fa-bell"></i>
                 </div>
             </div>
-            
+            </div>
         </nav>
+
+        <main>
         <!--search bar-->
         <div class="productpagehead loginhead">
             <div class="product-detail-head">
@@ -286,7 +283,7 @@
                          quaerat laudantium distinctio dolores veniam qui ratione,
                           nam neque! Enim aliquam incidunt sunt nemo.</p>
                     <div class="ourservices">
-                        <h4>List</h4>
+                        <h4 style="margin-top: 20px;">List</h4>
                         <div class="serviceslist2">
                             <div><span>●</span></div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -322,7 +319,7 @@
             </div>
         </div>
         
-        
+        </main> 
         
 
 
