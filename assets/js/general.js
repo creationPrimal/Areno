@@ -58,25 +58,28 @@
   //implementing switch tabs
   const productside = document.querySelector('.productside');
   const restaurantside = document.querySelector('.restaurantside');
-  const bookingside = document.querySelector('.bookingside');
   const productswitch =document.getElementById('productswitch');
   const restaurantswitch =document.getElementById('restaurantswitch');
-  const bookingswitch =document.getElementById('bookingswitch');
 
   productswitch.addEventListener("click", () => {
-    productside.style.display = 'flex'
-    restaurantside.style.display = 'none'
-    bookingside.style.display = 'none'
+    productside.style.display = 'flex';
+    restaurantside.style.display = 'none';
+    productswitch.style.backgroundColor = 'orangered';
+    productswitch.style.color = 'white';
+    restaurantswitch.style.backgroundColor = 'white';
+    restaurantswitch.style.color = 'black';
+    productswitch.style.border = 'none';
+    restaurantswitch.style.border = '1px solid rgba(0, 0, 0, 0.493)';
   })
   restaurantswitch.addEventListener("click", () => {
-    productside.style.display = 'none'
-    restaurantside.style.display = 'flex'
-    bookingside.style.display = 'none'
-  })
-  bookingswitch.addEventListener("click", () => {
-    productside.style.display = 'none'
-    restaurantside.style.display = 'none'
-    bookingside.style.display = 'flex'
+    productside.style.display = 'none';
+    restaurantside.style.display = 'flex';
+    productswitch.style.backgroundColor = 'white';
+    productswitch.style.color = 'black';
+    productswitch.style.border = '1px solid rgba(0, 0, 0, 0.493)';
+    restaurantswitch.style.backgroundColor = 'orangered';
+    restaurantswitch.style.color = 'white';
+    restaurantswitch.style.border = 'none';
   })
 
   

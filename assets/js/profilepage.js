@@ -53,7 +53,7 @@ function copyAndShare() {
   const closeButton = document.getElementsByClassName('close')[0];
 
   showFormButton.addEventListener('click', function() {
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
   });
 
   closeButton.addEventListener('click', function() {

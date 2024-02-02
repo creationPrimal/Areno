@@ -1,33 +1,39 @@
-//code to count products in product page
-const buttons = document.querySelectorAll('.more, .less');
-const cartamount = document.querySelector('.cartamount');
+// Select all product containers
+const productContainers = document.querySelectorAll('.product-container');
 
-let counter = 0;
+// Loop through each product container
+productContainers.forEach(container => {
+  // Select buttons and input field within the current container
+  const buttons = container.querySelectorAll('.more, .less');
+  const cartamount = container.querySelector('.cartamount');
 
-// Function to update the counter and display it in the <input> element
-function updateCounter() {
-  cartamount.value = counter;
-}
+  let counter = 0;
 
-// Function to handle button clicks
-function buttonClick(event) {
-  if (event.target.classList.contains('more')) {
-    counter++;
-  } else if (event.target.classList.contains('less')) {
-    if (counter >= 1) {
-      counter--;
-    }
+  // Function to update the counter and display it in the <input> element
+  function updateCounter() {
+    cartamount.value = counter;
   }
+
+  // Function to handle button clicks
+  function buttonClick(event) {
+    if (event.target.classList.contains('more')) {
+      counter++;
+    } else if (event.target.classList.contains('less')) {
+      if (counter >= 1) {
+        counter--;
+      }
+    }
+    updateCounter();
+  }
+
+  // Attach event listeners to buttons within the current container
+  buttons.forEach(button => {
+    button.addEventListener('click', buttonClick);
+  });
+
+  // Initial counter display
   updateCounter();
-}
-
-// Attach event listeners to buttons
-buttons.forEach(button => {
-  button.addEventListener('click', buttonClick);
 });
-
-// Initial counter display
-updateCounter();
 
 
        //fifth slider

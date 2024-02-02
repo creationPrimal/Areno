@@ -9,19 +9,19 @@ const darkside = document.querySelector('.darkside');
 const menudiv = document.querySelector('.menudiv');
 
   menu.addEventListener("click", () => {
-      menudiv.style.transform = 'translateX(0%)'
-      minimizediv.style.transform = 'translateX(0%)'
+      menudiv.style.display = 'flex'
+      minimizediv.style.display = 'flex'
       minimizediv.style.width = '100%'
       darkside.style.width = '100%'
   })
 
   minimize.addEventListener("click", () => {
-      menudiv.style.transform = 'translateX(-100%)'
+      menudiv.style.display = 'none'
       minimizediv.style.width = '0px'
       darkside.style.width = 'auto'
   })
   darkside.addEventListener("click", () => {
-      menudiv.style.transform = 'translateX(-100%)'
+      menudiv.style.display = 'none'
       minimizediv.style.width = '0px'
       darkside.style.width = 'auto'
   })
