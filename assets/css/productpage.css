@@ -94,6 +94,7 @@
 }
 .amount-counter input{
     width: 40px;
+    padding-left: 5px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.281);
 }
@@ -333,8 +334,9 @@
     align-self: center;
     width: 70%;
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.26);
-    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.271);
+    border-radius: 0px;
     margin: 10px 10px 10px 10px;
 }
 .order-summary h4{
@@ -382,7 +384,7 @@
     border: none;
     outline: none;
     background-color: rgba(180, 180, 180, 0.479);
-    height: 30px;
+    height: 40px;
 }
 .delivery-info input[type="tel"]{
     margin-bottom: 5px;
@@ -391,7 +393,7 @@
     border: none;
     outline: none;
     background-color: rgba(180, 180, 180, 0.479);
-    height: 30px;
+    height: 40px;
 }
 .delivery-info input[type="location"]{
     margin-bottom: 5px;
@@ -400,7 +402,7 @@
     border: none;
     outline: none;
     background-color: rgba(180, 180, 180, 0.479);
-    height: 30px;
+    height: 40px;
 }
 .delivery-info input[type="date"]{
     margin-bottom: 5px;
@@ -409,7 +411,7 @@
     border: none;
     outline: none;
     background-color: rgba(180, 180, 180, 0.479);
-    height: 30px;
+    height: 40px;
 }
 .delivery-info input[type="time"]{
     margin-bottom: 5px;
@@ -418,7 +420,7 @@
     border: none;
     outline: none;
     background-color: rgba(180, 180, 180, 0.479);
-    height: 30px;
+    height: 40px;
 }
 .map{
     display: flex;
@@ -446,6 +448,8 @@ textarea{
 .proceed{
     margin: 20px 10px 10px 0px;
     height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: auto;
     color: white;
     background-color: rgba(0, 128, 0, 0.747);
@@ -454,6 +458,8 @@ textarea{
 .cancel{
     margin: 20px 10px 10px 0px;
     height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: auto;
     color: white;
     background-color: rgba(255, 0, 0, 0.829);
@@ -526,13 +532,16 @@ textarea{
 }
 .cart-product{
     display: flex;
+    position: relative;
     flex-direction: row;
-    width: 47%;
+    width: 49%;
     min-width: 400px;
-    margin: 0px 10px 5px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.233);
+    margin: 0px 10px 20px 0px;
+    border: 1px solid rgba(97, 255, 131, 0);
+    background-color: rgba(177, 177, 177, 0.37);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0);
     padding: 4px;
-    border-radius: 6px;
+    border-radius: 0px;
 }
 .cart-product-image{
     height: 200px;
@@ -548,6 +557,19 @@ textarea{
     width: 100%;
     object-fit: cover;
 }
+.cartdelete{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 3px;
+    margin-right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.cartdelete:hover{
+    color: red;
+}
 .cart-product-details{
     display: flex;
     flex-direction: column;
@@ -561,6 +583,8 @@ textarea{
 }
 .cart-product-details h4{
     margin: 0px 0px 5px 0px;
+    max-height: 40px;
+    overflow: hidden;
 }
 .cart-product-details button{
     height: 40px;
@@ -569,17 +593,23 @@ textarea{
     height: 40px;
 }
 .cart-count-items{
-    height: 25px;
+    height: 40px;
     margin-top: 20px;
 }
 .cart-count-items button{
-    height: 25px;
+    height: 40px;
+    background-color: rgb(218, 58, 0);
 }
 .cart-count-items button:hover{
-    height: 25px;
+    height: 40px;
+}
+.cart-count-items input{
+    height: 40px;
+    padding-left: 4px;
 }
 .cart2{
-    width: 127px;
+    width: 120px;
+    border-radius: 0px;
 }
 .cart2:hover{
     width: 127px;
@@ -734,8 +764,8 @@ textarea{
         align-self: center;
         width: auto;
         padding: 6px;
-        border: 1px solid rgba(0, 0, 0, 0.116);
-        border-radius: 7px;
+        border: none;
+        border-radius: 0px;
         margin: 10px 10px 10px 10px;
     }
     .delivery-info label{
@@ -795,10 +825,10 @@ textarea{
         flex-direction: row;
         width: 100%;
         min-width: 400px;
-        margin: 0px 0px 5px 0px;
-        border: 1px solid rgba(0, 0, 0, 0.233);
+        margin: 0px 0px 15px 0px;
+        border: 1px solid rgba(0, 0, 0, 0);
         padding: 4px;
-        border-radius: 6px;
+        border-radius: 0px;
     }
     .cart-products{
         display: flex;
@@ -941,8 +971,8 @@ textarea{
         align-self: center;
         width: 95%;
         padding: 0px 5px 0px 6;
-        border: 1px solid rgba(0, 0, 0, 0.137);
-        border-radius: 7px;
+        border: none;
+        border-radius: 0px;
         margin: 10px 10px 10px 10px;
     }
     .delivery{
@@ -983,10 +1013,10 @@ textarea{
         flex-direction: row;
         width: 100%;
         min-width: 400px;
-        margin: 0px 0px 5px 0px;
-        border: 1px solid rgba(0, 0, 0, 0.233);
+        margin: 0px 0px 15px 0px;
+        border: 1px solid rgba(0, 0, 0, 0);
         padding: 4px;
-        border-radius: 6px;
+        border-radius: 0px;
     }
     .cart-products{
         display: flex;
@@ -998,15 +1028,25 @@ textarea{
         height: auto;
     }
     .cart-count-items{
-        height: 25px;
+        height: 30px;
         margin-top: 20px;
+    }
+    .cart-count-items button{
+        height: 30px;
+        background-color: rgb(218, 58, 0);
+    }
+    .cart-count-items button:hover{
+        height: 30px;
+    }
+    .cart-count-items input{
+        height: 30px;
     }
     .add-cart2{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: auto;
+        width: 120px;
         color: white;
         border: none;
         padding-left: 10px;
@@ -1020,7 +1060,7 @@ textarea{
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: auto;
+        width: 120px;
         color: black;
         border:  1px solid rgba(0, 0, 0, 0.466) ;
         padding-left: 10px;
@@ -1053,10 +1093,10 @@ textarea{
         flex-direction: row;
         width: 100%;
         min-width: 280px;
-        margin: 0px 10px 5px 0px;
-        border: 1px solid rgba(0, 0, 0, 0.233);
+        margin: 0px 0px 15px 0px;
+        border: 1px solid rgba(0, 0, 0, 0);
         padding: 4px;
-        border-radius: 6px;
+        border-radius: 0px;
     }
     .cart-product-image{
         height: 140px;
@@ -1068,8 +1108,8 @@ textarea{
         background-color: grey;
     }
 .cart2{
-    padding: 5px !important;
-    max-width: 100px;
+    width: 120px;
+    border-radius: 0px;
     margin-top: 0px;
     height: 25px !important;
 }
@@ -1084,8 +1124,8 @@ textarea{
 }
 .cart-product-details h4{
     font-size: 14px;
-    max-width: 150px;
-    max-height: 43px;
+    width: auto;
+    max-height: 36px;
     overflow: hidden;
     margin: 0px 0px 3px 0px;
 }
@@ -1095,6 +1135,17 @@ textarea{
 .cart-count-items{
     height: 25px;
     margin-top: 2px;
+}
+.cart-count-items button{
+    height: 25px;
+    width: 30px;
+}
+.cart-count-items button:hover{
+    height: 25px;
+    width: 30px;
+}
+.cart-count-items input{
+    height: 25px;
 }
     
 }
@@ -1153,15 +1204,19 @@ textarea{
         justify-content: center;
         align-items: center;
         height: 40px;
-        width: auto;
-        min-width: 100px;
+        width: 110px;
         color: white;
         border: none;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: 5px;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-right: 0px;
         background-color: rgba(0, 128, 0, 0.712);
         cursor: pointer;
+    }
+    .add-cart2:hover{
+        width: 110px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
     
 }
@@ -1174,16 +1229,20 @@ textarea{
         justify-content: center;
         align-items: center;
         height: 40px;
-        width: auto;
-        min-width: 100px;
+        width: 120px;
         color: white;
         border: none;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: 0px;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-right: 10px;
         margin-top: 0px;
         background-color: rgba(0, 128, 0, 0.712);
         cursor: pointer;
+    }
+    .add-cart2:hover{
+        width: 120px;
+        padding-left: 6px;
+        padding-right: 6px;
     }
     
 }
@@ -1193,6 +1252,16 @@ textarea{
 
 
 @media screen and (max-width: 1064px) and (min-width: 764px) {
+    .cart-product{
+        display: flex;
+        flex-direction: row;
+        width: 48%;
+        min-width: 450px;
+        margin: 0px 10px 20px 0px;
+        border: 1px solid rgba(97, 255, 131, 0);
+        padding: 4px;
+        border-radius: 0px;
+    }
     .product-menu{
         margin-left: 10px;
     }

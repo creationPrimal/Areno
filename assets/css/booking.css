@@ -93,6 +93,7 @@
     display: flex;
     position: relative;
     flex-direction: row;
+    margin-top: 20px;
     width: 100%;
 }
 .office{
@@ -100,9 +101,9 @@
     flex-direction: column;
     width: 31%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
     margin: 0px 30px 20px 0px;
-    background-color: rgba(0, 204, 255, 0.24);
+    background-color: rgba(0, 204, 255, 0);
     height: 355px;
 }
 .mapcontainer{
@@ -110,17 +111,15 @@
     overflow: hidden;
     width: 100%;
 }
-.mapcontainer iframe{
-    filter: invert(100%);
-}
 .locationname{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 10px;
 }
 .locationname p{
-    margin: 5px 10px 2px 10px;
+    margin: 5px 10px 2px 0px;
 }
 
 /*events*/
@@ -396,9 +395,9 @@
         flex-direction: column;
         width: 48%;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 0px;
         margin: 0px 0px 20px 0px;
-        background-color: rgba(0, 204, 255, 0.24);
+        background-color: rgba(0, 204, 255, 0);
         height: 355px;
     }
     .offices{
@@ -520,9 +519,9 @@
         flex-direction: column;
         width: 100%;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 0px;
         margin: 0px 0px 20px 0px;
-        background-color: rgba(0, 204, 255, 0.24);
+        background-color: rgba(0, 204, 255, 0);
         height: 355px;
     }
     .offices{
@@ -675,9 +674,9 @@
         flex-direction: column;
         width: 48%;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 0px;
         margin: 0px 30px 20px 0px;
-        background-color: rgba(0, 204, 255, 0.24);
+        background-color: rgba(0, 204, 255, 0);
         height: 355px;
     }
     .eventssliders{

@@ -8,6 +8,17 @@ body{
 }
 html{
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main{
+    position: relative;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 a{
     text-decoration: none;
@@ -16,15 +27,23 @@ a{
 nav{
     display: flex;
     position: sticky;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     top: 0px;
-    height: 40px;
+    height: 50px;
     width: 100%;
     color: white;
     background-color: orangered;
     z-index: 10000;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 100%;
 }
 nav a:hover{
     color: white;
@@ -64,6 +83,10 @@ nav a:hover{
 .cart svg{
     height: 23px;
 }
+.cart i{
+    font-size: 22px;
+    color: white;
+}
 .cart-circle{
     display: flex;
     position: absolute;
@@ -74,7 +97,7 @@ nav a:hover{
     right: 0px;
     color: white;
     transform: translateX(60%);
-    background-color:green;
+    background-color:rgb(0, 161, 0);
 }
 
 .mobile-cart{
@@ -124,6 +147,10 @@ nav a:hover{
 }
 .notifications svg{
     height: 23px;
+}
+.notifications i{
+    font-size: 23px;
+    color: white;
 }
 .profileimage{
     display: flex;
@@ -176,9 +203,9 @@ nav a:hover{
     height: 100%;
     min-width: 200px;
     border: none;
-    border-radius: 12px;
+    border-radius: 7px;
     margin-right: 35px;
-    background-color: rgb(221, 221, 221);
+    background-color: rgba(221, 221, 221, 0.562);
 
 }
 .search-icon{
@@ -218,6 +245,20 @@ nav a:hover{
 .mobile-headings{
     display: none;
 }
+.return2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
 /*menu div*/
 .menu{
     display: flex;
@@ -230,17 +271,17 @@ nav a:hover{
     z-index: 102;
 }
 .menudiv{
-    display: flex;
+    display: none;
     position: absolute;
     flex-direction: column;
     padding: 5px 5px 5px 35px;
     max-width: 300px;
+    width: 300px;
     height: 100%;
-    top: 40px;
+    top: 50px;
     overflow: hidden;
     background-color: white;
     z-index: 20;
-    transform: translateX(-100%);
     transition: all 300ms;
     z-index: 1003;
 }
@@ -520,6 +561,7 @@ nav a:hover{
     top: 5px;
     height: 20px;
     width: 20px;
+    margin-right: 8px;
     background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
 }
@@ -732,7 +774,7 @@ nav a:hover{
     min-width: 240px;
     max-width: 240px;
     margin: 0px 10px 10px 0px;
-    box-shadow: 2px 9px 15px rgba(0, 0, 0, 0.271);
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.271);
 }
 .productimage{
     height: 200px;
@@ -822,7 +864,7 @@ nav a:hover{
     border: none;
     border-radius: 8px;
     color: orangered;
-    background-color: rgba(128, 128, 128, 0.384);
+    background-color: rgba(0, 255, 13, 0.384);
 }
 .viewproduct:hover{
     height: 30px;
@@ -838,13 +880,21 @@ nav a:hover{
     display: flex;
     position: relative;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    min-height: 30px !important;
-    width: 30px;
+    min-height: 30px;
+    width: 25%;
     border: none;
     border-radius: 5px;
-    background-color: orangered;
+    background-color: green;
     cursor: pointer;
+}
+.likebutton:hover{
+    background-color: orangered;
+}
+.likebutton i{
+    color: white;
+    font-size: 15px;
 }
 
 /*footer*/
@@ -1411,8 +1461,105 @@ nav a:hover{
 
 
 
+/*footer*/
 
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+    width: 100%;
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer ul{
+	list-style: none;
+}
+.row{
+    display: flex;
+    width: 100%  ;
+}
+.footer{
+    bottom: 0px;
+	background-color: #24262b;
+    padding: 40px 0;
+}
+.footer i{
+    font-size: 13px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: orangered;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 400;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
 
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
 
 
 
