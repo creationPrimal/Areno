@@ -101,7 +101,7 @@ body {
 }
 
 
-.social i, .minimize-menu i, .seemorearrow i{
+.social i, .minimize-menu i, .seemorearrow i, .homebutton i, .mobile-cart i{
     color: var(--text-color-light);
 }
 .nav-menu i{
@@ -114,9 +114,7 @@ body {
 .fillform, .category2, .posting, .profilemenu {
     color: var(--text-color-light);
 }
-.store-details h4{
-    color: var(--text-color-orange) !important;
-}
+
   
 
 

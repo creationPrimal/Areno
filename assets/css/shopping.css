@@ -408,6 +408,7 @@ nav a:hover{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 4px 8px 4px 8px;
     margin: 0px 10px 0px 0px;
 }
 .eng{

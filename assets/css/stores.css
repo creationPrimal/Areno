@@ -34,7 +34,7 @@
     min-width: 330px;
     padding: 4px;
     margin: 0px 0px 10px 0px;
-    background-color: rgba(101, 255, 96, 0.445);
+    background-color: rgb(199, 253, 198);
 }
 .store:hover{
     display: flex;
@@ -45,14 +45,12 @@
     width: 48%;
     padding: 4px;
     margin: 0px 0px 10px 0px;
-    background-color: rgba(187, 183, 183, 0.377);
+    background-color: rgb(230, 229, 229);
     transition: 200ms;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.477);
     cursor: pointer;
 }
-.store:hover .store-details h4{
-    color: black !important;
-}
+
 .store-profileimage{
     display: flex;
     justify-content: center;
@@ -504,6 +502,7 @@ select{
     display: flex;
     position: absolute;
     z-index: 2;
+    font-size: 12px;
     margin: 7px 0px 0px 7px;
     background-color: white;
     padding: 4px 5px 4px 5px;
@@ -553,7 +552,7 @@ select{
         min-width: 300px;
         padding: 4px;
         margin: 0px 0px 10px 0px;
-        background-color: rgba(101, 255, 96, 0.445);
+        background-color: rgb(199, 253, 198);
     }
     .store:nth-child(1), 
     .store:nth-child(2),
@@ -682,7 +681,7 @@ select{
         min-width: 200px;
         padding: 4px;
         margin: 0px 0px 10px 0px;
-        background-color: rgba(101, 255, 96, 0.445);
+        background-color: rgb(199, 253, 198);
     }
     .store:nth-child(1), 
     .store:nth-child(2),
@@ -705,7 +704,7 @@ select{
         width: 100%;
         padding: 4px;
         margin: 0px 0px 10px 0px;
-        background-color: rgba(187, 183, 183, 0.377);
+        background-color: rgb(230, 229, 229);
         transition: 200ms;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.477);
         cursor: pointer;
