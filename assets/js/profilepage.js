@@ -51,12 +51,16 @@ function copyAndShare() {
   const showFormButton = document.getElementById('showFormButton');
   const modal = document.getElementById('myModal');
   const closeButton = document.getElementsByClassName('close')[0];
+  const cancel = document.querySelector('.cancel');
 
   showFormButton.addEventListener('click', function() {
     modal.style.display = 'flex';
   });
 
   closeButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+  cancel.addEventListener('click', function() {
     modal.style.display = 'none';
   });
 
@@ -67,6 +71,29 @@ function copyAndShare() {
   });
 
 
+  //settings profile image preview
+  function displayImage() {
+    const input = document.getElementById('image-input');
+    const preview = document.getElementById('image-preview');
+    const container = document.getElementById('image-container');
+
+    const file = input.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+        container.style.display = 'block';
+      };
+
+      reader.readAsDataURL(file);
+    } else {
+      // Clear the image preview if no file is selected
+      preview.src = '';
+      container.style.display = 'none';
+    }
+  }
 
 
 

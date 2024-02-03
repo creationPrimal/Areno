@@ -66,7 +66,7 @@ const secondsplide = new Splide( '#second-splide', {
   gap : '1rem',
   drag : 'free',
   perMove: 1,
-  padding: { left: 0, right: 80 },
+  padding: { left: 0, right: 140 },
   snap: true,
   type: 'loop',
   pagination: false,
@@ -79,7 +79,7 @@ const secondsplide = new Splide( '#second-splide', {
     },
     1104: {
     perPage: 3,
-    padding: { left: 0, right: 100 },
+    padding: { left: 0, right: 120 },
     },
     964: {
     perPage: 3,
@@ -87,43 +87,51 @@ const secondsplide = new Splide( '#second-splide', {
     },
     884: {
     perPage: 2,
-    padding: { left: 0, right: 180 },
+    padding: { left: 0, right: 200 },
     },
     764: {
     perPage: 3,
-    padding: { left: 0, right: 20 },
+    padding: { left: 0, right: 50 },
     },
     678: {
       perPage: 2,
-      padding: { left: 0, right: 170 },
+      padding: { left: 0, right: 190 },
     },
     610: {
       perPage: 2,
-      padding: { left: 0, right: 130 },
+      padding: { left: 0, right: 150 },
     },
     580: {
       perPage: 2,
-      padding: { left: 0, right: 80 },
+      padding: { left: 0, right: 100 },
     },
     520: {
       perPage: 2,
-      padding: { left: 0, right: 30 },
+      padding: { left: 0, right: 50 },
     },
     470: {
       perPage: 2,
-      padding: { left: 0, right: 0 },
+      padding: { left: 0, right: 20 },
     },
     440: {
       perPage: 1,
-      padding: { left: 0, right: 170 },
+      padding: { left: 0, right: 200 },
     },
-    390: {
+    415: {
       perPage: 1,
-      padding: { left: 0, right: 120 },
+      padding: { left: 0, right: 180 },
     },
-    335: {
+    395: {
       perPage: 1,
-      padding: { left: 0, right: 50 },
+      padding: { left: 0, right: 150 },
+    },
+    365: {
+      perPage: 1,
+      padding: { left: 0, right: 80 },
+    },
+    300: {
+      perPage: 1,
+      padding: { left: 0, right: 0 },
     },
     },
   } );
@@ -135,7 +143,7 @@ const thirdsplide = new Splide( '#third-splide', {
   gap : '1rem',
   drag : 'free',
   perMove: 1,
-  padding: { left: 0, right: 80 },
+  padding: { left: 0, right: 120 },
   snap: true,
   type: 'loop',
   pagination: false,
@@ -143,57 +151,65 @@ const thirdsplide = new Splide( '#third-splide', {
   breakpoints: {
 
     1200: {
-    perPage: 4,
-    padding: { left: 0, right: 20 },
-    },
-    1104: {
-    perPage: 3,
-    padding: { left: 0, right: 100 },
-    },
-    964: {
-    perPage: 3,
-    padding: { left: 0, right: 50 },
-    },
-    884: {
-    perPage: 2,
-    padding: { left: 0, right: 180 },
-    },
-    764: {
-    perPage: 3,
-    padding: { left: 0, right: 20 },
-    },
-    678: {
-      perPage: 2,
-      padding: { left: 0, right: 170 },
-    },
-    610: {
-      perPage: 2,
-      padding: { left: 0, right: 130 },
-    },
-    580: {
-      perPage: 2,
-      padding: { left: 0, right: 80 },
-    },
-    520: {
-      perPage: 2,
-      padding: { left: 0, right: 30 },
-    },
-    470: {
-      perPage: 2,
-      padding: { left: 0, right: 0 },
-    },
-    440: {
-      perPage: 1,
-      padding: { left: 0, right: 170 },
-    },
-    390: {
-      perPage: 1,
+      perPage: 4,
+      padding: { left: 0, right: 20 },
+      },
+      1104: {
+      perPage: 3,
       padding: { left: 0, right: 120 },
-    },
-    335: {
-      perPage: 1,
+      },
+      964: {
+      perPage: 3,
       padding: { left: 0, right: 50 },
-    },
+      },
+      884: {
+      perPage: 2,
+      padding: { left: 0, right: 200 },
+      },
+      764: {
+      perPage: 3,
+      padding: { left: 0, right: 50 },
+      },
+      678: {
+        perPage: 2,
+        padding: { left: 0, right: 190 },
+      },
+      610: {
+        perPage: 2,
+        padding: { left: 0, right: 150 },
+      },
+      580: {
+        perPage: 2,
+        padding: { left: 0, right: 100 },
+      },
+      520: {
+        perPage: 2,
+        padding: { left: 0, right: 50 },
+      },
+      470: {
+        perPage: 2,
+        padding: { left: 0, right: 20 },
+      },
+      440: {
+        perPage: 1,
+        padding: { left: 0, right: 200 },
+      },
+      415: {
+        perPage: 1,
+        padding: { left: 0, right: 180 },
+      },
+      395: {
+        perPage: 1,
+        padding: { left: 0, right: 150 },
+      },
+      365: {
+        perPage: 1,
+        padding: { left: 0, right: 80 },
+      },
+      300: {
+        perPage: 1,
+        padding: { left: 0, right: 0 },
+      },
     },
   } );
   thirdsplide.mount()
@@ -204,7 +220,7 @@ const fourthsplide = new Splide( '#fourth-splide', {
   gap : '1rem',
   drag : 'free',
   perMove: 1,
-  padding: { left: 0, right: 80 },
+  padding: { left: 0, right: 120 },
   snap: true,
   type: 'loop',
   pagination: false,
@@ -212,57 +228,65 @@ const fourthsplide = new Splide( '#fourth-splide', {
   breakpoints: {
 
     1200: {
-    perPage: 4,
-    padding: { left: 0, right: 20 },
-    },
-    1104: {
-    perPage: 3,
-    padding: { left: 0, right: 100 },
-    },
-    964: {
-    perPage: 3,
-    padding: { left: 0, right: 50 },
-    },
-    884: {
-    perPage: 2,
-    padding: { left: 0, right: 180 },
-    },
-    764: {
-    perPage: 3,
-    padding: { left: 0, right: 20 },
-    },
-    678: {
-      perPage: 2,
-      padding: { left: 0, right: 170 },
-    },
-    610: {
-      perPage: 2,
-      padding: { left: 0, right: 130 },
-    },
-    580: {
-      perPage: 2,
-      padding: { left: 0, right: 80 },
-    },
-    520: {
-      perPage: 2,
-      padding: { left: 0, right: 30 },
-    },
-    470: {
-      perPage: 2,
-      padding: { left: 0, right: 0 },
-    },
-    440: {
-      perPage: 1,
-      padding: { left: 0, right: 170 },
-    },
-    390: {
-      perPage: 1,
+      perPage: 4,
+      padding: { left: 0, right: 20 },
+      },
+      1104: {
+      perPage: 3,
       padding: { left: 0, right: 120 },
-    },
-    335: {
-      perPage: 1,
+      },
+      964: {
+      perPage: 3,
       padding: { left: 0, right: 50 },
-    },
+      },
+      884: {
+      perPage: 2,
+      padding: { left: 0, right: 200 },
+      },
+      764: {
+      perPage: 3,
+      padding: { left: 0, right: 50 },
+      },
+      678: {
+        perPage: 2,
+        padding: { left: 0, right: 190 },
+      },
+      610: {
+        perPage: 2,
+        padding: { left: 0, right: 150 },
+      },
+      580: {
+        perPage: 2,
+        padding: { left: 0, right: 100 },
+      },
+      520: {
+        perPage: 2,
+        padding: { left: 0, right: 50 },
+      },
+      470: {
+        perPage: 2,
+        padding: { left: 0, right: 20 },
+      },
+      440: {
+        perPage: 1,
+        padding: { left: 0, right: 200 },
+      },
+      415: {
+        perPage: 1,
+        padding: { left: 0, right: 180 },
+      },
+      395: {
+        perPage: 1,
+        padding: { left: 0, right: 150 },
+      },
+      365: {
+        perPage: 1,
+        padding: { left: 0, right: 80 },
+      },
+      300: {
+        perPage: 1,
+        padding: { left: 0, right: 0 },
+      },
     },
   } );
   fourthsplide.mount()
@@ -273,7 +297,7 @@ const fifthsplide = new Splide( '#fifth-splide', {
   gap : '1rem',
   drag : 'free',
   perMove: 1,
-  padding: { left: 0, right: 80 },
+  padding: { left: 0, right: 120 },
   snap: true,
   type: 'loop',
   pagination: false,
@@ -281,57 +305,65 @@ const fifthsplide = new Splide( '#fifth-splide', {
   breakpoints: {
 
     1200: {
-    perPage: 4,
-    padding: { left: 0, right: 20 },
-    },
-    1104: {
-    perPage: 3,
-    padding: { left: 0, right: 100 },
-    },
-    964: {
-    perPage: 3,
-    padding: { left: 0, right: 50 },
-    },
-    884: {
-    perPage: 2,
-    padding: { left: 0, right: 180 },
-    },
-    764: {
-    perPage: 3,
-    padding: { left: 0, right: 20 },
-    },
-    678: {
-      perPage: 2,
-      padding: { left: 0, right: 170 },
-    },
-    610: {
-      perPage: 2,
-      padding: { left: 0, right: 130 },
-    },
-    580: {
-      perPage: 2,
-      padding: { left: 0, right: 80 },
-    },
-    520: {
-      perPage: 2,
-      padding: { left: 0, right: 30 },
-    },
-    470: {
-      perPage: 2,
-      padding: { left: 0, right: 0 },
-    },
-    440: {
-      perPage: 1,
-      padding: { left: 0, right: 170 },
-    },
-    390: {
-      perPage: 1,
+      perPage: 4,
+      padding: { left: 0, right: 20 },
+      },
+      1104: {
+      perPage: 3,
       padding: { left: 0, right: 120 },
-    },
-    335: {
-      perPage: 1,
+      },
+      964: {
+      perPage: 3,
       padding: { left: 0, right: 50 },
-    },
+      },
+      884: {
+      perPage: 2,
+      padding: { left: 0, right: 200 },
+      },
+      764: {
+      perPage: 3,
+      padding: { left: 0, right: 50 },
+      },
+      678: {
+        perPage: 2,
+        padding: { left: 0, right: 190 },
+      },
+      610: {
+        perPage: 2,
+        padding: { left: 0, right: 150 },
+      },
+      580: {
+        perPage: 2,
+        padding: { left: 0, right: 100 },
+      },
+      520: {
+        perPage: 2,
+        padding: { left: 0, right: 50 },
+      },
+      470: {
+        perPage: 2,
+        padding: { left: 0, right: 20 },
+      },
+      440: {
+        perPage: 1,
+        padding: { left: 0, right: 200 },
+      },
+      415: {
+        perPage: 1,
+        padding: { left: 0, right: 180 },
+      },
+      395: {
+        perPage: 1,
+        padding: { left: 0, right: 150 },
+      },
+      365: {
+        perPage: 1,
+        padding: { left: 0, right: 80 },
+      },
+      300: {
+        perPage: 1,
+        padding: { left: 0, right: 0 },
+      },
     },
   } );
   fifthsplide.mount()
