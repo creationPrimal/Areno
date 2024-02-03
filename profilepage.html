@@ -84,7 +84,7 @@
                     <div class="cart-notificationsdiv">
                         <div class="mobile-notification">
                             <div class="cart-circle">8</div>
-                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            <i class="fa-regular fa-bell"></i>
                         </div>
                         <button class="homebutton" onclick="copyAndShare()" type="button">
                             <i class="fa-solid fa-share-nodes fa-fade"></i>
@@ -446,12 +446,12 @@
                     </div>
                     <div class="textareagroup">
                         <label for="productDescription">Description:</label>
-                        <textarea name="productDescription" id="" cols="30" rows="6"></textarea>
+                        <textarea name="productDescription" id="" cols="30" rows="4"></textarea>
                     </div>
               
                     <div class="buttons">
                       <button type="submit">Submit</button>
-                      <button type="button">Cancel</button>
+                      <button type="button" class="cancel">Cancel</button>
                     </div>
                   </form>
                 </div>
@@ -1090,7 +1090,15 @@
             </div>
         </div>
 
-
+        <!--loader-->
+        <div class="loadingdiv" id="preloaderbg">
+            <div class="load-row" id="preloader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 
 
 
@@ -1105,6 +1113,7 @@
     </section>
 
    
+    <script src="assets/js/loader.js"></script>
     <script src="assets/js/shoppingpage.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="assets/js/shoppingspliders.js" ></script>

@@ -285,12 +285,12 @@
             <div class="settingsinputs">
                 <div class="setprofileimage" >
                     <i class="fa-solid fa-camera" ></i>
-                    <img  src="" alt="">
+                    <img  src="" alt="" id="image-preview">
                 </div>
                 <div class="inputs">
                     <div class="inputdiv">
                         <label for="profileimage" class="translate" data-en="Select Profile Image" data-sw="Chagua Picha">Select Profile Image</label>
-                        <input type="file" name="profileimage" class="profimage-input" required>
+                        <input type="file" name="profileimage" class="profimage-input" id="image-input" accept="image/*" onchange="displayImage()" required>
                     </div>
                     <div class="inputdiv">
                         <label for="" class="translate" data-en="Activity Type" data-sw="Aina Ya Shughuli">Activity Type</label>
@@ -347,7 +347,7 @@
                     <label for="about" class="translate" data-en="Biography:" data-sw="Wasifu">Biography:</label>
                     <textarea name="about" id="" cols="30" rows="10"></textarea>
                 </div>
-                <button class="settings-button"><p style="margin: 0px;" class="translate" data-en="Save To Proceed" data-sw="Hifadhi na Uendelee">Save To Proceed</p></button>
+                <button type="submit" class="settings-button"><p style="margin: 0px;" class="translate" data-en="Save To Proceed" data-sw="Hifadhi na Uendelee">Save To Proceed</p></button>
             </div>
         </div>
         </form>
@@ -416,11 +416,8 @@
 
    
     <script src="assets/js/shoppingpage.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="assets/js/shoppingspliders.js" ></script>
-    <script src="assets/js/categories.js" ></script>
-    <script src="assets/js/products.js" ></script>
     <script src="assets/js/language.js" ></script>
+    <script src="assets/js/profilepage.js" ></script>
     <script>
      
     </script>
