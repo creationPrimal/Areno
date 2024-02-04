@@ -381,7 +381,7 @@
                          Itaque molestiae, voluptate autem odio corrupti vitae dicta 
                          commodi praesentium amet quisquam delectus assumenda
                          architecto cumque impedit sed nam quidem quaerat mollitia?</p>
-                    <p class="workinghours">Working Hours: <span><b>8:00 Am</b></span> - <span><b>16:00 Pm</b></span>, Monday to Friday</p>
+                    <p class="workinghours"><span class="translate" data-en="Working Hours:" data-sw="Masaa ya kazi:">Working Hours:</span> <span><b>8:00 Am</b></span> - <span><b>16:00 Pm</b></span>, Monday to Friday</p>
                     <p class="locationprofile"><b>Dar es Salaam, Tanzania</b></p>
                 </div>
             </div>
@@ -402,36 +402,37 @@
                     <h2 style="color: orangered; margin: 0px 0px 10px 0px;">Add Item</h2>
                     <div class="postform">
                         <div class="formGroup">
-                        <label for="imageUpload">Item Image:</label>
+                        <label for="imageUpload" class="translate" data-en="Item Image:" data-sw="Picha ya Bidhaa:">Item Image:</label>
                         <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
                         </div>
                         <div class="formGroup">
-                        <label for="productName">Item Name:</label>
+                        <label for="productName" class="translate" data-en="Item Name:" data-sw="Jina la Bidhaa:">Item Name:</label>
                         <input type="text" id="productName" name="productName" required>
                         </div>
                         <div class="formGroup">
-                            <label for="productPrice">Price:</label>
+                            <label for="productPrice" class="translate" data-en="Price:" data-sw="Bei:">Price:</label>
                             <input type="number" id="productPrice" name="productPrice" placeholder="0000" required>
                         </div>
                         <div class="formGroup">
-                            <label for="productLocation">Location:</label>
+                            <label for="productLocation" class="translate" data-en="Location:" data-sw="Sehemu:">Location:</label>
                             <input type="text" id="productLocation" name="productLocation">
                         </div>
                         <div class="formGroup">
-                            <label for="productSize">Size:</label>
+                            <label for="productSize" class="translate" data-en="Size:" data-sw="Ukubwa:">Size:</label>
                             <input type="text" id="productSize" name="productSize" placeholder="3x3x3">
                         </div>
                         <div class="formGroup">
-                            <label for="productWeight">Weight:</label>
+                            <label for="productWeight" class="translate" data-en="Weight:" data-sw="Uzito:">Weight:</label>
                             <input type="text" id="productWeight" name="productWeight" placeholder="1kg">
                         </div>
                         <div class="formGroup">
-                            <label for="productAvailability">Availability:</label>
+                            <label for="productAvailability" class="translate" data-en="Availability:" data-sw="Upatikanaji:">Availability:</label>
                             <input type="text" id="productAvailability" name="productAvailability" placeholder="Amount">
                         </div>
                         <div class="formGroup">
-                            <label for="productCategory">Product Category:</label>
+                            <label for="productCategory" class="translate" data-en="Product Category:" data-sw="Kategoria:">Product Category:</label>
                             <select id="productCategory" name="productCategory">
+                            <option disabled selected class="translate" data-en="Choose" data-sw="Chagua">Choose</option>
                             <option value="category1">Category 1</option>
                             <option value="category2">Category 2</option>
                             <option value="category3">Category 3</option>
@@ -439,19 +440,19 @@
                             </select>
                         </div>
                         <div class="formGroup">
-                            <label for="productColor">Color:</label>
+                            <label for="productColor" class="translate" data-en="Color:" data-sw="Rangi:">Color:</label>
                             <input type="text" id="productColor" name="productColor">
                         </div>
                         
                     </div>
                     <div class="textareagroup">
-                        <label for="productDescription">Description:</label>
+                        <label for="productDescription" class="translate" data-en="Description:" data-sw="Maelezo:">Description:</label>
                         <textarea name="productDescription" id="" cols="30" rows="4"></textarea>
                     </div>
-              
+                    <strong class="translate" data-en="*Your product will be reviewed before being displayed." data-sw="*Bidhaa yako itakaguliwa kabla ya kuonyeshwa.">*Your product will be reviewed before being displayed.</strong> <a href="aboutus.html"><strong style="color: orangered;">See Why</strong></a>
                     <div class="buttons">
-                      <button type="submit">Submit</button>
-                      <button type="button" class="cancel">Cancel</button>
+                      <button type="submit"><span class="translate" data-en="Submit" data-sw="Tuma">Submit</span></button>
+                      <button type="button" class="cancel"><span class="translate" data-en="Cancel" data-sw="Sitisha">Cancel</span></button>
                     </div>
                   </form>
                 </div>
@@ -991,7 +992,7 @@
             </div>
             <!--loading animation-->
             <div class="loadmorediv">
-                <button class="profloadmore">load more</button>
+                <button class="profloadmore"><span class="translate" data-en="load more" data-sw="Fungua zaidi">load more</span></button>
             </div>
             
             <!--end of Products div-->
@@ -1087,6 +1088,48 @@
                     </button>
                     <p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p>
                 </div></a>
+            </div>
+        </div>
+        <div class="mobilenavigation">
+            <div class="navigationsbuttons">
+                <div class="rectanglenavbar">
+                    <a href="shopping.html"><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </button>
+                        <p class="translate" data-en="Shopping" data-sw="Manunuzi">Shopping</p>
+                    </div></a>
+                    <a href="restaurants.html"><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </button>
+                        <p class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</p>
+                    </div></a>
+                </div>
+                <div class="rectanglenavbar3">
+                    <div class="mobile-nav-circle">
+                        <a href="index.html"><button class="mobile-nav-icon selected">
+                            <img src="assets/icons/Home_fill (1).png" alt="">
+                        </button></a>
+                    </div>
+                </div>
+                <div class="rectanglenavbar2">
+                    <a href="booking.html"><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </button>
+                        <p>Booking</p>
+                    </div></a>
+                    <a href=""><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon ">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </button>
+                        <p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p>
+                    </div></a>
+                </div>
+            </div>
+            <div class="navbarpng">
+                <img src="assets/icons/mobilenav.png" alt="">
             </div>
         </div>
 

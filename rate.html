@@ -120,7 +120,7 @@
                             </button>
                             <button><p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p></button>
                         </div></a>
-                        <a href="rate.html"><div class="menu-title">
+                        <a href="rate.html"><div class="menu-title title-selected">
                             <button class="menu-title-icon">
                                 <i class="fa-solid fa-star"></i>
                             </button>
@@ -293,7 +293,7 @@
          <!--rating and reviews-->
          <div class="mainratesdiv">
             <div class="averagerates">
-                <h3>Areno Ratings:</h3>
+                <h3 class="translate" data-en="Areno Ratings:" data-sw="Areno Makadirio:">Areno Ratings:</h3>
                 <div class="averagestars">
                     <p class="averagestarsh1" id="stars"></p>
                 <h1><span id="average"></span></h1>
@@ -361,7 +361,7 @@
                 </div>
             </div>
             <div class="viewall">
-                <button id="openModalBtn">View All</button>
+                <button id="openModalBtn"><span class="translate" data-en="View All" data-sw="Ona Zaidi">View All</span></button>
             </div>
             <!--semi screen-->
             <div id="myModal" class="modal">
@@ -420,16 +420,16 @@
                     <div class="review-form">
                         <div class="nameemail">
                             <div class="name">
-                                <label for="name">Name:</label>
+                                <label for="name" class="translate" data-en="Name:" data-sw="Jina:">Name:</label>
                                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                             </div>
                             <div class="email">
-                                <label for="email">Email:</label>
+                                <label for="email" class="translate" data-en="Email:" data-sw="Barua Pepe:">Email:</label>
                                 <input type="email" id="email" name="email" placeholder="example@email.com" required>
                             </div>
                         </div>
                         <div class="ratingdiv">
-                            <label for="rating">Rating:</label>
+                            <label for="rating" class="translate" data-en="Rating:" data-sw="Makadirio:">Rating:</label>
                             <select id="rating" name="rating" required>
                             <option value="5">★★★★★ 5.0</option>
                             <option value="4">★★★★☆ 4.0</option>
@@ -439,12 +439,12 @@
                             </select>
                         </div>
                         <div class="reviewdiv">
-                            <label for="comment">Review:</label>
+                            <label for="comment" class="translate" data-en="Review:" data-sw="Maoni:">Review:</label>
                             <textarea id="user-comment" name="comment" rows="8" required></textarea>
                         </div>
                 </div>
                 
-                <button type="submit"  class="reviewsubmitbtn">Submit Review</button>
+                <button type="submit"  class="reviewsubmitbtn"><span class="translate" data-en="Submit Review" data-sw="Tuma Maoni">Submit Review</span></button>
                 </form>
             </div>
          </div>
@@ -537,6 +537,48 @@
                     </button>
                     <p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p>
                 </div></a>
+            </div>
+        </div>
+        <div class="mobilenavigation">
+            <div class="navigationsbuttons">
+                <div class="rectanglenavbar">
+                    <a href="shopping.html"><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </button>
+                        <p class="translate" data-en="Shopping" data-sw="Manunuzi">Shopping</p>
+                    </div></a>
+                    <a href="restaurants.html"><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </button>
+                        <p class="translate" data-en="Restaurants" data-sw="Migahawa">Restaurants</p>
+                    </div></a>
+                </div>
+                <div class="rectanglenavbar3">
+                    <div class="mobile-nav-circle">
+                        <a href="index.html"><button class="mobile-nav-icon ">
+                            <img src="assets/icons/Home_fill (1).png" alt="">
+                        </button></a>
+                    </div>
+                </div>
+                <div class="rectanglenavbar2">
+                    <a href="booking.html"><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </button>
+                        <p>Booking</p>
+                    </div></a>
+                    <a href=""><div class="mobile-nav-div">
+                        <button class="mobile-nav-icon ">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </button>
+                        <p class="translate" data-en="Logistics" data-sw="Usafirishaji">Logistics</p>
+                    </div></a>
+                </div>
+            </div>
+            <div class="navbarpng">
+                <img src="assets/icons/mobilenav.png" alt="">
             </div>
         </div>
 
