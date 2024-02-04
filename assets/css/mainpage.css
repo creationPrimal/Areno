@@ -247,7 +247,7 @@
         overflow: hidden;
     }
     .new-mobile-nav{
-        display: flex;
+        display: none;
         position: fixed;
         flex-direction: row;
         align-items: flex-end;
@@ -294,7 +294,7 @@
         border: 0px rgba(255, 255, 255, 0) solid;
         border-radius: 50%;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.225);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0);
         z-index: 2;
     }
     .sub-rectangle{

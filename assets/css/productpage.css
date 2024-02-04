@@ -240,7 +240,6 @@
     overflow: hidden;
     margin: 0px;
     font-size: 11px;
-    max-width: 150px;
 }
 .product-profile b:hover{
     color: orangered;
