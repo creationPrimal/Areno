@@ -63,6 +63,47 @@ profileDarkSide.addEventListener('click', () => {
 });
   
 
+//notification switch
+const on = document.querySelector('.on');
+const off = document.querySelector('.off');
+
+// Check if there is a saved state in local storage
+const savedState = localStorage.getItem('notificationSwitchState');
+
+if (savedState === 'off') {
+  turnOff();
+} else {
+  // Default to 'on' if the value is empty or not present
+  turnOn();
+  // Save the default state in local storage
+  localStorage.setItem('notificationSwitchState', 'on');
+}
+
+off.addEventListener("click", () => {
+  turnOff();
+  // Save the state in local storage
+  localStorage.setItem('notificationSwitchState', 'off');
+});
+
+on.addEventListener("click", () => {
+  turnOn();
+  // Save the state in local storage
+  localStorage.setItem('notificationSwitchState', 'on');
+});
+
+function turnOn() {
+  off.style.backgroundColor = 'white';
+  on.style.backgroundColor = 'rgb(42, 255, 42)';
+  on.style.border = '1px rgba(0, 128, 0, 0) solid';
+  off.style.border = '1px rgba(0, 0, 0, 0.521) solid';
+}
+
+function turnOff() {
+  off.style.backgroundColor = 'rgb(42, 255, 42)';
+  on.style.backgroundColor = 'white';
+  on.style.border = '1px rgba(0, 0, 0, 0.521) solid';
+  off.style.border = '1px rgba(0, 128, 0, 0) solid';
+}
   
  //reasons slider main slider
  const reasons = new Splide( '#reasons', {
