@@ -9,7 +9,7 @@
 .areno-center h1{
     font-size: 40px;
 }
-.areno-center p, .areno-center h1{
+.areno-center h1{
     color: white;
     margin: 5px 0px 0px 0px;
 }
@@ -20,6 +20,12 @@
     flex-wrap: wrap;
     width: 100%;
 }
+.serviceshead{
+    margin-top: 35px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
 .service{
     display: flex;
     flex-direction: column;
@@ -28,8 +34,9 @@
     width: 23%;
     min-width: 200px;
     background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.277);
     height: 280px;
-    margin: 20px 10px 0px 0px;
+    margin: 10px 5px 10px 5px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -44,7 +51,7 @@
     color: white;
     background-color: rgb(0, 0, 0);
     height: 280px;
-    margin: 20px 10px 0px 0px;
+    margin: 10px 5px 10px 5px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -398,7 +405,7 @@
     height: 25px;
     min-width: 25px;
     max-width: 25px;
-    margin: 0px 15px 0px 0px;
+    margin: 0px 10px 0px 0px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px rgba(0, 0, 0, 0.151) solid;
@@ -500,7 +507,7 @@
     color: orangered;
 }
 .orders{
-    display: none;
+    display: flex; /*change this to none if you want to hide the orders and display them when hovered*/
     flex-direction: column;
     padding: 0px 0px 0px 25px;
     margin: 0px 0px 0px 0px;
@@ -512,7 +519,29 @@
     padding: 0px 0px 0px 25px;
     margin: 0px 0px 0px 0px;
 }
-
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .infoemail {
+    color: black;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  .infoemail p {
+    color: black;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 .info-detail{
     margin-top: 6px !important;
     cursor: pointer;
@@ -544,13 +573,18 @@
 .orders span{
     color: orangered;
 }
+.subinfo button:nth-child(1){
+    background-color: rgb(42, 255, 42);
+}
 .on{
+    padding: 4px 10px 4px 10px;
     border: 1px rgba(0, 128, 0, 0) solid;
-    background-color: rgb(42, 255, 42) !important;
+    background-color: rgb(42, 255, 42);
     border-radius: 5px;
     cursor: pointer;
 }
 .off{
+    padding: 4px 10px 4px 10px;
     border: 1px rgba(0, 0, 0, 0.521) solid;
     background-color: transparent;
     border-radius: 5px;
@@ -700,7 +734,13 @@
 
 @media screen and (max-width: 764px){
     p{
-        font-size: 14px !important;
+        font-size: 14px ;
+    }
+    .serviceshead{
+        margin-top: 5px;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
     }
     .areno-center{
         display: flex;
@@ -855,7 +895,7 @@
         min-width: 200px;
         background-color: white;
         height: 280px;
-        margin: 20px 10px 0px 0px;
+        margin: 10px 10px 10px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
@@ -870,7 +910,7 @@
         color: white;
         background-color: rgb(0, 0, 0);
         height: 280px;
-        margin: 20px 10px 0px 0px;
+        margin: 10px 10px 10px 0px;
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
@@ -908,7 +948,7 @@
         min-width: 200px;
         background-color: white;
         height: 210px;
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 10px 0px;
         border-radius: 7px;
         overflow: hidden;
         cursor: pointer;
@@ -923,7 +963,7 @@
         color: white;
         background-color: rgb(0, 0, 0);
         height: 210px;
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 10px 0px;
         border-radius: 7px;
         overflow: hidden;
         cursor: pointer;

@@ -20,6 +20,13 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+.indexmain{
+    position: relative;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: 1250px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
 a{
     text-decoration: none;
     color: black;
@@ -124,6 +131,9 @@ nav a:hover{
 }
 .mobile-notification svg{
     height: 25px;
+}
+.mobile-notification i{
+    font-size: 25px;
 }
 .homebutton{
     display: none;
@@ -445,7 +455,7 @@ nav a:hover{
   .switch-label {
     position: absolute;
     width: 100%;
-    height: 20px;
+    height: 22px;
     background-color: var(--dark);
     border-radius: 25px;
     cursor: pointer;
@@ -898,133 +908,6 @@ nav a:hover{
     font-size: 15px;
 }
 
-/*footer*/
-.footer{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    padding: 10px 10px 10px 10px;
-    left: 0px;
-    right: 0px;
-    bottom: -18px;
-    background-color: rgba(0, 0, 0, 0.801);
-}
-.footerdiv1{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.footerdiv1 a{
-    color: white;
-}
-.footerdiv1 a:hover{
-    color: orangered;
-}
-.footer p{
-    font-size: 14px;
-}
-.arenologo{
-    height: 25px;
-    width: auto;
-    background-color: rgba(128, 128, 128, 0);
-}
-.arenologo img{
-    height: 25px;
-}
-.logoquote{
-    display: flex;
-    color: white;
-    flex-direction: column;
-    max-width: 30%;
-}
-.quote p{
-    margin: 4px 0px 0px 0px;
-}
-.list{
-    display: flex;
-    color: white;
-    flex-direction: column;
-    max-width: 30%;
-}
-.list button{
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    color: white;
-    padding: 0px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-}
-.list button:hover{
-    display: flex;
-    justify-content: flex-start;
-    border: none;
-    color: orangered;
-    padding: 0px;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-}
-.list h4{
-    margin: 0px 0px 10px 0px;
-}
-.list ul {
-    text-decoration: none;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-}
-.list li {
-    margin: 5px 0px 0px 0px;
-    padding: 0px;
-    font-size: 14px;
-}
-.socialicons{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.social i {
-    font-size: 18px;
-    color: black;
-}
-.social i:hover{
-    color: orangered;
-}
-.footer-social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    border: none;
-    background-color: #0040ff00;
-    margin: 10px 5px 0px 0px;
-}
-.footer-social i {
-    font-size: 20px;
-    color: white;
-}
-.footer-social i:hover{
-    color: orangered;
-}
-
-.lowerfooterdetail {
-    margin: 10px 0px 17px 0px;
-}
-.lowerfooterdetail p{
-    margin: 5px 0px 5px 0px;
-    color: white;
-}
-.backtotop{
-    display: flex;
-    position: absolute;
-    right: 0px;
-    font-size: 10px;
-    color: white;
-    margin-right: 10px;
-}
 
 .mobile-nav{
     display: none;
@@ -1482,7 +1365,7 @@ nav a:hover{
 }
 .container{
     width: 100%;
-	max-width: 1170px;
+	max-width: 1270px;
 	margin:auto;
 }
 .row{
@@ -1498,7 +1381,7 @@ nav a:hover{
 }
 .footer{
     bottom: 0px;
-	background-color: #24262b;
+	background-color: #1a1a1a;
     padding: 40px 0;
 }
 .footer i{
@@ -1509,22 +1392,36 @@ nav a:hover{
    padding: 0 15px;
 }
 .footer-col h4{
-	font-size: 18px;
+	font-size: 20px;
 	color: #ffffff;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+	margin-bottom: 15px;
+    margin-top: 5px;
 	font-weight: 500;
 	position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: orangered;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+.credits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 4px;
+    margin-bottom: 14px;
+}
+.credits span{
+    color: rgb(0, 255, 0);
+}
+.line{
+    height: 1px ;
+    background-color:  rgba(255, 255, 255, 0.349);
+    margin-bottom: 10px;
+    width: 100%;
+}
+.developer{
+    color: white;
+    margin-top: 6px;
+    font-size: 9px !important;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -1551,7 +1448,7 @@ nav a:hover{
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
-	border-radius: 50%;
+	border-radius: 5px;
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
@@ -1562,6 +1459,21 @@ nav a:hover{
 
 /*responsive*/
 @media(max-width: 767px){
+    .container{
+        width: 100%;
+        max-width: 1270px;
+        margin:auto;
+        margin-top: 0px;
+    }
+    .credits{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 4px;
+        margin-bottom: 60px;
+    }
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
