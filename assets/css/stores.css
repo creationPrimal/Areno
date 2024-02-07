@@ -309,7 +309,7 @@
     background-color: rgba(151, 151, 151, 0.459);
 }
 
-select{
+.inputdiv select{
     height: 40px;
     outline: none;
     width: 100%;
@@ -823,7 +823,7 @@ select{
         width: 96%;
     }
     .inputdiv select{
-        width: 102.5%;
+        width: 100%;
     }
     .buttons {
         display: flex;

@@ -13,6 +13,9 @@ html{
   justify-content: center;
   align-items: center;
 }
+:focus{
+    outline: none;
+}
 main{
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));

@@ -1003,7 +1003,7 @@ textarea{
         align-items: center;
         justify-content: center;
         height: 200px;
-        width: auto;
+        width: 97%;
         margin: 0px 3px 10px 0px;
         background-color: rgba(128, 128, 128, 0.596);
     }
